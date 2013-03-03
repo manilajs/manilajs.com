@@ -1,3 +1,4 @@
+@import url(http://weloveiconfonts.com/api/?family=brandico);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0;  padding: 0;  border: 0;  font-size: 100%;  font: inherit;  vertical-align: baseline; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 body { line-height: 1; }
@@ -5,6 +6,25 @@ ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after, q:before, q:after { content: '';  content: none; }
 table { border-collapse: collapse;  border-spacing: 0; }
+
+/* ---------------------------------------------------------------------------- */
+
+/* Icons */
+i.twitter:before,
+i.github:before,
+i.facebook:before,
+i.google:before {
+  font-family: 'brandico', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+i.twitter:before { content: '\f303'; }
+i.github:before { content: '\f307'; }
+i.google:before { content: '\f309'; }
+i.facebook:before { content: '\f300'; }
+
+/* ---------------------------------------------------------------------------- */
 
 html {
   background: #fafafa;
@@ -188,7 +208,7 @@ a:hover {
   border: solid 1px #708090;
   box-shadow: 0 0 0 4px #f0f0f0;
 
-  background: #fafafa;
+  background-color: #fafafa;
 }
 
 .date-time-item .date {
@@ -199,6 +219,8 @@ a:hover {
 
   line-height: 30px;
   font-weight: bold;
+
+  color: #506070;
 }
 
 .date-time-item .time {
@@ -209,6 +231,20 @@ a:hover {
   line-height: 30px;
 
   color: #bc6d5e;
+}
+
+.date-time-item:hover {
+  text-decoration: none;
+  background: #333;
+  transform: scale(1.12);
+}
+
+.date-time-item:hover .date {
+  border-bottom-color: #444;
+}
+.date-time-item:hover .date,
+.date-time-item:hover .time {
+  color: #fff;
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -222,7 +258,7 @@ a:hover {
   margin: 2em 0;
   font-weight: 300;
 
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: #8a90a0;
 }
 
@@ -232,13 +268,80 @@ a:hover {
   margin: 2em 0;
 }
 
+.speaker:after {
+  content: '';
+  display: table;
+  clear: both;
+  zoom: 1;
+}
+
+
 .speaker h3 {
   font-weight: 700;
 }
 
 .speaker h3 .title {
   color: #bc6d5e;
-  margin-left: 5px;
+  margin: 0 15px 0 5px;
+}
+
+.speaker h3 a {
+  color: #b0b6c0;
+  padding: 0 3px;
+}
+
+.speaker h3 a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.speaker .avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 35px;
+
+  background: white;
+
+  float: right;
+  border: solid 2px #708090;
+  box-shadow: 0 0 0 4px #f0f0f0;
+
+  margin: 0 0 20px 20px;
+
+  background: #eee;
+}
+
+.speaker .avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin: 2px;
+}
+
+.speaker.anyone h3,
+.speaker.anyone .avatar {
+   display: none;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .speaker .avatar {
+    float: left;
+    margin: 0 30px 0 -96px;
+    position: relative;
+    top: 10px;
+  }
+
+  .speaker.anyone h3 {
+    display: block;
+  }
+
+  .speaker.anyone .avatar {
+    display: block;
+    top: 0;
+    opacity: 0.2;
+    margin-bottom: -2em;
+  }
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -249,7 +352,7 @@ a:hover {
 
 .cta .in {
   text-align: center;
-  padding: 0 0 3em 0;
+  padding: 2em 0 3em 0;
 }
 
 .button {
@@ -274,21 +377,32 @@ a:hover {
   cursor: pointer;
 }
 
-.button:hover {
+.button,
+.button:visited {
   background: #506070;
   border-color: #506070;
   color: white;
   text-decoration: none;
 }
 
-.button:active {
+.button:hover {
   background: #333;
   border-color: #333;
   color: white;
+  text-decoration: none;
+}
+
+.button:active {
+  background: #111;
+  border-color: #111;
+}
+
+.cta .venue {
+  margin-top: 1em;
+  font-weight: bold;
 }
 
 .cta .hint {
-  margin-top: 10px;
   font-size: 0.9em;
 }
 
@@ -296,8 +410,54 @@ a:hover {
 
 .venue-info {
   border-top: solid 1px #ccc;
-  box-shadow: inset 0 6px 8px -8px rgba(0, 0, 0, 0.2);
-  padding: 50px 0;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .venue-info {
+    padding-bottom: 20px;
+  }
+}
+
+/* ---------------------------------------------------------------------------- */
+
+.content-section {
+  border-top: solid 1px #eee;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.content-section:first-child {
+  border-top: 0;
+}
+
+.content-section h3 {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 1.2em;
+  font-family: lato;
+  color: #506070;
+}
+
+.location {
+  margin: 1em 0;
+}
+
+.location:last-child {
+  margin-bottom: 0;
+}
+
+.location h4 {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.venue .location {
+  margin: 0;
+}
+
+.venue .location h4 {
+  font-size: 1.3em;
 }
 
 /* ---------------------------------------------------------------------------- */
