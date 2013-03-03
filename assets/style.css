@@ -39,6 +39,7 @@ table { border-collapse: collapse;  border-spacing: 0; }
 i.twitter:before,
 i.github:before,
 i.facebook:before,
+.btn.facebook:before,
 i.google:before {
   font-family: 'brandico';
   font-size: 14px;
@@ -58,6 +59,7 @@ i.twitter:before { content: '\f303'; }
 i.github:before { content: '\f307'; }
 i.google:before { content: '\f309'; }
 i.facebook:before { content: '\f300'; }
+.btn.facebook:before { content: '\f301'; margin-right: 7px; }
 .btn:after,
 .button:after,
 i.right:before { content: '\f105'; }
@@ -92,6 +94,13 @@ a:hover {
 * {
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important; }
+
+/* ---------------------------------------------------------------------------- */
+/* Inline */
+
+.nobr {
+  white-space: nowrap;
+}
 
 /* ---------------------------------------------------------------------------- */
 /* Inline: btn */
@@ -628,6 +637,10 @@ a:hover {
   color: #506070;
 }
 
+.about-us p.actions {
+  margin-top: -20px;
+}
+
 /* Desktop */
 @media (min-width: 768px) {
   .about-us {
@@ -638,8 +651,8 @@ a:hover {
 
 /* ---------------------------------------------------------------------------- */
 
-.map,
-.map:visited {
+.btn,
+.btn:visited {
   margin: 0;
   outline: 0;
   display: inline-block;
@@ -661,15 +674,21 @@ a:hover {
   cursor: pointer;
 }
 
-.map:hover {
+.btn:hover,
+.btn:visited:hover {
   background: #506070;
   border-color: #506070;
   color: white;
   text-decoration: none;
+  text-shadow: none;
 }
 
-.map:active {
+.btn:active {
   background: #111;
   border-color: #111;
 }
 
+.btn.sq {
+  border-radius: 2px;
+  padding: 0 10px;
+}
