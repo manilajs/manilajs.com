@@ -1,4 +1,30 @@
-@import url(http://weloveiconfonts.com/api/?family=brandico);
+/* ---------------------------------------------------------------------------- */
+/* Fonts */
+
+@font-face {
+  font-family: 'FontAwesome';
+  font-style: 'normal';
+  font-weight: 'normal';
+  src: url('fonts/fontawesome-webfont.eot');
+  src: url('fonts/fontawesome-webfont.eot?#iefix') format('eot'), 
+  url('fonts/fontawesome-webfont.woff') format('woff'), 
+  url('fonts/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
+}
+
+@font-face {
+  font-family: 'brandico';
+  font-style: 'normal';
+  font-weight: 'normal';
+  src: url('fonts/brandico.eot');
+  src: url('fonts/brandico.eot?#iefix') format('eot'), 
+  url('fonts/brandico.woff') format('woff'), 
+  url('fonts/brandico.ttf') format('truetype'), 
+  url('fonts/brandico.svg#brandico') format('svg');
+}
+
+/* ---------------------------------------------------------------------------- */
+/* Reset */
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0;  padding: 0;  border: 0;  font-size: 100%;  font: inherit;  vertical-align: baseline; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 body { line-height: 1; }
@@ -8,23 +34,36 @@ blockquote:before, blockquote:after, q:before, q:after { content: '';  content: 
 table { border-collapse: collapse;  border-spacing: 0; }
 
 /* ---------------------------------------------------------------------------- */
-
 /* Icons */
+
 i.twitter:before,
 i.github:before,
 i.facebook:before,
 i.google:before {
-  font-family: 'brandico', sans-serif;
+  font-family: 'brandico';
   font-size: 14px;
   font-weight: normal;
+  font-style: normal;
+}
+.button:after,
+.btn:after,
+i.right:before {
+  font-family: 'FontAwesome';
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
 }
 
 i.twitter:before { content: '\f303'; }
 i.github:before { content: '\f307'; }
 i.google:before { content: '\f309'; }
 i.facebook:before { content: '\f300'; }
+.btn:after,
+.button:after,
+i.right:before { content: '\f105'; }
 
 /* ---------------------------------------------------------------------------- */
+/* Base */
 
 html {
   background: #fafafa;
@@ -48,12 +87,25 @@ a:hover {
 }
 
 /* ---------------------------------------------------------------------------- */
+/* Antialiased text */
 
 * {
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important; }
 
 /* ---------------------------------------------------------------------------- */
+/* Inline: btn */
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn:after {
+  margin-left: 7px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* Sections */
 
 .section {
   padding: 15px 30px;
@@ -69,6 +121,69 @@ a:hover {
 }
 
 /* ---------------------------------------------------------------------------- */
+/* Top nav */
+
+.top-nav-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 56px;
+  background: #fff;
+  z-index: 5;
+  opacity: 0.95;
+  border-bottom: solid 1px #ccc;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.top-nav {
+  position: fixed;
+  top: 12px;
+  right: 30px;
+  z-index: 15;
+
+  font-size: 0.9em;
+}
+
+.top-nav .hint {
+  margin: 0 20px;
+}
+
+.top-nav a:visited,
+.top-nav a {
+  display: inline-block;
+
+  color: #506070;
+  background: #fff;
+  padding: 0 20px;
+
+  height: 26px;
+  line-height: 26px;
+  border-radius: 16px;
+
+  font-family: montserrat, sans-serif;
+  text-transform: uppercase;
+  font-size: 9pt;
+  font-weight: bold;
+
+  border: solid 2px #506070;
+}
+
+/* Desktop */
+@media (max-width: 768px) {
+  .top-nav-bg, .top-nav {
+    position: absolute;
+  }
+
+  body {
+    padding-top: 56px;
+  }
+
+}
+
+
+/* ---------------------------------------------------------------------------- */
 
 .picture-header {
   background: #444;
@@ -79,6 +194,8 @@ a:hover {
   position: relative;
 
   box-shadow: inset 0 -4px 6px -6px rgba(0, 0, 0, 0.2);
+
+  z-index: 10;
 }
 
 .picture-header img.wallpaper {
@@ -395,6 +512,11 @@ a:hover {
 .button:active {
   background: #111;
   border-color: #111;
+}
+
+.button:after {
+  margin-left: 7px;
+  font-size: 1em;
 }
 
 .cta .venue {
