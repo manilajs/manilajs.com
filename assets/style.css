@@ -36,8 +36,7 @@ a:hover {
 /* ---------------------------------------------------------------------------- */
 
 .section {
-  margin: 15px 0;
-  padding: 0 30px;
+  padding: 15px 30px;
 }
 
 .section > .in {
@@ -54,7 +53,7 @@ a:hover {
 .picture-header {
   background: #444;
   height: 190px;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 
   overflow: hidden;
   position: relative;
@@ -221,11 +220,69 @@ a:hover {
 
 /* ---------------------------------------------------------------------------- */
 
+.cta {
+  margin: 0;
+}
+
+.cta .in {
+  text-align: center;
+  padding: 0 0 3em 0;
+}
+
+.button {
+  margin: 0;
+  outline: 0;
+  display: inline-block;
+
+  height: 42px;
+  line-height: 42px;
+  border-radius: 26px;
+
+  border: solid 2px #506070;
+  padding: 0 40px;
+
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12pt;
+  font-family: montserrat;
+
+  color: #506070;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #506070;
+  border-color: #506070;
+  color: white;
+  text-decoration: none;
+}
+
+.button:active {
+  background: #333;
+  border-color: #333;
+  color: white;
+}
+
+.cta .hint {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+.venue-info {
+  border-top: solid 1px #ccc;
+  box-shadow: inset 0 6px 8px -8px rgba(0, 0, 0, 0.2);
+  padding: 50px 0;
+}
+
+/* ---------------------------------------------------------------------------- */
+
 .about-us {
   background: #e5eaf0;
   box-shadow: inset 0 6px 8px -8px rgba(0, 0, 0, 0.2);
 
-  margin-top: 5em;
   padding-top: 40px;
 
   height: 400px;
