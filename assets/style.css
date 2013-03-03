@@ -153,26 +153,45 @@ a:hover {
   top: 0;
   left: 0;
   right: 0;
+  box-sizing: border-box;
 
   height: 56px;
   background: #fff;
   z-index: 5;
-  opacity: 0.95;
+  opacity: 0.99;
   border-bottom: solid 1px #ccc;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
+.top-nav-bg {
+  padding-top: 12px;
+  padding-left: 20px;
+
+  color: #aaa;
+}
+
+.top-nav-bg .logo {
+  display: inline-block;
+  color: #111;
+}
+
 .top-nav {
   position: fixed;
-  top: 12px;
-  right: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 12px 20px;
+
   z-index: 15;
 
   font-size: 0.9em;
+  overflow: hidden;
 }
 
 .top-nav .hint {
   margin: 0 20px;
+  opacity: 0.5;
 }
 
 .top-nav a:visited,
@@ -196,15 +215,26 @@ a:hover {
 }
 
 /* Desktop */
+@media (min-width: 768px) {
+  .top-nav .left {
+    float: left;
+  }
+  .top-nav .right {
+    float: right;
+  }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
-  .top-nav-bg, .top-nav {
-    position: absolute;
+  .top-nav-bg {
+    display: none;
   }
 
-  body {
-    padding-top: 56px;
+  .top-nav {
+    position: static;
+    background: #222;
+    color: #aaa;
   }
-
 }
 
 
@@ -245,15 +275,21 @@ a:hover {
 
 .picture-header .logo {
   position: absolute;
-  left: 20px;
-  top: 20px;
+  left: 0px;
+  top: 10px;
 
   z-index: 5;
 
   background: #111;
   color: #fff;
+  padding: 5px 20px;
+}
+
+.top-nav-bg .logo,
+.picture-header .logo {
+  font-family: montserrat;
+  font-weight: bold;
   font-size: 1.3;
-  padding: 5px 10px;
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -557,6 +593,8 @@ a:hover {
 
 .venue-info {
   border-top: solid 1px #ccc;
+  background: #f5f8fc;
+  box-shadow: inset 0 6px 8px -8px rgba(0, 0, 0, 0.2);
 }
 
 /* Desktop */
@@ -569,7 +607,7 @@ a:hover {
 /* ---------------------------------------------------------------------------- */
 
 .content-section {
-  border-top: solid 1px #eee;
+  border-top: solid 1px #e3e5e7;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -588,9 +626,18 @@ a:hover {
 
 .content-section h3 {
   text-transform: uppercase;
-  font-weight: 400;
-  font-size: 1em;
+  font-weight: bold;
+  font-size: 0.9em;
   font-family: montserrat;
+  color: #5eaebc;
+}
+
+.content-section a:visited,
+.content-section a {
+  color: #a0b0c0;
+}
+
+.content-section a:hover {
   color: #506070;
 }
 
@@ -613,10 +660,6 @@ a:hover {
 }
 
 /* -- */
-
-.venue h3 {
-  margin-bottom: 20px;
-}
 
 .venue .location h4 {
   font-size: 1.4em;
@@ -667,6 +710,11 @@ a:hover {
 
 .about-us p.actions {
   margin-top: -20px;
+}
+
+.about-us .btn:visited,
+.about-us .btn {
+  border-color: #c0c8d0;
 }
 
 /* Desktop */
@@ -741,8 +789,8 @@ a.map:before {
   margin: 0 0 0 -70px;
   vertical-align: top;
 
-  color: #506070;
-  opacity: 0.2;
+  color: #a0b0c0;
+  opacity: 0.5;
 }
 
 .location.afterparty:before {
