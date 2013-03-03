@@ -48,6 +48,8 @@
     <div class='logo'>
       ManilaJS
     </div>
+
+    <img src="assets/header.jpg" alt="Manila" class='wallpaper' />
   </section>
 
   <section class='section next-meetup wide'>
@@ -71,7 +73,7 @@
       <div class="brief">
         <p>
           The first JavaScript meetup in the Philippines, ever!
-          Join us for an evening of JavaScript talks and stuff.
+          Join us for an evening of JavaScript talks and camaraderie.
           Beginners and experts are all welcome!
         </p>
       </div>
@@ -154,7 +156,10 @@
     </div>
   </section>
 
-  <script src="assets/respond.min.js?v=28395"></script>
-  <script src="assets/prefixfree.min.js?v=28395"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="assets/vendor.js?v=28395"></script>
+  <script>
+    $('.picture-header').fillsize('> .wallpaper');
+  </script>
 </body>
 </html>
