@@ -421,7 +421,8 @@ a:hover {
 
 .date-time-item:hover {
   text-decoration: none;
-  background: #333;
+  background: #111;
+  border-color: #111;
   transform: scale(1.12);
 }
 
