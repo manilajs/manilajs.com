@@ -234,6 +234,7 @@ a:hover {
     position: static;
     background: #222;
     color: #aaa;
+    display: none; /* Eh, can't get it to look right so whatevs */
   }
 }
 
@@ -795,4 +796,11 @@ a.map:before {
 
 .location.afterparty:before {
   font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  .location:before {
+    float: right;
+    margin: 0 0 0 20px;
+  }
 }
