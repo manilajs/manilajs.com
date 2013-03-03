@@ -76,7 +76,7 @@ i.right:before { content: '\f105'; }
 /* Base */
 
 html {
-  background: #fafafa;
+  background: #fff;
 }
 
 body, td, th, input, textarea {
