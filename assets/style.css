@@ -455,9 +455,7 @@ a:hover {
 
   .speaker.anyone .avatar {
     display: block;
-    top: 0;
     opacity: 0.2;
-    margin-bottom: -2em;
   }
 }
 
