@@ -601,6 +601,19 @@ a:hover {
   font-size: 1em;
 }
 
+.button.disabled:hover,
+.button.disabled:visited,
+.button.disabled {
+  background-color: #eee;
+  border-color: #ddd;
+  cursor: not-allowed;
+  color: #888;
+}
+
+.button.disabled:after {
+  display: none;
+}
+
 .cta .venue {
   margin-top: 1em;
   font-weight: bold;
@@ -789,6 +802,19 @@ a:hover {
 .btn.sq {
   border-radius: 2px;
   padding: 0 10px;
+}
+
+.btn.disabled,
+.btn.disabled:visited,
+.btn.disabled:hover {
+  background: #eee;
+  border-color: #ddd;
+  cursor: not-allowed;
+  color: #888;
+}
+
+.btn.disabled:after {
+  display: none;
 }
 
 /* ---------------------------------------------------------------------------- */
