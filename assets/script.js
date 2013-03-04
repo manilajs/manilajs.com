@@ -10,4 +10,6 @@
     var $parent = $(this).closest('.picture-header');
     setTimeout(function() { $parent.addClass('loaded'); }, 25);
   });
+
+  $('.next-meetup h5, .unorphan, .brief p, .speaker p, .closing p, .about-us p').unorphan();
 })(jQuery);
