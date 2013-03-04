@@ -242,8 +242,8 @@ a:hover {
 /* ---------------------------------------------------------------------------- */
 
 .picture-header {
-  background: #444;
-  height: 190px;
+  background: #222;
+  height: 120px;
   margin-bottom: 3em;
 
   overflow: hidden;
@@ -263,6 +263,11 @@ a:hover {
 
 .picture-header.loaded img.wallpaper {
   opacity: 1;
+}
+
+.picture-header.loaded img.wallpaper.blur {
+  -webkit-filter: blur(5px);
+  transform: scale(1.1);
 }
 
 .picture-header:after {
