@@ -1,6 +1,6 @@
 http://www.flickr.com/photos/iliveinphilippines/6450698133/sizes/l/in/photostream/
 
-http://farm6.staticflickr.com/5165/5308303245_1141b23bda_b.jpg
+http://www.flickr.com/photos/10168114@N04/6774800874/in/photostream/
 
 Todo:
 
