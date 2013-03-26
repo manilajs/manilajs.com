@@ -266,7 +266,7 @@ a:hover {
 }
 
 .picture-header.loaded img.wallpaper.blur {
-  -webkit-filter: blur(10px);
+  -webkit-filter: blur(15px);
   transform: scale(1.1);
 }
 
