@@ -52,7 +52,8 @@ i.google:before
 .btn:after,
 a.map:before,
 i.right:before,
-.location:before
+.venue .placeholder:before,
+.afterparty .placeholder:before
 {
   font-family: 'FontAwesome';
   font-size: 14px;
@@ -66,8 +67,8 @@ i.google:before { content: '\f309'; }
 i.facebook:before { content: '\f300'; }
 .btn.facebook:before { content: '\f301'; margin-right: 7px; }
 a.map:before { content: '\f064'; }
-.location:before { content: '\f041'; }
-.location.afterparty:before { content: '\f0fc'; }
+.venue .placeholder:before { content: '\f041'; }
+.afterparty .placeholder:before { content: '\f0fc'; }
 .btn:after,
 .button:after,
 i.right:before { content: '\f105'; }
@@ -840,26 +841,46 @@ a.map:before {
   vertical-align: middle;
 }
 
-.location:before {
+/* Icon */
+.location .icon {
   display: block;
   float: left;
 
   width: 60px;
-  font-size: 60px;
 
   margin: 0 0 0 -70px;
   vertical-align: top;
 
   color: #a0b0c0;
+}
+
+.location .placeholder:before {
+  font-size: 60px;
   opacity: 0.5;
 }
 
-.location.afterparty:before {
+.location .icon img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.location .logo {
+  background: white;
+  width: 100px;
+  height: 100px;
+  margin: 0 0 0 -140px;
+  border-radius: 52px;
+  border: solid 2px #405050;
+  overflow: hidden;
+}
+
+.afterparty .placeholder:before {
   font-size: 40px;
 }
 
 @media (max-width: 768px) {
-  .location:before {
+  .location .icon {
     float: right;
     margin: 0 0 0 20px;
   }
