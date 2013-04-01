@@ -693,7 +693,7 @@ a:hover {
 /* -- */
 
 .location {
-  margin: 1em 0;
+  margin: 0 0 1em 0;
 }
 
 .location:last-child {
@@ -706,6 +706,7 @@ a:hover {
 
 .location h4 {
   font-weight: bold;
+  font-size: 1.1em;
 }
 
 /* -- */
@@ -713,9 +714,6 @@ a:hover {
 .venue .location h4 {
   font-size: 1.2em;
   font-weight: bold;
-}
-.venue .location {
-  margin: 0;
 }
 
 .venue .location a.map {
