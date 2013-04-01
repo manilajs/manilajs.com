@@ -722,6 +722,10 @@ a:hover {
   margin-top: 30px;
 }
 
+.venue .location + p {
+  margin-top: 1em;
+}
+
 /* ---------------------------------------------------------------------------- */
 
 .about-us {
@@ -859,7 +863,8 @@ a.map:before {
   opacity: 0.5;
 }
 
-.location .icon img {
+.location .logo,
+.location .logo img {
   width: 100px;
   height: 100px;
   border-radius: 50px;
@@ -867,12 +872,22 @@ a.map:before {
 
 .location .logo {
   background: white;
-  width: 100px;
-  height: 100px;
   margin: 0 0 0 -140px;
-  border-radius: 52px;
+  border-radius: 54px;
   border: solid 2px #405050;
   overflow: hidden;
+  padding: 2px;
+}
+
+/* Smaller logo */
+.location .logo.smaller {
+  margin: 0 0 0 -110px;
+}
+
+.location .logo.smaller,
+.location .logo.smaller img {
+  width: 70px;
+  height: 70px;
 }
 
 .afterparty .placeholder:before {
