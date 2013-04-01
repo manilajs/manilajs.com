@@ -1,4 +1,4 @@
-ManilaJS.org website
+ManilaJS.com website
 ====================
 
 Yes.
