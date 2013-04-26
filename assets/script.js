@@ -19,4 +19,10 @@
   $(document).on('click', '[href=#]', function(e) {
     e.preventDefault();
   });
+
+  // Signup form
+  $(function() {
+    var url = $('link[rel="signup-form"]').attr('href');
+    $('[href="#signup"]').attr('href', url);
+  });
 })(jQuery);
