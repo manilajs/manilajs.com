@@ -26,7 +26,7 @@
   <script>WebFontConfig={google:{families:['Electrolize:400','Lato:300,700','Montserrat:400']}},function(a,b){var c=a.createElement(b);c.src="//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js",c.async=1;var d=a.getElementsByTagName(b)[0];d.parentNode.insertBefore(c,d)}(document,"script")</script>
 
   <!-- Site assets -->
-  <link href="assets/style.css?v=209948" rel="stylesheet" type="text/css">
+  <link href="assets/style.css?v=209385" rel="stylesheet" type="text/css">
 
   <!-- Meta -->
   <meta content="Next meetup: May 3, 2013 @ Ortigas Center, Pasig!" name="description">
@@ -42,10 +42,14 @@
   <link href="http://manilajs.com/" rel="canonical">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Config -->
   <link rel="signup-form" href="https://docs.google.com/forms/d/1hpv9GOh7jQmLcwgLHHXiccisg0YrYSXReWAdTCDQ618/viewform">
+
+  <!-- Analytics -->
   <script>(location.hostname.match(/manilajs.com/))&&(_gaq=[['_setAccount','UA-38979948-1'],['_trackPageview']],(function(a,b){var c=b.createElement(a);c.async=!0,c.src=("https:"==b.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var d=b.getElementsByTagName(a)[0];d.parentNode.insertBefore(c,d)})("script",document))</script>
 </head>
-<body>
+<body class='registration-open'>
 
   <!--[if lt IE 8]>
   <div class="unsupported-browser">
@@ -75,13 +79,17 @@
   <nav class='top-nav'>
     <div class='left'>
     </div>
-    <div class='right'>
-      <!-- <span class='hint'>Join the meetup!</span> -->
-      <!-- <a href='#signup' class='btn'>Join in</a> -->
+    <div class='right r-open'>
+      <span class='hint'>Join the meetup!</span>
+      <a href='#signup' class='btn'>Join in</a>
+    </div>
 
-      <!-- <span class='hint'>Check back next month!</span> -->
-      <!-- <a href='#' class='btn disabled'>Slots full</a> -->
+    <div class='right r-closed'>
+      <span class='hint'>Check back next month!</span>
+      <a href='#' class='btn disabled'>Slots full</a>
+    </div>
 
+    <div class='right r-announce'>
       <span class='hint'>Check back soon!</span>
       <a href='#' class='btn disabled'>Soon to open</a>
     </div>
@@ -185,17 +193,21 @@
 
   <section class='section cta'>
     <div class='in'>
-      <!-- <a class='button big' href='https://docs.google.com/forms/d/1ZHBzZ5irUzHnmvE4w_XiKeMaWc78oK9ACniUCH4x1PU/viewform'>I'm attending!</a> -->
-      <!-- <a class='button big disabled' href="#">Sold out!</a> -->
-      <a class='button big disabled' href="#">Soon to open</a>
+      <a class='button big r-open' href='https://docs.google.com/forms/d/1ZHBzZ5irUzHnmvE4w_XiKeMaWc78oK9ACniUCH4x1PU/viewform'>I'm attending!</a>
+      <a class='button big disabled r-closed' href="#">Sold out!</a>
+      <a class='button big disabled r-announce' href="#">Soon to open</a>
 
       <p class='venue'>
         May 3, Friday &nbsp;&middot;&nbsp; 7PM onwards
       </p>
 
-      <p class='hint'>
-        <!-- Slots are now full. Be sure to register early next month! -->
-        <!-- It's free! Reserve your seat now. Slots are limited, so hurry! -->
+      <p class='hint r-closed'>
+        Slots are now full. Be sure to register early next month!
+      </p>
+      <p class='hint r-open'>
+        It's free! Reserve your seat now. Slots are limited, so hurry!
+      </p>
+      <p class='hint r-announce'>
         Registration will open on the morning of Monday, April 29. Slots are limited!
       </p>
 
@@ -287,7 +299,7 @@
   </section>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="assets/vendor.js?v=209948"></script>
-  <script src="assets/script.js?v=209948"></script>
+  <script src="assets/vendor.js?v=209385"></script>
+  <script src="assets/script.js?v=209385"></script>
 </body>
 </html>
