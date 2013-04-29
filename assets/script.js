@@ -1,4 +1,10 @@
 ;(function($){
+  var Meta = {
+    get: function(name) {
+      return $("meta[name='site:"+name+"']").attr('content');
+    }
+  };
+
   $(function() {
     $('.picture-header').fillsize('> .wallpaper');
   });
@@ -28,8 +34,14 @@
 
   // Signup form
   $(function() {
+    var state = Meta.get('registration_state');
+
     var url = $('link[rel="signup-form"]').attr('href');
-    $('[href="#signup"]').attr('href', url);
+    if (state === 'open') {
+      $('[href="#signup"]').attr('href', url);
+    } else {
+      $('[href="#signup"]').attr({ href: '#', disabled: true });
+    }
   });
 
   // Content
@@ -37,8 +49,7 @@
     $('[data-content]').each(function() {
       var $span = $(this);
       var key = $span.data('content');
-      var value = $("meta[name='site:"+key+"']").attr('content');
-      console.log($span, key, value);
+      var value = Meta.get(key);
 
       $span.html(value);
     });

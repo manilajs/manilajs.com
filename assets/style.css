@@ -429,6 +429,11 @@ a:hover {
   background-color: #eee;
 }
 
+.date-time-item[disabled],
+.date-time-item:disabled {
+  cursor: not-allowed;
+}
+
 .date-time-item .date {
   display: block;
   text-align: center;
@@ -451,18 +456,18 @@ a:hover {
   color: #60ab50;
 }
 
-.date-time-item:hover {
+.date-time-item:not([disabled]):hover {
   text-decoration: none;
   background: #111;
   border-color: #111;
   transform: scale(1.02);
 }
 
-.date-time-item:hover .date {
+.date-time-item:not([disabled]):hover .date {
   border-bottom-color: #444;
 }
-.date-time-item:hover .date,
-.date-time-item:hover .time {
+.date-time-item:not([disabled]):hover .date,
+.date-time-item:not([disabled]):hover .time {
   color: #fff;
 }
 
