@@ -898,15 +898,3 @@ a.map:before {
     margin: 0 0 0 20px;
   }
 }
-
-/* ---------------------------------------------------------------------------- */
-/* Registration states */
-
-body.registration-open .r-closed,
-body.registration-open .r-announce,
-body.registration-closed .r-open,
-body.registration-closed .r-announce,
-body.registration-announce .r-open,
-body.registration-announce .r-closed {
-  display: none !important;
-}

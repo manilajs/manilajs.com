@@ -26,7 +26,7 @@
   <script>WebFontConfig={google:{families:['Electrolize:400','Lato:300,700','Montserrat:400']}},function(a,b){var c=a.createElement(b);c.src="//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js",c.async=1;var d=a.getElementsByTagName(b)[0];d.parentNode.insertBefore(c,d)}(document,"script")</script>
 
   <!-- Site assets -->
-  <link href="assets/style.css?v=209385" rel="stylesheet" type="text/css">
+  <link href="assets/style.css?v=018475" rel="stylesheet" type="text/css">
 
   <!-- Meta -->
   <meta content="Next meetup: May 3, 2013 @ Ortigas Center, Pasig!" name="description">
@@ -46,10 +46,20 @@
   <!-- Config -->
   <link rel="signup-form" href="https://docs.google.com/forms/d/1hpv9GOh7jQmLcwgLHHXiccisg0YrYSXReWAdTCDQ618/viewform">
 
+  <meta content="003" name="site:event_series">
+  <meta content="May 3" name="site:event_date">
+  <meta content="Monday, April 29" name="site:registration_date">
+  <meta content="open" name="site:registration_state">
+
   <!-- Analytics -->
   <script>(location.hostname.match(/manilajs.com/))&&(_gaq=[['_setAccount','UA-38979948-1'],['_trackPageview']],(function(a,b){var c=b.createElement(a);c.async=!0,c.src=("https:"==b.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var d=b.getElementsByTagName(a)[0];d.parentNode.insertBefore(c,d)})("script",document))</script>
+
+  <!-- Scripts -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="assets/vendor.js?v=018475"></script>
+  <script src="assets/script.js?v=018475"></script>
 </head>
-<body class='registration-open'>
+<body>
 
   <!--[if lt IE 8]>
   <div class="unsupported-browser">
@@ -104,7 +114,7 @@
   <section class='section next-meetup wide'>
     <div class='in'>
       <h5>Ortigas Center, Pasig City</h5>
-      <h1>Manila.js Fridays <small>003</small></h1>
+      <h1>Manila.js Fridays <small data-content='event_series'></small></h1>
       <div class="brief">
         <p>
           Join us for an evening of JavaScript talks, networking, and
@@ -118,7 +128,7 @@
     <div class='in'>
       <!-- <a class='date-time-item' href='#signup'> -->
       <a class='date-time-item' href="#">
-        <strong class='date'>May 3</strong>
+        <strong class='date' data-content='event_date'></strong>
         <span class='time'>7PM</span>
       </a>
     </div>
@@ -198,7 +208,7 @@
       <a class='button big disabled r-announce' href="#">Soon to open</a>
 
       <p class='venue'>
-        May 3, Friday &nbsp;&middot;&nbsp; 7PM onwards
+        <span data-content='event_date'></span>, Friday &nbsp;&middot;&nbsp; 7PM onwards
       </p>
 
       <p class='hint r-closed'>
@@ -208,7 +218,7 @@
         It's free! Reserve your seat now. Slots are limited, so hurry!
       </p>
       <p class='hint r-announce'>
-        Registration will open on the morning of Monday, April 29. Slots are limited!
+        Registration will open on <span data-content='registration_date'></span>. Slots are limited!
       </p>
 
     </div>
@@ -298,8 +308,5 @@
     </div>
   </section>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="assets/vendor.js?v=209385"></script>
-  <script src="assets/script.js?v=209385"></script>
 </body>
 </html>

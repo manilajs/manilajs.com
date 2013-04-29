@@ -31,4 +31,25 @@
     var url = $('link[rel="signup-form"]').attr('href');
     $('[href="#signup"]').attr('href', url);
   });
+
+  // Content
+  $(function() {
+    $('[data-content]').each(function() {
+      var $span = $(this);
+      var key = $span.data('content');
+      var value = $("meta[name='site:"+key+"']").attr('content');
+      console.log($span, key, value);
+
+      $span.html(value);
+    });
+  });
+
+  // Registration state
+  $(function() {
+    var current = $("meta[name='site:registration_state']").attr('content');
+
+    $.each(['announce', 'open', 'closed'], function(i, state) {
+      if (state !== current) $(".r-"+state).remove();
+    });
+  });
 })(jQuery);
