@@ -4,6 +4,11 @@ html, body {
   height: 100%;
 }
 
+html {
+  background: #f7f7f7;
+  color: #222;
+}
+
 body {
   font-family: Lato, sans-serif;
   font-weight: 300;
@@ -24,6 +29,12 @@ body {
 .page {
   width: 90%;
   margin: 20px auto;
+}
+
+img.logo {
+  width: 90px;
+  display: block;
+  margin: 0 auto 30px auto;
 }
 
 textarea {
@@ -74,7 +85,7 @@ textarea:focus {
   font-family: electrolize, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  color: #3a3;
+  color: #9b5;
 }
 
 .heading-1 {
