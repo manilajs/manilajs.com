@@ -1,12 +1,29 @@
 * { margin: 0; padding: 0; font-size: 1em; }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: Lato, sans-serif;
   font-weight: 300;
   font-size: 14pt;
   line-height: 1.5;
+}
 
-  padding-top: 200px;
+body {
+  width: 100%;
+  display: table;
+}
+
+#all {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.page {
+  width: 90%;
+  margin: 20px auto;
 }
 
 textarea {
@@ -97,4 +114,10 @@ div.hr {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   border-radius: 2px;
   text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+.hide {
+  display: none;
 }
