@@ -74,3 +74,27 @@ div.hr {
   height: 1px;
   border-top: solid 1px #888;
 }
+
+.message {
+  font-size: 10pt;
+  border: solid 1px #ddd;
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 300px;
+
+  line-height: 2em;
+}
+
+.message ul, .message li {
+  list-style-type: none;
+}
+
+.message a {
+  color: #333;
+  font-weight: bold;
+  background: #eee;
+  padding: 2px 4px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  text-decoration: none;
+}

@@ -40,10 +40,17 @@
     var hash = window.location.search.match(/^\??(.*?)\/?$/)[1].replace(/(_|%20)/g, ' ');
     var date = Date.parse(hash);
 
-    new Countdown({
-      $timer: $("[role~='timer_value']"),
-      $date: $("[role~='timer_date']"),
-      date: date });
+    if (date) {
+      $("[role~='countdown_page']").show();
+      new Countdown({
+        $timer: $("[role~='timer_value']"),
+        $date: $("[role~='timer_date']"),
+        date: date
+      });
+    } else {
+      $(".message").show();
+      $(".message").html($("#samples").html());
+    }
   });
 
   function sToDuration(n) {
