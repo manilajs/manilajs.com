@@ -82,7 +82,7 @@ html {
 
 body, td, th, input, textarea {
   font-family: lato, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 12pt;
   line-height: 1.7;
   color: #404750;
@@ -244,7 +244,7 @@ a:hover {
 
 .picture-header {
   background: #222;
-  height: 120px;
+  /* height: 120px; */
   margin-bottom: 3em;
 
   overflow: hidden;
@@ -262,12 +262,21 @@ a:hover {
   transition: opacity 400ms linear;
 }
 
+.picture-header section {
+  position: relative;
+  z-index: 2;
+}
+
+.picture-header section.next-meetup {
+  padding-top: 70px;
+}
+
 .picture-header.loaded img.wallpaper {
-  opacity: 1;
+  opacity: 0.7;
 }
 
 .picture-header.loaded img.wallpaper.blur {
-  -webkit-filter: blur(15px);
+  -webkit-filter: blur(30px);
   transform: scale(1.1);
 }
 
@@ -317,10 +326,12 @@ a:hover {
 
 .next-meetup {
   margin: 3em 0 0 0;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.4), 0 1px rgba(0, 0, 0, 0.2);
 }
 
 .next-meetup h5 {
-  color: #60ab50;
+  /* color: #60ab50; */
+  color: #8adc79;
   font-family: lato, sans-serif;
   font-size: 0.9em;
   line-height: 1.5;
@@ -340,7 +351,7 @@ a:hover {
   letter-spacing: -1px;
 
   text-align: center;
-  color: #333;
+  color: #fff;
 }
 
 .next-meetup h1 small {
@@ -354,7 +365,8 @@ a:hover {
 
   font-size: 1.3em;
   line-height: 1.6;
-  color: #666;
+  color: #fff;
+  opacity: 0.8;
 
   max-width: 500px;
   text-align: center;
@@ -397,7 +409,7 @@ a:hover {
   position: absolute;
   top: 58px;
 
-  border-bottom: solid 1px #ddd;
+  /* border-bottom: solid 1px #ddd; */
 }
 
 .date-time .in:before {
