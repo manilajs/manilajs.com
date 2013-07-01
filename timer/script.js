@@ -9,6 +9,7 @@
   Countdown.prototype = {
     initialize: function() {
       this.update();
+      $("title").html(this.getDateString());
     },
 
     update: function() {
@@ -16,7 +17,7 @@
 
       var val = this.getTimeLeft();
       this.$timer.html(val);
-      this.$date.html(this.getMoment().calendar());
+      this.$date.html(this.getDateString());
 
       setTimeout($.proxy(this.update, this), 1000);
     },
@@ -25,11 +26,16 @@
       return moment(this.date);
     },
 
-    //=> "in 34 minutes"
+    //=> "Today at 9:00PM"
+    getDateString: function() {
+      return this.getMoment().calendar();
+    },
+
+    //=> "34 minutes"
     getTimeLeft: function() {
       var diff = this.getMoment().diff();
 
-      if (diff > 0) return "in " + sToDuration(diff / 1000);
+      if (diff > 0) return "" + sToDuration(diff / 1000);
       else return "now";
     }
   };

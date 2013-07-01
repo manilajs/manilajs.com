@@ -6,13 +6,14 @@ html, body {
 
 html {
   background: #f7f7f7;
+  background-image: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/shattered.png);
   color: #222;
 }
 
 body {
   font-family: Lato, sans-serif;
   font-weight: 300;
-  font-size: 14pt;
+  font-size: 16pt;
   line-height: 1.5;
 }
 
@@ -47,6 +48,7 @@ textarea {
   resize: none;
   width: 100%;
   height: 1.2em;
+  line-height: 1.5;
 }
 
 textarea:focus {
@@ -94,6 +96,11 @@ textarea:focus {
 
 .heading-2 {
   font-size: 2em;
+}
+
+.heading-4 {
+  margin-top: 0;
+  line-height: 1.6;
 }
 
 div.hr {
