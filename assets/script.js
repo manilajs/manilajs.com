@@ -2,7 +2,7 @@
   var Meta = {
     get: function(name) {
       return $("meta[name='site:"+name+"']").attr('content') ||
-        $("link[title='site:"+name+"']").attr('href');
+        $("link[rel='site:"+name+"']").attr('href');
     }
   };
 
