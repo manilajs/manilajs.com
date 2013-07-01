@@ -498,10 +498,14 @@ a:hover {
 
 .speaker h3 .title {
   color: #60ab50;
-  margin: 0 15px 0 5px;
+  margin: 0 15px 0 0;
 }
 
 .speaker h3 a {
+  color: #333;
+}
+
+.speaker h3 i {
   color: #b0b6c0;
   padding: 0 3px;
 }

@@ -1,7 +1,8 @@
 ;(function($){
   var Meta = {
     get: function(name) {
-      return $("meta[name='site:"+name+"']").attr('content');
+      return $("meta[name='site:"+name+"']").attr('content') ||
+        $("link[title='site:"+name+"']").attr('href');
     }
   };
 
@@ -36,7 +37,7 @@
   $(function() {
     var state = Meta.get('registration_state');
 
-    var url = $('link[rel="signup-form"]').attr('href');
+    var url = Meta.get('signup_form');
     if (state === 'open') {
       $('[href="#signup"]').attr('href', url);
     } else {
@@ -52,6 +53,14 @@
       var value = Meta.get(key);
 
       $span.html(value);
+    });
+
+    $('[data-href]').each(function() {
+      var $span = $(this);
+      var key = $span.data('href');
+      var value = Meta.get(key);
+
+      $span.attr('href', value);
     });
   });
 

@@ -26,18 +26,22 @@
   <script>WebFontConfig={google:{families:['Electrolize:400','Lato:300,700','Montserrat:400']}},function(a,b){var c=a.createElement(b);c.src="//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js",c.async=1;var d=a.getElementsByTagName(b)[0];d.parentNode.insertBefore(c,d)}(document,"script")</script>
 
   <!-- Site assets -->
-  <link href="assets/style.css?v=018475" rel="stylesheet" type="text/css">
+  <link href="assets/style.css?v=829981" rel="stylesheet" type="text/css">
 
   <!-- Config -->
-  <meta content="003" name="site:event_series">
-  <meta content="May 3" name="site:event_date">
-  <meta content="Ortigas Center, Pasig City" name="site:event_location">
-  <meta content="Monday, April 29" name="site:registration_date">
-  <meta content="closed" name="site:registration_state"><!-- open | closed | announce -->
+  <meta content="004" name="site:event_series">
+  <meta content="July 5" name="site:event_date">
+  <meta content="Salcedo Village, Makati" name="site:event_location">
+  <meta content="Tuesday, July 2" name="site:registration_date">
+  <meta content="announce" name="site:registration_state"><!-- open | closed | announce -->
+  <meta content="Next meetup: July 5, 2013 @ Salcedo Village, Makati!" name="description">
+  <meta content="Next meetup: July 5, 2013 @ Salcedo Village, Makati!" property="og:description">
+
+  <!-- Links -->
+  <link href="http://goo.gl/maps/CEqOZ" rel='site:event_map'>
+  <link href="https://docs.google.com/forms/d/1hpv9GOh7jQmLcwgLHHXiccisg0YrYSXReWAdTCDQ618/viewform" rel='site:signup_form'>
 
   <!-- Meta -->
-  <meta content="Next meetup: May 3, 2013 @ Ortigas Center, Pasig City!" name="description">
-  <meta content="Next meetup: May 3, 2013 @ Ortigas Center, Pasig City!" property="og:description">
   <meta content="http://manilajs.com/assets/preview-logo.jpg" property="og:image">
   <meta content="http://manilajs.com/assets/preview-logo.jpg" name="twitter:image">
   <meta content="Manila.js JavaScript community" property="og:title">
@@ -50,16 +54,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width; initial-scale=1.0">
 
-  <!-- Links -->
-  <link rel="signup-form" href="https://docs.google.com/forms/d/1hpv9GOh7jQmLcwgLHHXiccisg0YrYSXReWAdTCDQ618/viewform">
-
   <!-- Analytics -->
   <script>(location.hostname.match(/manilajs.com/))&&(_gaq=[['_setAccount','UA-38979948-1'],['_trackPageview']],(function(a,b){var c=b.createElement(a);c.async=!0,c.src=("https:"==b.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var d=b.getElementsByTagName(a)[0];d.parentNode.insertBefore(c,d)})("script",document))</script>
 
   <!-- Scripts -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="assets/vendor.js?v=018475"></script>
-  <script src="assets/script.js?v=018475"></script>
+  <script src="assets/vendor.js?v=829981"></script>
+  <script src="assets/script.js?v=829981"></script>
 </head>
 <body>
 
@@ -140,41 +141,62 @@
       <div class="speaker-list">
         <article class="speaker">
           <div class="avatar">
-            <img src="avatars/jamesflorentino-100.jpg" alt="James Florentino" />
+            <img src="avatars/jokosarmiento-120.jpg" alt="Joko Sarmiento" />
           </div>
           <h3>
-            <a href='http://jamesflorentino.com/'>James Florentino</a>
-            <em class='title'>Wishbone Media</em>
-            <a href='https://twitter.com/jamesflorentino'>
+            <a href='http://jaunesarmiento.me/'>Joko Sarmiento</a>
+            <em class='title'></em>
+            <a href='https://twitter.com/jaunesarmiento'>
               <i class='twitter'></i>
             </a>
-            <a href='https://github.com/jamesflorentino'>
+            <a href='https://github.com/jaunesarmiento'>
               <i class='github'></i>
             </a>
           </h3>
           <p>
-            James will be sharing with us an introduction to Ember 1.0rc3 and
-            using it for single-page web applications.
+          Joko is the author of the wildly-popular framework <a
+            href='http://jaunesarmiento.me/fries'>Fries</a>, used to to
+          prototype Android interfaces in HTML. Joko will be sharing with us
+          his experiences in building an HTML prototyping tool.
+          </p>
+        </article>
+
+        <article class="speaker">
+          <div class="avatar">
+            <img src="avatars/ricostacruz-100.jpg" alt="Rico Sta. Cruz" />
+          </div>
+          <h3>
+            <a href='http://ricostacruz.com/'>Rico Sta. Cruz</a>
+            <em class='title'>Nadarei, Inc.</em>
+            <a href='https://twitter.com/rstacruz'>
+              <i class='twitter'></i>
+            </a>
+            <a href='https://github.com/rstacruz'>
+              <i class='github'></i>
+            </a>
+          </h3>
+          <p>
+          Rico will tell us about how you have no excuse not to do JavaScript
+          testing, and how you can easily test your frontend applications using
+          <a href='http://visionmedia.github.io/mocha'>Mocha</a>,
+          <a href='https://npmjs.org/package/jsdom'>jsdom</a>,
+          <a href='http://sinonjs.org'>Sinon</a>, and
+          <a href='http://chaijs.com'>Chai</a>.
           </p>
         </article>
         
         <article class="speaker">
           <div class="avatar">
-            <img src="avatars/marksteve-120.jpg" alt="Mark Steve Samson" />
+            <img src="avatars/paymentwall.jpg" alt="Titony" />
           </div>
           <h3>
-            <a href='http://marksteve.com/'>Mark Steve Samson</a>
-            <em class='title'>InsyncHQ</em>
-            <a href='https://twitter.com/marksteve'>
-              <i class='twitter'></i>
-            </a>
-            <a href='https://github.com/marksteve'>
-              <i class='github'></i>
-            </a>
+            <a href='http://paymentwall.com/'>Titony</a>
+            of
+            <em class='title'>Paymentwall</em>
           </h3>
           <p>
-            Steve is a passionate Python and JavaScript web developer.
-            He will be sharing with us his experience on working with open source projects.
+            Titony will be sharing about how HTML5 widgets are created and
+            integrated for a payment gateway service.
           </p>
         </article>
 
@@ -232,41 +254,42 @@
         <h3>Our venue is</h3>
         <div class='location'>
           <!-- <div class='icon placeholder'></div> -->
-          <div class='icon logo'><img src='avatars/sourcepad.jpg' alt='SourcePad'></div>
+          <div class='icon logo'><img src='avatars/paymentwall.jpg' alt='Paymentwall'></div>
           <h4>
-            <a href='http://www.sourcepad.com/'>SourcePad</a>
+            <a href='http://www.paymentwall.com/en/office/manila'>Paymentwall PH</a>
           </h4>
           <p>
-            25 ADB Avenue, Suite 2701,
-            Discovery Centre Building 
+            Penthouse B, LPL Building,
+            Leviste corner Sedeno Streets
             <br>
-            Ortigas Center, Pasig City
-            (near Podium)
+            Salcedo Village, Makati City
+            (near Makati Sports Club)
           </p>
-          <a href='http://goo.gl/maps/megDY' class='map' target='_blank'>View map</a>
+          <a href='' class='map' data-href='event_map' target='_blank'>View map</a>
         </div>
         <p>Special thanks to our gracious host for hosting this month's meetup!
-        SourcePad is a consulting firm that lols.
+        Paymentwall is a payment gateway service startup that has a Manila
+        office to cater to its clientelle in Southeast Asia.
         </p>
       </div>
     </section>
 
-    <section class='section content-section afterparty'>
-      <div class="in">
-        <h3>After-drinkup</h3>
-        <div class='location afterparty'>
-          <!-- <div class='icon placeholder'></div> -->
-          <!-- <div class='icon logo smaller'><img src='avatars/borough.jpg' alt='Borough'></div> -->
-          <div class='icon logo'><img src='avatars/borough.jpg' alt='Borough'></div>
-          <h4>Borough</h4>
-          <p>1st floor, the Podium, Ortigas</p>
-          <a href='http://goo.gl/maps/ig06l' class='map' target='_blank'>View map</a>
-        </div>
-        <p>Join us for drinks at Borough after the event! Borough is located at
-        the Podium, just across the venue and serves a selection of local
-        beers.</p>
-      </div>
-    </section>
+    <!-- <section class='section content-section afterparty'> -->
+    <!--   <div class="in"> -->
+    <!--     <h3>After-drinkup</h3> -->
+    <!--     <div class='location afterparty'> -->
+    <!--       <1!-- <div class='icon placeholder'></div> --1> -->
+    <!--       <1!-- <div class='icon logo smaller'><img src='avatars/borough.jpg' alt='Borough'></div> --1> -->
+    <!--       <div class='icon logo'><img src='avatars/borough.jpg' alt='Borough'></div> -->
+    <!--       <h4>Borough</h4> -->
+    <!--       <p>1st floor, the Podium, Ortigas</p> -->
+    <!--       <a href='http://goo.gl/maps/ig06l' class='map' target='_blank'>View map</a> -->
+    <!--     </div> -->
+    <!--     <p>Join us for drinks at Borough after the event! Borough is located at -->
+    <!--     the Podium, just across the venue and serves a selection of local -->
+    <!--     beers.</p> -->
+    <!--   </div> -->
+    <!-- </section> -->
 
     <section class='section content-section contact'>
       <div class="in">
