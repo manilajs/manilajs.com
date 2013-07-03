@@ -3,6 +3,12 @@ ManilaJS.com website
 
 Yes.
 
+What's in here
+--------------
+
+ * http://manilajs.com/timer - Timer mini-app
+ * http://manilajs.com/e/ - Email archive
+
 Developer notes
 ---------------
 
@@ -12,5 +18,3 @@ Developer notes
 
  * In index.html, you mostly only need to edit the `meta` and `link` tags up 
  top.
-
- * Don't forget about http://manilajs.com/timer
