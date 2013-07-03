@@ -711,6 +711,30 @@ a:hover {
   color: #506070;
 }
 
+.content-section p + p {
+  margin-top: 20px;
+}
+
+.content-section .icon {
+  width: 16px;
+  height: 16px;
+  padding: 1px;
+  border: solid 1px transparent;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: middle;
+
+  position: relative;
+  top: -1px;
+
+  margin: 0 3px;
+}
+
+.content-section .icon.bordered {
+  border-color: #ddd;
+  background: transparent;
+}
+
 /* -- */
 
 .location {
