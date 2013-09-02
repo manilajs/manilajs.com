@@ -50,7 +50,7 @@
     $('[data-content]').each(function() {
       var $span = $(this);
       var key = $span.data('content');
-      var value = Meta.get(key);
+      var value = Meta.get(key).split('; ').join('<br>');
 
       $span.html(value);
     });
