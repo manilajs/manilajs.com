@@ -257,6 +257,7 @@ a:hover {
 
 .picture-header img.wallpaper {
   width: 100%;
+  position: absolute;
   z-index: 1;
   opacity: 0;
   transition: opacity 400ms linear;
