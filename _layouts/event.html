@@ -83,7 +83,7 @@
     {% if page.registration.state == "open" %}
     <div class='right'>
       <span class='hint'>Join the meetup!</span>
-      <a href='#signup' class='btn'>Join in</a>
+      <a href='{{ page.registration.signup }}' class='btn'>Join in</a>
     </div>
     {% endif %}
 
@@ -208,7 +208,7 @@
   <section class='section cta'>
     <div class='in'>
       {% if page.registration.state == "open" %}
-      <a class='button big' href='#signup'>I'm attending!</a>
+      <a class='button big' href='{{ page.registration.signup }}'>I'm attending!</a>
       {% endif %}
       {% if page.registration.state == "closed" %}
       <a class='button big disabled' href="#">Sold out!</a>
