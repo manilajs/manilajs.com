@@ -148,6 +148,12 @@
 
   <section class='section speakers'>
     <div class='in'>
+      {% if page.opening %}
+      <div class="closing">
+        {{ page.opening }}
+      </div>
+      {% endif %}
+
       <div class="speaker-list">
         {% for speaker in page.speakers %}
           <article class="speaker">
@@ -184,7 +190,7 @@
         
         <article class="speaker anyone">
           <div class="avatar"></div>
-          <h3>Someone like you!</h3>
+          <h3>Open for speakers!</h3>
           <p>
             The floor is open to anyone who has something interesting to share.
             Interested in being a speaker?
