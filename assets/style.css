@@ -89,7 +89,7 @@ body, td, th, input, textarea {
   font-weight: 400;
   font-size: 13.5pt;
   line-height: 1.7;
-  color: #505050;
+  color: #606060;
 } 
 
 /* Mobile */
@@ -107,6 +107,7 @@ a, a:visited {
 
 a:hover {
   color: #333;
+  transition: all 100ms linear;
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -208,9 +209,10 @@ a:hover {
   background: #fff;
   padding: 0 20px;
 
-  height: 26px;
-  line-height: 26px;
-  border-radius: 16px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 4px;
+  border: 0;
 
   font-family: montserrat, sans-serif;
   text-transform: uppercase;
@@ -218,7 +220,7 @@ a:hover {
   font-weight: bold;
   color: #222;
 
-  border: solid 2px #506070;
+  /* border: solid 2px #506070; */
 }
 
 /* Desktop */
@@ -249,7 +251,7 @@ a:hover {
 /* ---------------------------------------------------------------------------- */
 
 .picture-header {
-  background: #193;
+  background: #143;
   /* height: 120px; */
   margin-bottom: 5em;
 
@@ -276,7 +278,7 @@ a:hover {
 }
 
 .picture-header.loaded img.wallpaper {
-  opacity: 0.4;
+  opacity: 0.168;
 }
 
 .picture-header.loaded img.wallpaper.blur {
@@ -514,6 +516,7 @@ a:hover {
 
 .speaker h3 {
   font-weight: 700;
+  color: #222;
 }
 
 .speaker h3 .title {
@@ -526,7 +529,7 @@ a:hover {
 }
 
 .speaker h3 a {
-  color: #333;
+  color: #222;
 }
 
 .speaker h3 i {
@@ -602,7 +605,7 @@ a:hover {
   line-height: 42px;
   border-radius: 26px;
 
-  border: solid 2px #506070;
+  /* border: solid 2px #506070; */
   padding: 0 40px;
 
   text-transform: uppercase;
@@ -705,7 +708,7 @@ a:hover {
 
 .content-section h4 a:visited,
 .content-section h4 a {
-  color: #404750;
+  color: #222;
 }
 
 .content-section a:visited,
@@ -751,13 +754,31 @@ a:hover {
   margin-bottom: 0;
 }
 
-.location a.map {
-  margin-top: 15px;
+.location .address {
+  font-size: 0.9em;
+  margin-bottom: 18px;
+}
+
+a.map {
+  background: transparent;
+  border: solid 1px #d0d0d0;
+  font-size: 0.7em;
+  color: #506070;
+  padding: 5px 10px;
+  border-radius: 3px;
+
+  font-family: montserrat, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+a.map:hover {
+  background: rgba(0, 0, 0, 0.01);
 }
 
 .location h4 {
   font-weight: bold;
   font-size: 1.1em;
+  color: #222;
 }
 
 /* -- */
@@ -836,7 +857,7 @@ a:hover {
 
   height: 24px;
   line-height: 24px;
-  border-radius: 14px;
+  border-radius: 4px;
 
   border: solid 1px #506070;
   padding: 0 20px;

@@ -268,7 +268,7 @@
           <h4>
             <a href='{{ page.venue.url }}'>{{ page.venue.name }}</a>
           </h4>
-          <p>{{ page.venue.address }}</p>
+          <p class='address'>{{ page.venue.address }}</p>
           <a href='{{ page.venue.map }}' class='map' target='_blank'>View map</a>
         </div>
         <p>
@@ -288,7 +288,7 @@
             <div class='icon placeholder'></div>
           {% endif %}
           <h4>{{ page.drinkup.name }}</h4>
-          <p>{{ page.drinkup.location }}</p>
+          <p class='address'>{{ page.drinkup.location }}</p>
           <a href='{{ page.drinkup.map }}' class='map' target='_blank'>View map</a>
         </div>
         <p>Join us for drinks at {{ page.drinkup.name }}
