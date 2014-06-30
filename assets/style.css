@@ -1,6 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:700);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 @import url(http://fonts.googleapis.com/css?family=Electrolize:400);
 
 /* ---------------------------------------------------------------------------- */
@@ -86,11 +85,11 @@ html {
 }
 
 body, td, th, input, textarea {
-  font-family: droid sans, sans-serif;
+  font-family: source sans pro, sans-serif;
   font-weight: 400;
-  font-size: 13pt;
-  line-height: 1.8;
-  color: #404750;
+  font-size: 13.5pt;
+  line-height: 1.7;
+  color: #505050;
 } 
 
 /* Mobile */
@@ -167,7 +166,6 @@ a:hover {
   background: #fff;
   z-index: 5;
   opacity: 0.99;
-  border-bottom: solid 1px #ccc;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -218,6 +216,7 @@ a:hover {
   text-transform: uppercase;
   font-size: 9pt;
   font-weight: bold;
+  color: #222;
 
   border: solid 2px #506070;
 }
@@ -252,12 +251,10 @@ a:hover {
 .picture-header {
   background: #193;
   /* height: 120px; */
-  margin-bottom: 3em;
+  margin-bottom: 5em;
 
   overflow: hidden;
   position: relative;
-
-  box-shadow: inset 0 -4px 6px -6px rgba(0, 0, 0, 0.2);
 
   z-index: 10;
 }
@@ -276,7 +273,6 @@ a:hover {
 }
 
 .picture-header section.next-meetup {
-  padding-top: 70px;
 }
 
 .picture-header.loaded img.wallpaper {
@@ -308,12 +304,9 @@ a:hover {
   background-size: 66px 45px;
   width: 66px;
   height: 45px;
-
-  position: absolute;
-  z-index: 5;
-  left: 50%;
-  top: 34px;
-  margin-left: -33px;
+  margin: 40px auto;
+  position: relative;
+  z-index: 20;
 }
 
 .top-nav-bg .logo,
@@ -325,21 +318,25 @@ a:hover {
 
 /* Mobile */
 @media (max-width: 480px) {
+  .picture-header .monogram {
+    margin: 20px auto;
+  }
   .picture-header {
     height: 90px;
+    margin-bottom: 2em;
   }
 }
 
 /* ---------------------------------------------------------------------------- */
 
 .next-meetup {
-  margin: 3em 0 0 0;
+  margin: 2em 0 1em 0;
 }
 
 .next-meetup h5 {
   /* color: #60ab50; */
   color: #8adc79;
-  font-family: droid sans, sans-serif;
+  font-family: source sans pro, sans-serif;
   font-size: 0.9em;
   line-height: 1.5;
   font-weight: 700;
@@ -352,8 +349,9 @@ a:hover {
 }
 
 .next-meetup h1 {
-  font-family: electrolize, serif;
-  font-size: 2.0em;
+  font-family: open sans, serif;
+  font-weight: 100;
+  font-size: 1.7em;
   line-height: 1.3;
   letter-spacing: -1px;
 
@@ -362,13 +360,15 @@ a:hover {
 }
 
 .next-meetup h1 small {
-  font-size: 0.7em;
+  font-size: 0.8em;
+  font-weight: 400;
+  font-family: electrolize;
 }
 
 .next-meetup .brief {
   margin: 1em auto 1em auto;
   font-weight: 300;
-  font-family: droid sans, sans-serif;
+  font-family: source sans pro, sans-serif;
 
   font-size: 1.1em;
   line-height: 1.6;
@@ -382,12 +382,22 @@ a:hover {
 
 /* Tablet & Desktop */
 @media (min-width: 480px) {
+  .next-meetup h5:before {
+    content: '';
+    display: block;
+    margin: 20px auto;
+    width: 90px;
+    height: 2px;
+    background: #8adc79;
+    border-radius: 4px;
+  }
+
   .next-meetup h5 {
-    font-size: 1.0em;
+    font-size: 0.9em;
   }
 
   .next-meetup h1 {
-    font-size: 3.5em;
+    font-size: 3.0em;
   }
 }
 
@@ -478,17 +488,7 @@ a:hover {
 
 .date-time-item:not([disabled]):hover {
   text-decoration: none;
-  background: #111;
-  border-color: #111;
-  transform: scale(1.02);
-}
-
-.date-time-item:not([disabled]):hover .date {
-  border-bottom-color: #444;
-}
-.date-time-item:not([disabled]):hover .date,
-.date-time-item:not([disabled]):hover .time {
-  color: #fff;
+  background: rgba(250, 250, 250, 0.1);
 }
 
 /* ---------------------------------------------------------------------------- */
