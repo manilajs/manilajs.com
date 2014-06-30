@@ -1086,3 +1086,33 @@ a.map:before {
     top: -1px;
   }
 }
+
+.signup-footer {
+  background: #111;
+  color: #888;
+}
+.signup-footer h2 {
+  font-weight: bold;
+  margin: 2em 0;
+  color: white;
+}
+.signup-footer .in {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.signup-footer [type='email'],
+.signup-footer [type='text'] {
+  background: transparent;
+  border: 0;
+  padding: 5px 10px;
+  width: 44%;
+  border-bottom: solid 1px #333;
+  background: #191919;
+  margin: 5px 5px 5px 0;
+  color: white;
+}
+.signup-footer [type='email']:focus,
+.signup-footer [type='text']:focus {
+  color: #3ad;
+  border-bottom-color: #3ad;
+}
