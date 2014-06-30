@@ -29,6 +29,10 @@ open http://localhost:8000
     make deploy
     # ...or: git push origin meetup-009:gh-pages
 
+Be sure to update Facebook's cache before sharing:
+
+ * https://developers.facebook.com/tools/debug
+
 ### index.html
 
 In index.html, you mostly only need to edit the `meta` and `link` tags up top.
