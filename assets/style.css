@@ -651,6 +651,7 @@ a:hover {
 .cta .venue {
   margin-top: 1em;
   font-weight: bold;
+  font-size: 1.2em;
   color: #222;
 }
 
@@ -776,7 +777,8 @@ a:hover {
   line-height: 1.6;
 }
 
-a.map {
+a.map,
+a.map:visited {
   background: transparent;
   border: solid 1px #d0d0d0;
   font-size: 0.7em;
@@ -789,7 +791,10 @@ a.map {
   font-weight: bold;
 }
 a.map:hover {
-  background: rgba(0, 0, 0, 0.01);
+  border: solid 1px #3ad;
+}
+a.map:before {
+  color: #3ad;
 }
 
 .closing {
@@ -843,7 +848,7 @@ a.map:hover {
 /* ---------------------------------------------------------------------------- */
 
 .about-us {
-  background: #e5eaf0;
+  background: #fbfbfb;
 
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1046,7 +1051,7 @@ a.map:before {
 
 .btn.gitter,
 .btn.facebook {
-  padding: 7px 18px;
+  padding: 5px 18px;
   vertical-align: middle;
 }
 .btn.gitter:after,
