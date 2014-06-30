@@ -157,7 +157,7 @@
         {% for speaker in page.speakers %}
           <article class="speaker">
             <div class="avatar">
-              <img src="images/{{ speaker.avatar }}" alt="{{ speaker.name }}" />
+              <img src="{{ speaker.avatar }}" alt="{{ speaker.name }}" />
             </div>
             <h3>
               {% if speaker.url %}
@@ -340,6 +340,14 @@
       </p>
       <p class='actions'>
         <a href='https://www.facebook.com/groups/javascriptdevelopersph/' class='btn sq facebook'>Join us!</a>
+      </p>
+
+      <h3>Chat with us</h3>
+      <p>
+        Join us in the online chatroom powered by Gitter.
+      </p>
+      <p class='actions'>
+        <a href='http://gitter.im/manilajs/manilajs.com' class='btn gitter sq'>Chat via Gitter</a>
       </p>
 
       <h3>Contact</h3>
