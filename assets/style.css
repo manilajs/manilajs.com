@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:700);
 @import url(http://fonts.googleapis.com/css?family=Electrolize:400);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400italic);
 
 /* ---------------------------------------------------------------------------- */
 /* Fonts */
@@ -543,21 +544,15 @@ a:hover {
 }
 
 .speaker .avatar {
-  width: 64px;
-  height: 64px;
-  border-radius: 35px;
-
-  background: white;
-
-  float: right;
-
-  margin: 0 0 20px 20px;
-  background: #eee;
+  margin: 20px 0;
+  position: relative;
+  text-align: center;
 }
 
 .speaker .avatar img {
-  width: 64px;
-  height: 64px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
 }
 
@@ -569,9 +564,8 @@ a:hover {
 /* Desktop */
 @media (min-width: 768px) {
   .speaker .avatar {
-    float: left;
-    margin: 0 30px 0 -96px;
-    position: relative;
+    float: right;
+    margin: 0 0 40px 40px;
     top: 10px;
   }
 
@@ -701,9 +695,25 @@ a:hover {
 .content-section h3 {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 0.9em;
+  font-size: 0.8em;
+  letter-spacing: 1px;
   font-family: montserrat;
   color: #60ab50;
+}
+.content-section h3:after {
+  display: block;
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0;
+  border-radius: 2px;
+}
+
+.content-section h4 {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #222;
 }
 
 .content-section h4 a:visited,
@@ -757,6 +767,7 @@ a:hover {
 .location .address {
   font-size: 0.9em;
   margin-bottom: 18px;
+  line-height: 1.6;
 }
 
 a.map {
@@ -775,10 +786,37 @@ a.map:hover {
   background: rgba(0, 0, 0, 0.01);
 }
 
-.location h4 {
-  font-weight: bold;
+.closing {
+  font-family: playfair display, serif;
+  font-style: italic;
   font-size: 1.1em;
-  color: #222;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .closing {
+    width: 140%;
+    margin-left: -20%;
+    font-size: 1.3em;
+  }
+  .closing.top {
+    margin-bottom: 2em;
+  }
+  .closing.bottom {
+    margin-top: 2em;
+  }
+
+  .closing.top:before,
+  .closing.top:after,
+  .closing.bottom:before {
+    content: '';
+    display: block;
+    margin: 40px auto;
+    width: 80px;
+    height: 1px;
+    background: #222;
+    opacity: 0.2;
+  }
 }
 
 /* -- */
