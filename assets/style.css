@@ -662,7 +662,8 @@ a:hover {
 /* ---------------------------------------------------------------------------- */
 
 .venue-info {
-  background: #f9fafb;
+  /* background: #f9fafb; */
+  border-top: solid 1px #e5e5e7;
 }
 
 /* Desktop */
@@ -675,7 +676,7 @@ a:hover {
 /* ---------------------------------------------------------------------------- */
 
 .content-section {
-  border-top: solid 1px #e3e5e7;
+  /* border-top: solid 1px #e3e5e7; */
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -749,6 +750,12 @@ a:hover {
   margin: 0 3px;
 }
 
+@media (min-width: 768px) {
+  .content-section p {
+    font-size: 0.95em;
+  }
+}
+
 .content-section .icon.bordered {
   border-color: #ddd;
   background: transparent;
@@ -775,7 +782,7 @@ a.map {
   border: solid 1px #d0d0d0;
   font-size: 0.7em;
   color: #506070;
-  padding: 5px 10px;
+  padding: 6px 12px;
   border-radius: 3px;
 
   font-family: montserrat, sans-serif;
