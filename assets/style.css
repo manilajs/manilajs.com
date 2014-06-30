@@ -2,21 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:700);
 @import url(http://fonts.googleapis.com/css?family=Electrolize:400);
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400italic);
-
-/* ---------------------------------------------------------------------------- */
-/* Fonts */
-
 @import url(http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css);
-
-@font-face {
-  font-family: 'FontAwesome';
-  font-style: 'normal';
-  font-weight: 'normal';
-  src: url('fonts/fontawesome-webfont.eot');
-  src: url('fonts/fontawesome-webfont.eot?#iefix') format('eot'), 
-  url('fonts/fontawesome-webfont.woff') format('woff'), 
-  url('fonts/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
-}
 
 /* ---------------------------------------------------------------------------- */
 /* Reset */
@@ -51,10 +37,17 @@ i.right:before,
 .venue .placeholder:before,
 .afterparty .placeholder:before
 {
-  font-family: 'FontAwesome';
-  font-size: 14px;
+  font-family: 'ionicons';
+  font-size: 24px;
   font-weight: normal;
   font-style: normal;
+}
+
+.btn.facebook:before,
+.button:after,
+.btn:after,
+i.right:before {
+  font-size: 16px;
 }
 
 i.twitter:before { content: '\f242'; }
@@ -62,12 +55,12 @@ i.github:before { content: '\f232'; }
 i.google:before { content: '\f234'; }
 i.facebook:before { content: '\f230'; }
 .btn.facebook:before { content: '\f231'; margin-right: 7px; }
-a.map:before { content: '\f064'; }
-.venue .placeholder:before { content: '\f041'; }
-.afterparty .placeholder:before { content: '\f0fc'; }
+a.map:before { content: '\f1b9'; }
+.venue .placeholder:before { content: '\f1a5'; }
+.afterparty .placeholder:before { content: '\f293'; }
 .btn:after,
 .button:after,
-i.right:before { content: '\f105'; }
+i.right:before { content: '\f152'; }
 
 /* ---------------------------------------------------------------------------- */
 /* Base */
@@ -972,7 +965,7 @@ a.map:before {
 
 .location .placeholder:before {
   font-size: 60px;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 .location .logo,
@@ -1002,7 +995,9 @@ a.map:before {
 }
 
 .afterparty .placeholder:before {
-  font-size: 40px;
+  font-size: 64px;
+  position: relative;
+  top: -21px;
 }
 
 @media (max-width: 768px) {
@@ -1010,4 +1005,21 @@ a.map:before {
     float: right;
     margin: 0 0 0 20px;
   }
+  .afterparty .placeholder:before {
+    font-size: 24px;
+    top: 0;
+  }
+}
+
+.btn.facebook {
+  padding: 7px 18px;
+}
+.btn.facebook:after {
+  margin-left: 10px;
+  position: relative;
+  top: 2px;
+}
+.btn.facebook:before {
+  margin-right: 8px;
+  position: relative;
 }
