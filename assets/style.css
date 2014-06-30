@@ -1,3 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Electrolize:400);
+
 /* ---------------------------------------------------------------------------- */
 /* Fonts */
 
@@ -81,10 +86,10 @@ html {
 }
 
 body, td, th, input, textarea {
-  font-family: lato, sans-serif;
+  font-family: droid sans, sans-serif;
   font-weight: 400;
-  font-size: 12pt;
-  line-height: 1.7;
+  font-size: 13pt;
+  line-height: 1.8;
   color: #404750;
 } 
 
@@ -110,7 +115,9 @@ a:hover {
 
 * {
   text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important; }
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 /* ---------------------------------------------------------------------------- */
 /* Inline */
@@ -243,7 +250,7 @@ a:hover {
 /* ---------------------------------------------------------------------------- */
 
 .picture-header {
-  background: #222;
+  background: #193;
   /* height: 120px; */
   margin-bottom: 3em;
 
@@ -273,7 +280,7 @@ a:hover {
 }
 
 .picture-header.loaded img.wallpaper {
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 .picture-header.loaded img.wallpaper.blur {
@@ -327,13 +334,12 @@ a:hover {
 
 .next-meetup {
   margin: 3em 0 0 0;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.4), 0 1px rgba(0, 0, 0, 0.2);
 }
 
 .next-meetup h5 {
   /* color: #60ab50; */
   color: #8adc79;
-  font-family: lato, sans-serif;
+  font-family: droid sans, sans-serif;
   font-size: 0.9em;
   line-height: 1.5;
   font-weight: 700;
@@ -362,9 +368,9 @@ a:hover {
 .next-meetup .brief {
   margin: 1em auto 1em auto;
   font-weight: 300;
-  font-family: lato;
+  font-family: droid sans, sans-serif;
 
-  font-size: 1.3em;
+  font-size: 1.1em;
   line-height: 1.6;
   color: #fff;
   opacity: 0.8;
@@ -439,7 +445,8 @@ a:hover {
   text-align: center;
 
   box-sizing: border-box;
-  background-color: #eee;
+  border: solid 1px  rgba(250, 250, 250, 0.5);
+  /* background-color: #eee; */
 }
 
 .date-time-item[disabled],
@@ -451,12 +458,12 @@ a:hover {
   display: block;
   text-align: center;
   font-size: 15pt;
-  border-bottom: solid 1px #ccc;
+  border-bottom: solid 1px rgba(250, 250, 250, 0.5);
 
   line-height: 45px;
   font-weight: bold;
 
-  color: #222;
+  color: #fff;
 }
 
 .date-time-item .time {
@@ -466,7 +473,7 @@ a:hover {
 
   line-height: 45px;
 
-  color: #60ab50;
+  color: #fff;
 }
 
 .date-time-item:not([disabled]):hover {
@@ -511,7 +518,11 @@ a:hover {
 
 .speaker h3 .title {
   color: #60ab50;
-  margin: 0 15px 0 0;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-family: montserrat, sans-serif;
+  letter-spacing: 1px;
+  margin: 0 15px 0 10px;
 }
 
 .speaker h3 a {
@@ -654,7 +665,7 @@ a:hover {
 /* ---------------------------------------------------------------------------- */
 
 .venue-info {
-  background: #f5f8fc;
+  background: #f9fafb;
 }
 
 /* Desktop */
@@ -773,7 +784,6 @@ a:hover {
   padding-bottom: 30px;
 
   color: #607080;
-  text-shadow: 0 1px 1px rgba(250, 250, 250, 0.5);
 
   font-size: 0.9em;
   line-height: 1.8;
@@ -904,14 +914,13 @@ a.map:before {
 .location .logo img {
   width: 100px;
   height: 100px;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 .location .logo {
   background: white;
   margin: 0 0 0 -140px;
-  border-radius: 54px;
-  border: solid 2px #405050;
+  border-radius: 50%;
   overflow: hidden;
   padding: 2px;
 }
