@@ -12,9 +12,22 @@ What's in here
 Developer notes
 ---------------
 
- * `python -m SimpleHTTPServer` is your friend.
+### Working on the site locally
 
- * Deploy a branch using `git push origin meetup-00X:gh-pages`
+```js
+gem install github-pages   # install jekyll and other gems
+make watch                 # starts the server
+open http://localhost:8000
+```
 
- * In index.html, you mostly only need to edit the `meta` and `link` tags up 
- top.
+### Starting work on a new meetup
+
+    git checkout -b meetup-009
+
+### Deploying
+
+    git push origin meetup-009:gh-pages
+
+### index.html
+
+In index.html, you mostly only need to edit the `meta` and `link` tags up top.
