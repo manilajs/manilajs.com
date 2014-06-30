@@ -6,6 +6,8 @@
 /* ---------------------------------------------------------------------------- */
 /* Fonts */
 
+@import url(http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css);
+
 @font-face {
   font-family: 'FontAwesome';
   font-style: 'normal';
@@ -14,17 +16,6 @@
   src: url('fonts/fontawesome-webfont.eot?#iefix') format('eot'), 
   url('fonts/fontawesome-webfont.woff') format('woff'), 
   url('fonts/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
-}
-
-@font-face {
-  font-family: 'brandico';
-  font-style: 'normal';
-  font-weight: 'normal';
-  src: url('fonts/brandico.eot');
-  src: url('fonts/brandico.eot?#iefix') format('eot'), 
-  url('fonts/brandico.woff') format('woff'), 
-  url('fonts/brandico.ttf') format('truetype'), 
-  url('fonts/brandico.svg#brandico') format('svg');
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -47,8 +38,8 @@ i.facebook:before,
 .btn.facebook:before,
 i.google:before
 {
-  font-family: 'brandico';
-  font-size: 14px;
+  font-family: 'ionicons';
+  font-size: 24px;
   font-weight: normal;
   font-style: normal;
 }
@@ -66,11 +57,11 @@ i.right:before,
   font-style: normal;
 }
 
-i.twitter:before { content: '\f303'; }
-i.github:before { content: '\f307'; }
-i.google:before { content: '\f309'; }
-i.facebook:before { content: '\f300'; }
-.btn.facebook:before { content: '\f301'; margin-right: 7px; }
+i.twitter:before { content: '\f242'; }
+i.github:before { content: '\f232'; }
+i.google:before { content: '\f234'; }
+i.facebook:before { content: '\f230'; }
+.btn.facebook:before { content: '\f231'; margin-right: 7px; }
 a.map:before { content: '\f064'; }
 .venue .placeholder:before { content: '\f041'; }
 .afterparty .placeholder:before { content: '\f0fc'; }
@@ -534,13 +525,20 @@ a:hover {
 }
 
 .speaker h3 i {
-  color: #b0b6c0;
-  padding: 0 3px;
+  color: #222;
+  padding: 0 5px;
+  position: relative;
+  top: 3px;
+  transition: all 100ms linear;
 }
 
 .speaker h3 a:hover {
   color: #333;
   text-decoration: none;
+}
+
+.speaker h3 a:hover i {
+  color: #60ab50;
 }
 
 .speaker .avatar {
@@ -653,6 +651,7 @@ a:hover {
 .cta .venue {
   margin-top: 1em;
   font-weight: bold;
+  color: #222;
 }
 
 .cta .hint {
