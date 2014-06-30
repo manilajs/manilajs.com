@@ -26,7 +26,8 @@ open http://localhost:8000
 
 ### Deploying
 
-    git push origin meetup-009:gh-pages
+    make deploy
+    # ...or: git push origin meetup-009:gh-pages
 
 ### index.html
 
