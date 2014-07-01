@@ -13,3 +13,6 @@ watch:
 deploy:
 	git push origin `git rev-parse --abbrev-ref HEAD`:gh-pages
 
+autoprefix:
+	@# npm install -g autoprefixer
+	autoprefixer assets/style.css
