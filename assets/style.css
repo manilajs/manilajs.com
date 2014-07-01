@@ -726,15 +726,16 @@ a:hover {
   border-radius: 2px;
 }
 
-.content-section h4 {
-  font-weight: bold;
-  font-size: 1.3em;
+.content-section h4,
+.content-section h4 a,
+.content-section h4 a:visited {
+  font-weight: 100;
+  font-family: open sans, sans-serif;
   color: #222;
 }
 
-.content-section h4 a:visited,
-.content-section h4 a {
-  color: #222;
+.content-section h4 {
+  font-size: 1.6em;
 }
 
 .content-section a:visited,
@@ -819,6 +820,17 @@ a.map:before {
   text-align: center;
 }
 
+.closing .preface {
+  font-weight: bold;
+  color: #aaa;
+  font-family: montserrat, sans-serif;
+  letter-spacing: 2px;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  font-style: normal;
+  margin-bottom: 0.5em;
+}
+
 @media (min-width: 768px) {
   .closing {
     width: 140%;
@@ -846,11 +858,6 @@ a.map:before {
 }
 
 /* -- */
-
-.venue .location h4 {
-  font-size: 1.2em;
-  font-weight: bold;
-}
 
 .venue .location a.map {
   margin-top: 30px;
