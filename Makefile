@@ -11,7 +11,7 @@ watch:
 	@git ls-files | entr make
 
 deploy:
-	git push origin `git rev-parse --abbrev-ref HEAD`:gh-pages
+	git push & git push origin `git rev-parse --abbrev-ref HEAD`:gh-pages
 
 autoprefix:
 	@# npm install -g autoprefixer
