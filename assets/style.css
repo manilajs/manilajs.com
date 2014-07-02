@@ -1167,7 +1167,7 @@ a.map:before {
   position: relative;
   top: 4px;
   left: 4px;
-  color: #f81;
+  color: #1a8;
   opacity: 0.5;
 }
 .text-field:befxore {
@@ -1185,8 +1185,8 @@ a.map:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
 }
 .text-field [type='email']::-webkit-input-placeholder,
 .text-field [type='text']::-webkit-input-placeholder {
