@@ -173,6 +173,8 @@ a:hover {
   .column-section > .left,
   .column-section > .right {
     width: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     float: left;
   }
@@ -642,6 +644,7 @@ a:hover {
   padding: 2em 0 3em 0;
 }
 
+/* okay, i messed up and there's .button and .btn. sorreh */
 .button {
   margin: 0;
   outline: 0;
@@ -959,6 +962,7 @@ a.map:before {
 .about-us-section .btn:visited,
 .about-us-section .btn {
   border-color: rgba(250, 250, 250, 0.5);
+  border-radius: 6px;
 }
 
 .about-us-section .btn:hover {
@@ -968,6 +972,7 @@ a.map:before {
 /* Desktop */
 @media (min-width: 768px) {
   .about-us-section {
+    margin-top: 100px;
     padding-top: 90px;
     padding-bottom: 90px;
   }
@@ -996,6 +1001,9 @@ a.map:before {
 
   color: #506070;
   cursor: pointer;
+
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
 .btn:hover,
@@ -1009,9 +1017,12 @@ a.map:before {
   transition: all 100ms ease;
 }
 
-.btn:active {
-  background: #111;
-  border-color: #111;
+.btn:active,
+.btn:visited:active {
+  background: #405060;
+  border-color: #405060;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .btn.sq {
