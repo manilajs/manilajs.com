@@ -33,8 +33,8 @@
   <link href="assets/style.css?v={{site.time | date: "%Y%M%d%H%M%S"}}" rel="stylesheet" type="text/css">
 
   <!-- description -->
-  <meta content="Next meetup: {{ page.event.date }}, {{ page.event.year }} @ {{ page.event.location }}" name="description">
-  <meta content="Next meetup: {{ page.event.date }}, {{ page.event.year }} @ {{ page.event.location }}" property="og:description">
+  <meta content="Next meetup: {{ page.event.date | date: "%A, %B %e" }} at {{ page.event.location }}" name="description">
+  <meta content="Next meetup: {{ page.event.date | date: "%A, %B %e" }} at {{ page.event.location }}" property="og:description">
   <meta content="javascript, manila, meetup, manila.js" name="keywords">
 
   <!-- og/twitter -->
@@ -138,13 +138,13 @@
       <div class='in'>
         {% if page.registration.state == "open" %}
           <a class='date-time-item' href="{{ page.registration.signup }}">
-            <strong class='date'>{{ page.event.date }}</strong>
+            <strong class='date'>{{ page.event.date | date: "%b %e" }}</strong>
             <span class='time'>{{ page.event.time }}</span>
           </a>
         {% else %}
           <a class='date-time-item' href="#signup">
-            <strong class='date' data-content='event_date'>{{ page.event.date }}</strong>
-            <span class='time' data-content='event_time'>{{ page.event.time }}</span>
+            <strong class='date'>{{ page.event.date | date: "%b %e" }}</strong>
+            <span class='time'>{{ page.event.time }}</span>
           </a>
         {% endif %}
       </div>
@@ -235,7 +235,7 @@
       {% endif %}
 
       <p class='venue'>
-      <span>{{ page.event.date }}</span>, Friday &nbsp;&middot;&nbsp; <span>{{ page.event.time }}</span> onwards
+      <span>{{ page.event.date | date: "%B %e, %A" }}</span> &nbsp;&middot;&nbsp; <span>{{ page.event.time }}</span> onwards
       </p>
 
       {% if page.registration.state == "open" %}
@@ -250,7 +250,7 @@
       {% endif %}
       {% if page.registration.state == "announce" %}
       <p class='hint'>
-        Registration will open on {{ page.registration.date }}. Slots are limited!
+        Registration will open on {{ page.registration.date | date: "%B %e, %A" }}. Slots are limited!
       </p>
       {% endif %}
       {% if page.registration.state == "over" %}
