@@ -1141,8 +1141,11 @@ a.map:before {
 .form-row.checkbox {
   font-size: 0.85em;
 }
-.form-row.texts + .form-row.checkbox {
+.form-row.texts:first-of-type {
   margin-top: 30px;
+}
+.form-row.texts:last-of-type {
+  margin-bottom: 30px;
 }
 .text-field {
   width: 50%;
@@ -1233,20 +1236,26 @@ a.map:before {
  */
 
 .signup-footer {
-  background: #111;
+  background: #101a12;
   color: #888;
 }
 .signup-footer h2 {
   font-weight: bold;
   margin: 0;
+  font-size: 1.5em;
   color: white;
 }
-.signup-footer .in {
-  padding-top: 40px;
-  padding-bottom: 40px;
+@media (min-width: 768px) {
+  .signup-footer .in {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
 }
 .signup-footer p {
   margin: 0;
+}
+.signup-footer h2 + p {
+  margin-top: -0.25em;
 }
 .signup-footer .submit {
   height: 40px;
