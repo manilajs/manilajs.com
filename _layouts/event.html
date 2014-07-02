@@ -30,7 +30,7 @@
   <link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet" type="text/css">
 
   <!-- Site assets -->
-  <link href="assets/style.css?v=009128" rel="stylesheet" type="text/css">
+  <link href="assets/style.css?v={{site.time | date: "%Y%M%d%H%M%S"}}" rel="stylesheet" type="text/css">
 
   <!-- description -->
   <meta content="Next meetup: {{ page.event.date }}, {{ page.event.year }} @ {{ page.event.location }}" name="description">
@@ -56,8 +56,8 @@
   <!-- scripts -->
   <script src='assets/modernizr.js'></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="assets/vendor.js?v=009128"></script>
-  <script src="assets/script.js?v=009128"></script>
+  <script src="assets/vendor.js?v={{site.time | date: "%Y%M%d%H%M%S" }}"></script>
+  <script src="assets/script.js?v={{site.time | date: "%Y%M%d%H%M%S" }}"></script>
 </head>
 <body>
 

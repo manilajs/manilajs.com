@@ -880,7 +880,7 @@ a.map:before {
 
 /* ---------------------------------------------------------------------------- */
 
-.about-us {
+.about-us-section {
   background: #fbfbfb;
 
   padding-top: 30px;
@@ -892,38 +892,38 @@ a.map:before {
   line-height: 1.8;
 }
 
-.about-us p {
+.about-us-section p {
   margin: 2em 0;
 }
 
-.about-us h3 {
+.about-us-section h3 {
   font-family: montserrat, sans-serif;
   font-weight: bold;
   color: #222;
   margin: 0;
 }
 
-.about-us h3 + p {
+.about-us-section h3 + p {
   margin-top: 0;
 }
 
-.about-us a:visited,
-.about-us a {
+.about-us-section a:visited,
+.about-us-section a {
   color: #506070;
 }
 
-.about-us p.actions {
+.about-us-section p.actions {
   margin-top: -20px;
 }
 
-.about-us .btn:visited,
-.about-us .btn {
+.about-us-section .btn:visited,
+.about-us-section .btn {
   border-color: #c0c8d0;
 }
 
 /* Desktop */
 @media (min-width: 768px) {
-  .about-us {
+  .about-us-section {
     padding-top: 90px;
     padding-bottom: 90px;
   }
