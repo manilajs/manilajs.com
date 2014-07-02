@@ -1,7 +1,27 @@
-<section class='section signup-footer'>
+<section class='section signup-footer' id="signup">
   <div class='in'>
-    <h2>Subscribe</h2>
-    <p>Enter your details below to be notified of new meetup schedules.</p>
+
+    {% if page.registration.state == "open" %}
+      <h2>Join us!</h2>
+      <p>Enter your details below to register your slot. See you this Friday!</p>
+    {% endif %}
+
+    {% if page.registration.state == "closed" %}
+      <h2>Get notified</h2>
+      <p>Be notified of when the next event will be! Enter your details below
+      and we'll send you an email.</p>
+    {% endif %}
+
+    {% if page.registration.state == "announce" %}
+      <h2>Get notified</h2>
+      <p>Be notified of when the next event will be! Enter your details below
+      and we'll send you an email.</p>
+    {% endif %}
+
+    {% if page.registration.state == "over" %}
+      <h2>Get notified</h2>
+      <p>Enter your details below to be notified of new meetup schedules.</p>
+    {% endif %}
 
       <!-- Begin MailChimp Signup Form -->
       <form action="http://manilajs.us6.list-manage.com/subscribe/post?u=5f5fd8e377&amp;id=916f3ae313" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscribe-form" target="_blank" novalidate role="validate">
@@ -28,20 +48,27 @@
         </label>
       </div>
 
-      <!--<div class="form-row checkbox">
-        <label>
-          <input value="{{ page.mailchimp.group_id }}" name="group[8741][{{ page.mailchimp.group_id }}]" type="checkbox" checked>
-          <span>Yes, I'm joining the meetup.</span>
-        </label>
-      </div>-->
+      <!-- Join the meetup -->
+      {% if page.registration.state == "open" %}
+        <div class="form-row checkbox">
+          <label class='checkbox-field'>
+            <input value="{{ page.mailchimp.group_id }}" name="group[8741][{{ page.mailchimp.group_id }}]" type="checkbox" checked>
+            <span>Yes, I'm joining the meetup.</span>
+          </label>
+        </div>
 
-      <!--<div class="form-row checkbox">
-        <label>
-          <input type="checkbox" value="8" name="group[9585][8]" checked>
-          <strong>Email me for updates.</strong>
-        </label>
-      </div>-->
-      <input type="hidden" value="8" name="group[9585][8]">
+        <div class="form-row checkbox">
+          <label class='checkbox-field'>
+            <input type="checkbox" value="8" name="group[9585][8]" checked>
+            <strong>Email me for updates.</strong>
+          </label>
+        </div>
+      {% endif %}
+
+      <!-- Yes, update me -->
+      {% if page.registration.state != "open" %}
+        <input type="hidden" value="8" name="group[9585][8]">
+      {% endif %}
 
       <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
       <div style="position: absolute; left: -5000px;"><input type="text" name="b_5f5fd8e377_916f3ae313" tabindex="-1" value=""></div>

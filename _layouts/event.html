@@ -97,21 +97,21 @@
     {% if page.registration.state == "closed" %}
     <div class='right'>
       <span class='hint'>Check back next month!</span>
-      <a href='#' class='btn disabled'>Slots full</a>
+      <a href='#signup' class='btn'>Slots full</a>
     </div>
     {% endif %}
 
     {% if page.registration.state == "announce" %}
     <div class='right'>
       <span class='hint'>Check back soon!</span>
-      <a href='#' class='btn disabled'>Soon to open</a>
+      <a href='#signup' class='btn'>Soon to open</a>
     </div>
     {% endif %}
 
     {% if page.registration.state == "over" %}
     <div class='right'>
       <span class='hint'>Check back soon!</span>
-      <a href='#' class='btn disabled'>Event is over</a>
+      <a href='#signup' class='btn'>Event is over</a>
     </div>
     {% endif %}
   </nav>
@@ -142,7 +142,7 @@
             <span class='time'>{{ page.event.time }}</span>
           </a>
         {% else %}
-          <a class='date-time-item' href="#">
+          <a class='date-time-item' href="#signup">
             <strong class='date' data-content='event_date'>{{ page.event.date }}</strong>
             <span class='time' data-content='event_time'>{{ page.event.time }}</span>
           </a>

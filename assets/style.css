@@ -1144,9 +1144,14 @@ a.map:before {
 .form-row.texts:first-of-type {
   margin-top: 30px;
 }
-.form-row.texts:last-of-type {
-  margin-bottom: 30px;
+.form-row.texts + .form-row:not(.texts) {
+  margin-top: 30px;
 }
+
+.checkbox-field input {
+  margin-right: 10px;
+}
+
 .text-field {
   width: 50%;
   float: left;
@@ -1237,7 +1242,7 @@ a.map:before {
 
 .signup-footer {
   background: #101a12;
-  color: #888;
+  color: rgba(250, 250, 250, 0.7);
 }
 .signup-footer h2 {
   font-weight: bold;
@@ -1253,6 +1258,7 @@ a.map:before {
 }
 .signup-footer p {
   margin: 0;
+  line-height: 1.4;
 }
 .signup-footer h2 + p {
   margin-top: -0.25em;
