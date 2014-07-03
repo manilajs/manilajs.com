@@ -264,7 +264,7 @@
 
   <section class='venue-info'>
 
-    <section class='section content-section venue'>
+    <section class='section content-section venue' id="venue">
       <div class="in">
         <h3>Our venue is</h3>
         <div class='location'>
@@ -285,7 +285,7 @@
       </div>
     </section>
 
-    <section class='section content-section afterparty'>
+    <section class='section content-section afterparty' id="drinkup">
       <div class="in">
         <h3>After-drinkup</h3>
         <div class='location afterparty'>
@@ -294,7 +294,11 @@
           {% else %}
             <div class='icon placeholder'></div>
           {% endif %}
-          <h4>{{ page.drinkup.name }}</h4>
+          {% if page.drinkup.url %}
+            <h4><a href="{{ page.drinkup.url }}">{{ page.drinkup.name }}</a></h4>
+          {% else %}
+            <h4>{{ page.drinkup.name }}</h4>
+          {% endif %}
           <p class='address'>{{ page.drinkup.location }}</p>
           <a href='{{ page.drinkup.map }}' class='map' target='_blank'>View map</a>
         </div>
