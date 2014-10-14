@@ -1,3 +1,8 @@
+Developer notes
+---------------
+
+ * `make start` — use this to run a dev server.
+
 Images used
 -----------
 
