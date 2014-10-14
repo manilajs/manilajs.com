@@ -121,7 +121,11 @@
     <section class='section next-meetup wide'>
       <div class='in'>
         <h1>Manila.js Fridays <small>{{ page.event.series }}</small></h1>
-        <h5>{{ page.event.location }}</h5>
+        {% if page.event.location %}
+          <h5>{{ page.event.location }}</h5>
+        {% else %}
+          <h5>Venue TBD</h5>
+        {% endif %}
         <!-- <div class="brief"> -->
         <!--   <p> -->
         <!--     Join us for an evening of JavaScript talks, networking, and -->
@@ -199,20 +203,26 @@
             The floor is open to anyone who has something interesting to share.
             Interested in being a speaker?
           <a
-            href='mailto:hi@ricostacruz.com'>Contact us</a>
+            href='mailto:{{ site.contact.email }}'>Contact us</a>
             and let us know.
           </p>
         </article>
-      </div>
 
-      <div class="closing bottom">
-        <p>
-        Manila.js Fridays happens every first Friday of the month.
-        Everybody's welcome!
-        Expect learning, fun, and happy conversations from people just like you.
-        This event is free. Bring your friends!
-        </p>
-      </div>
+        <article class="speaker anyone">
+          <h3>Venue TBD</h3>
+          <p>
+            We are still looking for a venue for this meetup. Interested to hold
+            a Manila.js meetup in your office?
+            <a href='mailto:{{ site.contact.email }}'>Drop us a note!</a>
+        </article>
+
+        <div class="{% if speakers[0] %}closing bottom{% endif %}">
+          <p>
+            Manila.js Fridays happens every first Friday of the month.
+            Everybody's welcome!  Expect learning, fun, and happy conversations
+            from people just like you.  This event is free. Bring your friends!
+          </p>
+        </div>
     </div>
   </section>
 
@@ -246,9 +256,15 @@
       </p>
       {% endif %}
       {% if page.registration.state == "announce" %}
-      <p class='hint'>
-        Registration will open on {{ page.registration.date | date: "%B %e, %A" }}. Slots are limited!
-      </p>
+        {% if page.registration.date %}
+          <p class='hint'>
+            Registration will open on {{ page.registration.date | date: "%B %e, %A" }}. Slots are limited!
+          </p>
+        {% else %}
+          <p class='hint'>
+            Registration will open soon.
+          </p>
+        {% endif %}
       {% endif %}
       {% if page.registration.state == "over" %}
       <p class='hint'>
@@ -261,57 +277,79 @@
 
   <section class='venue-info'>
 
-    <section class='section content-section venue' id="venue">
-      <div class="in">
-        <h3>Our venue is</h3>
-        <div class='location'>
-          {% if page.venue.icon %}
-            <div class='icon logo'><img src='images/{{ page.venue.icon }}' alt='{{ page.venue.name }}'></div>
-          {% else %}
-            <div class='icon placeholder'></div>
-          {% endif %}
-          <h4>
-            <a href='{{ page.venue.url }}'>{{ page.venue.name }}</a>
-          </h4>
-          <p class='address'>{{ page.venue.address }}</p>
-          <a href='{{ page.venue.map }}' class='map' target='_blank'>View map</a>
+    <!-- Venue -->
+    {% if page.venue %}
+      <section class='section content-section venue' id="venue">
+        <div class="in">
+          <h3>Our venue is</h3>
+          <div class='location'>
+            {% if page.venue.icon %}
+              <div class='icon logo'><img src='images/{{ page.venue.icon }}' alt='{{ page.venue.name }}'></div>
+            {% else %}
+              <div class='icon placeholder'></div>
+            {% endif %}
+            <h4>
+              <a href='{{ page.venue.url }}'>{{ page.venue.name }}</a>
+            </h4>
+            <p class='address'>{{ page.venue.address }}</p>
+            <a href='{{ page.venue.map }}' class='map' target='_blank'>View map</a>
+          </div>
+          <p>
+            {{ page.venue.description }}
+          </p>
         </div>
-        <p>
-          {{ page.venue.description }}
-        </p>
-      </div>
-    </section>
+      </section>
 
-    <section class='section content-section afterparty' id="drinkup">
-      <div class="in">
-        <h3>After-drinkup</h3>
-        <div class='location afterparty'>
-          {% if page.drinkup.icon %}
-            <div class='icon logo smaller'><img src='images/{{ page.drinkup.icon }}' alt='{{ page.drinkup.name }}'></div>
-          {% else %}
+    <!-- Venue TBD -->
+    {% else %}
+
+      <section class='section content-section venue' id="venue">
+        <div class="in">
+          <h3>Venue TBD</h3>
+          <div class='location'>
             <div class='icon placeholder'></div>
-          {% endif %}
-          {% if page.drinkup.url %}
-            <h4><a href="{{ page.drinkup.url }}">{{ page.drinkup.name }}</a></h4>
-          {% else %}
-            <h4>{{ page.drinkup.name }}</h4>
-          {% endif %}
-          <p class='address'>{{ page.drinkup.location }}</p>
-          <a href='{{ page.drinkup.map }}' class='map' target='_blank'>View map</a>
+          </div>
+          <p>
+            We are still looking for a venue for this meetup. Interested to
+            hold a Manila.js meetup in your office? Drop us a note!
+          </p>
         </div>
-        <p>Join us for drinks at {{ page.drinkup.name }}
-        after the event! {{ page.drinkup.name }} is located
-        at {{ page.drinkup.location }}, just a few paces away from the venue
-        and serves {{ page.drinkup.serves }}.</p>
-      </div>
-    </section>
+      </section>
+
+    {% endif %}
+
+    {% if page.drinkup %}
+      <section class='section content-section afterparty' id="drinkup">
+        <div class="in">
+          <h3>After-drinkup</h3>
+          <div class='location afterparty'>
+            {% if page.drinkup.icon %}
+              <div class='icon logo smaller'><img src='images/{{ page.drinkup.icon }}' alt='{{ page.drinkup.name }}'></div>
+            {% else %}
+              <div class='icon placeholder'></div>
+            {% endif %}
+            {% if page.drinkup.url %}
+              <h4><a href="{{ page.drinkup.url }}">{{ page.drinkup.name }}</a></h4>
+            {% else %}
+              <h4>{{ page.drinkup.name }}</h4>
+            {% endif %}
+            <p class='address'>{{ page.drinkup.location }}</p>
+            <a href='{{ page.drinkup.map }}' class='map' target='_blank'>View map</a>
+          </div>
+          <p>Join us for drinks at {{ page.drinkup.name }}
+          after the event! {{ page.drinkup.name }} is located
+          at {{ page.drinkup.location }}, just a few paces away from the venue
+          and serves {{ page.drinkup.serves }}.</p>
+        </div>
+      </section>
+    {% endif %}
 
     <section class='section content-section contact'>
       <div class="in">
         <h3>Contact info</h3>
         <p>
           Need directions or any help? Interested in speaking or sponsorship? Contact
-          Rico at <a href='mailto:hi@ricostacruz.com'>hi@ricostacruz.com</a> or <b>0908 864 8125</b>.
+          Rico at <a href='mailto:{{ site.contact.email }}'>{{ site.contact.email }}</a> or <b>0908 864 8125</b>.
         </p>
       </div>
     </section>
