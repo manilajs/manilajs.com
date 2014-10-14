@@ -16,10 +16,10 @@ Developer notes
 
 Use the branch gh-pages.
 
-```js
+```sh
 gem install github-pages   # install jekyll and other gems
 make watch                 # starts the server
-open http://localhost:8000
+open http://localhost:3000
 ```
 
 ### Starting work on a new meetup
