@@ -1,10 +1,11 @@
 PORT ?= 3000
+be := env BUNDLE_GEMFILE=./_/Gemfile bundle exec
 
 all:
-	jekyll build --drafts
+	${be} jekyll build --drafts
 
 start:
-	jekyll serve --drafts --watch --port ${PORT}
+	${be} jekyll serve --drafts --watch --port ${PORT}
 
 deploy:
 	@# git push origin meetup-009:gh-pages meetup-009
