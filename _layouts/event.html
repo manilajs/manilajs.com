@@ -113,8 +113,8 @@
     {% endif %}
   </nav>
 
-  <section class='picture-header' style='background: #234'>
-    <div class='cover' style='background-image: url(/images/{{ page.cover.image }}); opacity: 0.40;'></div>
+  <section class='picture-header' style='background-color: {{ page.hero.color }};'>
+    <div class='cover' style='background-image: url({{ page.hero.image }}); opacity: {{ page.hero.opacity }};'></div>
 
     <div class='monogram'></div>
 

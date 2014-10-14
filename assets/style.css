@@ -307,6 +307,9 @@ a:hover {
   z-index: 1;
   -webkit-transition: opacity 400ms linear;
   transition: opacity 400ms linear;
+
+  background-size: cover;
+  background-position: center center;
 }
 
 .picture-header section {

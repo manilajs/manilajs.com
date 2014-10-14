@@ -34,3 +34,13 @@ open http://localhost:8000
 Be sure to update Facebook's cache before sharing:
 
  * https://developers.facebook.com/tools/debug
+
+### Images
+
+Header images are here:
+
+    /images/header
+
+Be sure to annotate:
+
+    /images/header/README
