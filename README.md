@@ -22,17 +22,15 @@ open http://localhost:8000
 
 ### Starting work on a new meetup
 
-    git checkout -b meetup-009
+    # archive the old meetup into a branch
+    # (eh, shouldn't we use tags instead? dunno)
+      git push origin develop:meetup-010
 
 ### Deploying
 
     make deploy
-    # ...or: git push origin meetup-009:gh-pages
+    # ...or: git push origin develop:gh-pages develop
 
 Be sure to update Facebook's cache before sharing:
 
  * https://developers.facebook.com/tools/debug
-
-### index.html
-
-In index.html, you mostly only need to edit the `meta` and `link` tags up top.
