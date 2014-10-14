@@ -22,9 +22,8 @@ open http://localhost:8000
 
 ### Starting work on a new meetup
 
-    # archive the old meetup into a branch
-    # (eh, shouldn't we use tags instead? dunno)
-      git push origin develop:meetup-010
+ * Tag the current meetup (`git tag meetup-009; git push --tags`)
+ * Edit `index.html` to comment out the venue, drinkup, speakers, etc
 
 ### Deploying
 
