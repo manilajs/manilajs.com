@@ -1,16 +1,13 @@
+PORT ?= 3000
+
 all:
 	jekyll build --drafts
 
 start:
-	@echo "=> starting server and watching for changes"
-	@mkdir -p _site
-	make && make watch & (cd _site && python -m SimpleHTTPServer)
-
-watch:
-	@echo "=> watching for changes"
-	@git ls-files | entr make
+	jekyll serve --drafts --watch --port ${PORT}
 
 deploy:
+	@# git push origin meetup-009:gh-pages meetup-009
 	git push origin `git rev-parse --abbrev-ref HEAD`:gh-pages `git rev-parse --abbrev-ref HEAD`
 
 autoprefix:
