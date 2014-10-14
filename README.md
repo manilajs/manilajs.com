@@ -14,6 +14,8 @@ Developer notes
 
 ### Working on the site locally
 
+Use the branch gh-pages.
+
 ```js
 gem install github-pages   # install jekyll and other gems
 make watch                 # starts the server
@@ -27,8 +29,7 @@ open http://localhost:8000
 
 ### Deploying
 
-    make deploy
-    # ...or: git push origin develop:gh-pages develop
+Just git push.
 
 Be sure to update Facebook's cache before sharing:
 
