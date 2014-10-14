@@ -116,6 +116,16 @@
   <section class='picture-header' style='background-color: {{ page.hero.color }};'>
     <div class='cover' style='background-image: url({{ page.hero.image }}); opacity: {{ page.hero.opacity }};'></div>
 
+
+    {% if page.hero.attribution %}
+      <div class='attribution'>
+        Photo:
+        <a href="{{ page.hero.attribution.url }}">
+          {{ page.hero.attribution.source }}
+        </a>
+      </div>
+    {% endif %}
+
     <div class='monogram'></div>
 
     <section class='section next-meetup wide'>

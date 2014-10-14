@@ -312,6 +312,33 @@ a:hover {
   background-position: center center;
 }
 
+.picture-header .attribution {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.6em;
+
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2;
+}
+
+.picture-header .attribution a {
+  color: rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 -1px rgba(255, 255, 255, 0.30);
+  margin-left: 5px;
+}
+
+.picture-header .attribution a:hover {
+  color: rgba(255, 255, 255, 1.0);
+  box-shadow: inset 0 -1px rgba(255, 255, 255, 0.70);
+}
+
+@media (max-width: 768px) {
+  .pictuer-header .attribution {
+    display: none;
+  }
+}
+
 .picture-header section {
   position: relative;
   z-index: 2;
