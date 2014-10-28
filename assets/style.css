@@ -605,6 +605,11 @@ a:hover {
   display: inline-block;
   width: 100px;
   height: 100px;
+  background: #3d8;
+  line-height: 100px;
+  text-align: center;
+  font-size: 1.2em;
+  color: white;
   border-radius: 50%;
 }
 
@@ -1332,4 +1337,18 @@ a.map:before {
 }
 .signup-footer .actions {
   margin-top: 30px;
+}
+
+.section.full-image {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: #345;
+}
+
+.section.full-image div {
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.5;
 }

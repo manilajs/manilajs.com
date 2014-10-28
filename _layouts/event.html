@@ -20,6 +20,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Manila.js - JavaScript community in Manila, Philippines</title>
+  <base href='.'>
 
   <!-- CDN assets -->
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300|Source+Sans+Pro:400,700|Montserrat:700|Playfair+Display:400italic" rel="stylesheet" type="text/css">
@@ -142,6 +143,7 @@
         <!--     camaraderie.  Beginners and experts welcome! -->
         <!--   </p> -->
         <!-- </div> -->
+        <div class='brief'>Date tentative&mdash;check for updates soon</div>
       </div>
     </section>
 
@@ -176,7 +178,7 @@
         {% for speaker in page.speakers %}
           <article class="speaker">
             <div class="avatar">
-              <img src="{{ speaker.avatar }}" alt="{{ speaker.name }}" />
+              <img src="{{ speaker.avatar }}" alt="{{ speaker.initials }}">
             </div>
             <h3>
               {% if speaker.url %}
@@ -218,17 +220,20 @@
           </p>
         </article>
 
-        <article class="speaker anyone">
-          <h3>Venue TBD</h3>
-          <p>
-            We are still looking for a venue for this meetup. Interested to hold
-            a Manila.js meetup in your office?
-            <a href='mailto:{{ site.contact.email }}'>Drop us a note!</a>
-        </article>
+        {% if page.event.location %}
+        {% else %}
+          <article class="speaker anyone">
+            <h3>Venue TBD</h3>
+            <p>
+              We are still looking for a venue for this meetup. Interested to hold
+              a Manila.js meetup in your office?
+              <a href='mailto:{{ site.contact.email }}'>Drop us a note!</a>
+          </article>
+        {% endif %}
 
         <div class="{% if speakers[0] %}closing bottom{% endif %}">
           <p>
-            Manila.js Fridays happens every first Friday of the month.
+            Manila.js Fridays happens (usually) every first Friday of the month.
             Everybody's welcome!  Expect learning, fun, and happy conversations
             from people just like you.  This event is free. Bring your friends!
           </p>
@@ -284,6 +289,12 @@
 
     </div>
   </section>
+
+  {% if page.venue.panorama %}
+    <section class='section full-image'>
+      <div style='background-image: url({{ page.venue.panorama }})'></div>
+    </section>
+  {% endif %}
 
   <section class='venue-info'>
 
