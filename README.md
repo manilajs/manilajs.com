@@ -33,7 +33,7 @@ Just git push.
 
 Be sure to update Facebook's cache before sharing:
 
- * https://developers.facebook.com/tools/debug
+ * https://developers.facebook.com/tools/debug/og/object?q=http%3A%2F%2Fmanilajs.com
 
 ### Images
 
