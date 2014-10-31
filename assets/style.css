@@ -922,11 +922,7 @@ a.map:before {
 
 .about-us-section {
   background:
-    -webkit-gradient(linear, left top, left bottom, from(rgba(16, 128, 80, 0.98)), to(rgba(16, 128, 100, 0.8))), url(/images/header/ms.jpg) center center / cover fixed, #185;
-  background:
-    -webkit-linear-gradient(top, rgba(16, 128, 80, 0.98), rgba(16, 128, 100, 0.8)), url(/images/header/ms.jpg) center center / cover fixed, #185;
-  background:
-    linear-gradient(to bottom, rgba(16, 128, 80, 0.98), rgba(16, 128, 100, 0.8)),
+    linear-gradient(320deg, rgba(16, 128, 80, 0.98), rgba(16, 128, 100, 0.86)),
     url(/images/header/ms.jpg) center center / cover fixed,
     #185;
 
