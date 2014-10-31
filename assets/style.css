@@ -308,6 +308,8 @@ a:hover {
   -webkit-transition: opacity 400ms linear;
   transition: opacity 400ms linear;
 
+  -webkit-background-size: cover;
+
   background-size: cover;
   background-position: center center;
 }
@@ -324,12 +326,14 @@ a:hover {
 
 .picture-header .attribution a {
   color: rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: inset 0 -1px rgba(255, 255, 255, 0.30);
   box-shadow: inset 0 -1px rgba(255, 255, 255, 0.30);
   margin-left: 5px;
 }
 
 .picture-header .attribution a:hover {
   color: rgba(255, 255, 255, 1.0);
+  -webkit-box-shadow: inset 0 -1px rgba(255, 255, 255, 0.70);
   box-shadow: inset 0 -1px rgba(255, 255, 255, 0.70);
 }
 
@@ -917,7 +921,14 @@ a.map:before {
 /* ---------------------------------------------------------------------------- */
 
 .about-us-section {
-  background: #185;
+  background:
+    -webkit-gradient(linear, left top, left bottom, from(rgba(16, 128, 80, 0.98)), to(rgba(16, 128, 100, 0.8))), url(/images/header/ms.jpg) center center / cover fixed, #185;
+  background:
+    -webkit-linear-gradient(top, rgba(16, 128, 80, 0.98), rgba(16, 128, 100, 0.8)), url(/images/header/ms.jpg) center center / cover fixed, #185;
+  background:
+    linear-gradient(to bottom, rgba(16, 128, 80, 0.98), rgba(16, 128, 100, 0.8)),
+    url(/images/header/ms.jpg) center center / cover fixed,
+    #185;
 
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1348,6 +1359,7 @@ a.map:before {
 
 .section.full-image div {
   height: 300px;
+  -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
   opacity: 0.5;
