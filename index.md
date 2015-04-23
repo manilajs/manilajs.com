@@ -25,7 +25,7 @@ hero:
 
 # -- Comment out the venue if it's TBD --
 venue:
-  name: A-Venue Coworking
+  name: A Space Manila Coworking Studio
   panorama: images/bg-aspace.jpg
   icon: images/aspace.jpg
   url: http://aspacemanila.com/
@@ -48,27 +48,37 @@ speakers:
 ##############################################################################
 ---
 
+## Let's try something different.
+Instead of having speaking presentations, we'll have an open dicussion to share how JavaScript has shaped our web development work. I'll be picking the brains of seasoned professionals on some relevant topics, such as:
+
+* __ES6__: Have you adopted it? Why or why not? Has it helped?
+* __Grunt/Gulp__: How has modern frontend development tools shaped your workflow?
+* __io.js__: How is the future of Node.js going to be?
+* __Anything else__: feel free to suggest topics!
+
+{% include speaker-list.html %}
+
+<!-- Call to action -->
+{% include register-cta.html %}
+
+* * * *
+
+## Still open for speakers!
+The floor is open to anyone who has something interesting to share.
+Wanna share a 20-minute presentation? [Contact me](mailto:{{ site.contact.email }}) and I'll set you right up.
+
+Manila.js Fridays happens (usually) every first Friday of the month.
+Everybody's welcome!  Expect learning, fun, and happy conversations from people
+just like you.  This event is free. Bring your friends!
+
+<br>
+
 #### Manila JavaScript Community Meetup
 {:.pull-quote-heading}
 
 Let's have an evening of updates from the JavaScript community. Join us for a
 fun night of talks and camaraderie—beginners and experts welcome.
 {:.pull-quote}
-
-* * * *
-
-{% include speaker-list.html %}
-
-### Open for speakers!
-The floor is open to anyone who has something interesting to share.
-Wanna share something? [Contact us.](mailto:{{ site.contact.email }})
-
-Manila.js Fridays happens (usually) every first Friday of the month.
-Everybody's welcome!  Expect learning, fun, and happy conversations from people
-just like you.  This event is free. Bring your friends!
-
-<!-- Call to action -->
-{% include register-cta.html %}
 
 <!-- Big venue image -->
 {% if page.venue.panorama %}{% include panorama.html image=page.venue.panorama %}{% endif %}

@@ -1,5 +1,5 @@
 .formatted-content {
-  h3, h4, p, ul {
+  h2, h3, h4, p, ul {
     margin: 1.5em 0;
   }
 
@@ -13,12 +13,33 @@
     padding-bottom: 3em;
   }
 
-  > h3 {
-    font-weight: normal;
+  strong, b {
+    font-weight: bold;
     color: $blacker;
-    font-size: 1.3em;
   }
 
+  ul, ol {
+    margin-left: 1.5em;
+  }
+
+  ul li {
+    list-style: disc;
+  }
+
+  > h2 {
+    font-weight: 300;
+    font-family: open sans, sans-serif;
+    color: $blacker;
+    font-size: 1.6em;
+  }
+
+  > h3 {
+    font-weight: 700;
+    color: $blacker;
+    font-size: 1.2em;
+  }
+
+  > h2 + p,
   > h3 + p {
     margin-top: -1.5em;
   }
