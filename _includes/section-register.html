@@ -1,16 +1,16 @@
 <section class='section section-register'>
   <div class='in'>
     {% if page.registration.state == "open" %}
-    <a class='button big' href='{{ page.registration.signup }}'>I'm attending!</a>
+    <a class='cta-button' href='{{ page.registration.signup }}'>I'm attending!</a>
     {% endif %}
     {% if page.registration.state == "closed" %}
-    <a class='button big disabled' href="#">Sold out!</a>
+    <a class='cta-button -disabled' href="#">Sold out!</a>
     {% endif %}
     {% if page.registration.state == "announce" %}
-    <a class='button big disabled' href="#">Soon to open</a>
+    <a class='cta-button -disabled' href="#">Soon to open</a>
     {% endif %}
     {% if page.registration.state == "over" %}
-    <a class='button big disabled' href="#">All done</a>
+    <a class='cta-button -disabled' href="#">All done</a>
     {% endif %}
 
     <p class='venue'>
