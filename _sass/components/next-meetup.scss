@@ -1,0 +1,77 @@
+/*
+ * text inside the hero shot
+ */
+
+.next-meetup {
+  & {
+    margin: 2em 0 1em 0;
+  }
+
+  h5 {
+    /* color: #60ab50; */
+    color: #8adc79;
+    font-family: source sans pro, sans-serif;
+    font-size: 0.9em;
+    line-height: 1.5;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    text-align: center;
+
+    margin-bottom: 5px;
+  }
+
+  h1 {
+    font-family: open sans, serif;
+    font-weight: 300;
+    font-size: 1.7em;
+    line-height: 1.3;
+    letter-spacing: -1px;
+
+    text-align: center;
+    color: #fff;
+  }
+
+  h1 small {
+    font-size: 0.8em;
+    font-weight: 400;
+    font-family: electrolize;
+  }
+
+  .brief {
+    margin: 1em auto 1em auto;
+    font-weight: 300;
+    font-family: source sans pro, sans-serif;
+
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #fff;
+    opacity: 0.8;
+
+    max-width: 500px;
+    text-align: center;
+  }
+
+
+  /* Tablet & Desktop */
+  @media (min-width: 480px) {
+    h5:before {
+      content: '';
+      display: block;
+      margin: 20px auto;
+      width: 90px;
+      height: 2px;
+      background: #8adc79;
+      border-radius: 4px;
+    }
+
+    h5 {
+      font-size: 0.9em;
+    }
+
+    h1 {
+      font-size: 3.0em;
+    }
+  }
+}

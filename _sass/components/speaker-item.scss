@@ -1,0 +1,88 @@
+.speaker-item {
+  & {
+    margin: 2em 0;
+  }
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+    zoom: 1;
+  }
+
+
+  h3 {
+    font-weight: 700;
+    color: #222;
+  }
+
+  h3 .title {
+    color: #60ab50;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    font-family: montserrat, sans-serif;
+    letter-spacing: 1px;
+    margin: 0 15px 0 10px;
+  }
+
+  h3 a {
+    color: #222;
+  }
+
+  h3 i {
+    color: #222;
+    padding: 0 5px;
+    position: relative;
+    top: 3px;
+    -webkit-transition: all 100ms linear;
+    transition: all 100ms linear;
+  }
+
+  h3 a:hover {
+    color: #333;
+    text-decoration: none;
+  }
+
+  h3 a:hover i {
+    color: #60ab50;
+  }
+
+  .avatar {
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+  }
+
+  .avatar img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #3d8;
+    line-height: 100px;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 50%;
+  }
+
+  &.-anyone .avatar {
+     display: none;
+  }
+
+  /* no speakers */
+  &.-anyone:first-of-type:last-of-type h3 {
+    font-size: 1.6em;
+    font-weight: normal;
+    margin-bottom: 0.2em;
+    // text-align: center;
+  }
+
+  /* Desktop */
+  @media (min-width: 768px) {
+    .avatar {
+      float: right;
+      margin: 0 0 40px 40px;
+      top: 10px;
+    }
+  }
+}

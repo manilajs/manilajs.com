@@ -1,0 +1,37 @@
+html {
+  background: #fff;
+}
+
+body, td, th, input, textarea {
+  font-family: source sans pro, sans-serif;
+  font-weight: 400;
+  font-size: 13.5pt;
+  line-height: 1.7;
+  color: #606060;
+} 
+
+/* Mobile */
+@media (max-width: 570px) {
+  body, td, th, input, textarea {
+    font-size: 11pt;
+  }
+}
+
+a, a:visited {
+  color: #60ab50;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #333;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+/* Antialiased text */
+* {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+}
+

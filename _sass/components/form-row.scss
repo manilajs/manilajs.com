@@ -1,0 +1,23 @@
+.form-row {
+  & {
+    margin: 10px 0;
+    @include clearfix;
+  }
+
+  &.-checkbox {
+    font-size: 0.85em;
+  }
+
+  &.-texts:first-of-type {
+    margin-top: 30px;
+  }
+
+  &.-texts + .form-row:not(.-texts) {
+    margin-top: 30px;
+  }
+}
+
+.checkbox-field input {
+  margin-right: 10px;
+}
+

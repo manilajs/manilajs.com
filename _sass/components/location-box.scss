@@ -1,0 +1,150 @@
+/*
+ * a location
+ * could be a drinkup (.-afterparty)
+ */
+
+.location-box {
+  & {
+    margin: 0 0 1em 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .address {
+    font-size: 0.9em;
+    margin-bottom: 18px;
+    line-height: 1.6;
+  }
+
+  // map button
+  a.map,
+  a.map:visited {
+    background: transparent;
+    border: solid 1px #d0d0d0;
+    font-size: 0.7em;
+    color: #506070;
+    padding: 6px 12px;
+    border-radius: 3px;
+
+    font-family: montserrat, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+
+  a.map:hover {
+    border: solid 1px #3ad;
+  }
+
+  a.map:before {
+    @include ion-icon('paper-airplane', 16px);
+    margin-right: 10px;
+    color: #3ad;
+    vertical-align: middle;
+  }
+
+  .icon.-beerplaceholder:before {
+    @include ion-icon('beer');
+    font-size: 64px;
+    position: relative;
+    top: -21px;
+  }
+
+  @media (max-width: 768px) {
+    h4, .address {
+      text-align: center;
+    }
+    a.map {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 0.9em;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+  }
+}
+
+/*
+ * icon
+ */
+
+.location-box .icon {
+  & {
+    display: block;
+    float: left;
+
+    width: 60px;
+
+    margin: 0 0 0 -70px;
+    vertical-align: top;
+
+    color: #a0b0c0;
+  }
+
+  &.-placeholder:before,
+  &.-beerplaceholder:before {
+    @include ion-icon('ios-location-outline');
+    font-size: 60px;
+    opacity: 0.9;
+  }
+
+  &.-logo,
+  &.-logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  &.-logo {
+    background: white;
+    margin: 0 0 0 -140px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 2px;
+  }
+
+  /* Smaller logo */
+  &.-smaller {
+    margin: 0 0 0 -110px;
+  }
+
+  &.-smaller,
+  &.-smaller img {
+    width: 70px;
+    height: 70px;
+  }
+
+  @media (max-width: 768px) {
+    &, &.icon {
+      margin: 0 auto 20px auto;
+      float: none;
+    }
+
+    &.-placeholder,
+    &.-beerplaceholder {
+      display: block;
+      float: none;
+      margin: 0 auto;
+      text-align: center;
+      height: 60px;
+      top: 0;
+    }
+    &.-placeholder:before,
+    &.-beerplaceholder:before {
+      font-size: 40px;
+      position: relative;
+      top: -10px;
+    }
+  }
+}
+
+/*
+ * wtf?
+ */
+
+.location-box + p {
+  margin-top: 1em;
+}

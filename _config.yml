@@ -2,3 +2,8 @@ markdown: kramdown
 
 contact:
   email: hi@ricostacruz.com
+
+# Google analytics
+analytics:
+  hostname: manilajs.com
+  id: UA-38979948-1

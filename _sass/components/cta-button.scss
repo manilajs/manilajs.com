@@ -1,0 +1,71 @@
+/*
+ * big call to action button
+ */
+
+.cta-button {
+  & {
+    margin: 0;
+    outline: 0;
+    display: inline-block;
+
+    height: 42px;
+    line-height: 42px;
+    border-radius: 26px;
+
+    /* border: solid 2px #506070; */
+    padding: 0 40px;
+
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12pt;
+    font-family: montserrat;
+
+    color: #506070;
+
+    cursor: pointer;
+  }
+
+  &:after {
+    @include ion-icon('ios-arrow-right', 16px);
+  }
+
+  &,
+  &:visited {
+    background: #506070;
+    border-color: #506070;
+    color: white;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background: #333;
+    border-color: #333;
+    color: white;
+    text-decoration: none;
+  }
+
+  &:active {
+    background: #111;
+    border-color: #111;
+  }
+
+  &:after {
+    margin-left: 13px;
+    position: relative;
+    top: 1px;
+    opacity: 0.5;
+  }
+
+  &.-disabled:hover,
+  &.-disabled:visited,
+  &.-disabled {
+    background-color: #eee;
+    border-color: #ddd;
+    cursor: not-allowed;
+    color: #888;
+  }
+
+  &.-disabled:after {
+    display: none;
+  }
+}

@@ -1,0 +1,42 @@
+/*
+ * signup
+ */
+
+.signup-footer {
+  & {
+    background: #101a12;
+    color: rgba(250, 250, 250, 0.7);
+  }
+
+  h2 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.5em;
+    color: white;
+  }
+
+  @media (min-width: 768px) {
+    .in {
+      padding-top: 140px;
+      padding-bottom: 140px;
+    }
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  h2 + p {
+    margin-top: -0.25em;
+  }
+
+  .submit {
+    height: 40px;
+    line-height: 36px;
+  }
+
+  .actions {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<title>Manila.js - JavaScript community in Manila, Philippines</title>
+<base href='.'>
+
+<link href="assets/style.css?v={{site.time | date: "%Y%M%d%H%M%S"}}" rel="stylesheet" type="text/css">
+
+<!-- description -->
+<meta content="Next meetup: {{ page.event.date | date: "%A, %B %e" }} at {{ page.event.location }}" name="description">
+<meta content="Next meetup: {{ page.event.date | date: "%A, %B %e" }} at {{ page.event.location }}" property="og:description">
+<meta content="javascript, manila, meetup, manila.js" name="keywords">
+
+<!-- og/twitter -->
+<meta content="{{ page.event.share_image }}" property="og:image">
+<meta content="{{ page.event.share_image }}" name="twitter:image">
+
+<meta content="Manila.js JavaScript community" property="og:title">
+<meta content="Manila.js JavaScript community" property="og:site_name">
+<meta content="Manila.js JavaScript community" name="twitter:title">
+<meta content="website" property="og:type">
+<meta content="http://manilajs.com/" property="og:url">
+<meta content="http://manilajs.com/" name="twitter:url">
+<link href="http://manilajs.com/" rel="canonical">
+
+{%comment%}<!-- google analytics -->{%endcomment%}
+{% if site.analytics %}<script>if(~location.hostname.indexOf("{{site.analytics.hostname}}")){var _gaq=_gaq||[];_gaq.push(["_setAccount","{{ site.analytics.id }}"]);_gaq.push(["_trackPageview"]);(function(){var ga=document.createElement("script");ga.async=true;ga.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga,s)})()}</script>{% endif %}
+
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<!-- <link href='{{ base }}/assets/favicon.png' rel='shortcut icon'> -->
+
+{%comment%}<!-- js -->{%endcomment%}
+<script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
