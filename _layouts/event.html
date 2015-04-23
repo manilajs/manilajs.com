@@ -21,7 +21,15 @@
 </section>
 
 {% include section-venue-image.html %}
-{% include section-venue.html %}
+
+<section class='section'>
+  <div class='in formatted-content'>
+{% capture mkdn %}
+{% include s-venue.md %}
+{% endcapture %}{{ mkdn | markdownify }}
+  </div>
+</section>
+
 {% include section-about-us.html %}
 {% include section-signup.html %}
 

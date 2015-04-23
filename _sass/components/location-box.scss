@@ -3,13 +3,18 @@
  * could be a drinkup (.-afterparty)
  */
 
-.location-box {
+.all .location-box {
   & {
-    margin: 0 0 1em 0;
+    margin: -0.5em 0 1em 0;
   }
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  h4, p {
+    margin: 0;
+    padding: 0;
   }
 
   .address {
@@ -53,7 +58,7 @@
   }
 
   @media (max-width: 768px) {
-    h4, .address {
+    .title, .address {
       text-align: center;
     }
     a.map {
@@ -64,6 +69,27 @@
       padding-top: 2px;
       padding-bottom: 2px;
     }
+  }
+
+  .title,
+  .title a,
+  .title a:visited {
+    font-weight: 300;
+    font-family: open sans, sans-serif;
+    color: #222;
+  }
+
+  .title {
+    font-size: 1.6em;
+  }
+
+  a:visited,
+  a {
+    color: #a0b0c0;
+  }
+
+  a:hover {
+    color: #506070;
   }
 }
 

@@ -23,6 +23,33 @@
     margin-top: -1.5em;
   }
 
+  > h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    font-family: montserrat, sans-serif;
+    color: $green;
+
+    @media (min-width: 769px) {
+      margin-top: 3.5em;
+    }
+
+    + p {
+      margin-top: -0.5em;
+    }
+  }
+
+  > h4:after {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 2px;
+    background: #ddd;
+    margin: 10px 0;
+    border-radius: 2px;
+  }
+
   > hr {
     width: 150px;
     height: 1px;
