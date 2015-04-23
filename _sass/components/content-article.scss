@@ -1,0 +1,90 @@
+/*
+ * uh. venues and some-like-that.
+ * sometimes it contains a .locatino-box.
+ *
+ *     .content-article.section
+ *       .in
+ *         h3 Thanks!
+ *         p You're really amazing
+ */
+
+.content-article {
+  & {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* Desktop */
+  @media (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &:first-child {
+    border-top: 0;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    font-family: montserrat;
+    color: #60ab50;
+  }
+  h3:after {
+    display: block;
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: #ddd;
+    margin: 10px 0;
+    border-radius: 2px;
+  }
+
+  h4,
+  h4 a,
+  h4 a:visited {
+    font-weight: 300;
+    font-family: open sans, sans-serif;
+    color: #222;
+  }
+
+  h4 {
+    font-size: 1.6em;
+  }
+
+  a:visited,
+  a {
+    color: #a0b0c0;
+  }
+
+  a:hover {
+    color: #506070;
+  }
+
+  p + p {
+    margin-top: 20px;
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+    padding: 1px;
+    border: solid 1px transparent;
+    border-radius: 2px;
+    display: inline-block;
+    vertical-align: middle;
+
+    position: relative;
+    top: -1px;
+
+    margin: 0 3px;
+  }
+
+  @media (min-width: 768px) {
+    p {
+      font-size: 0.95em;
+    }
+  }
+}
