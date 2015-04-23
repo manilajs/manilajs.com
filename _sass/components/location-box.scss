@@ -45,7 +45,8 @@
     vertical-align: middle;
   }
 
-  &.-afterparty .icon.-placeholder:before {
+  .icon.-beerplaceholder:before {
+    @include ion-icon('beer');
     font-size: 64px;
     position: relative;
     top: -21px;
@@ -83,7 +84,9 @@
     color: #a0b0c0;
   }
 
-  &.-placeholder:before {
+  &.-placeholder:before,
+  &.-beerplaceholder:before {
+    @include ion-icon('ios-location-outline');
     font-size: 60px;
     opacity: 0.9;
   }
@@ -120,7 +123,8 @@
       float: none;
     }
 
-    &.-placeholder {
+    &.-placeholder,
+    &.-beerplaceholder {
       display: block;
       float: none;
       margin: 0 auto;
@@ -128,7 +132,8 @@
       height: 60px;
       top: 0;
     }
-    &.-placeholder:before {
+    &.-placeholder:before,
+    &.-beerplaceholder:before {
       font-size: 40px;
       position: relative;
       top: -10px;

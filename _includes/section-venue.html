@@ -7,7 +7,9 @@
         <h3>Our venue is</h3>
         <div class='location-box'>
           {% if page.venue.icon %}
-            <div class='icon -logo'><img src='{{ page.venue.icon }}' alt='{{ page.venue.name }}'></div>
+            <div class='icon -logo'>
+              <img src='{{ page.venue.icon }}' alt='{{ page.venue.name }}'>
+            </div>
           {% else %}
             <div class='icon -placeholder'></div>
           {% endif %}
@@ -49,7 +51,7 @@
           {% if page.drinkup.icon %}
             <div class='icon -logo -smaller'><img src='{{ page.drinkup.icon }}' alt='{{ page.drinkup.name }}'></div>
           {% else %}
-            <div class='icon -placeholder'></div>
+            <div class='icon -beerplaceholder'></div>
           {% endif %}
           {% if page.drinkup.url %}
             <h4><a href="{{ page.drinkup.url }}">{{ page.drinkup.name }}</a></h4>
