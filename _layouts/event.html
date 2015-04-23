@@ -66,7 +66,7 @@
 
   {% include section-speakers.html %}
 
-  <section class='section cta'>
+  <section class='section section-register'>
     <div class='in'>
       {% if page.registration.state == "open" %}
       <a class='button big' href='{{ page.registration.signup }}'>I'm attending!</a>
@@ -82,35 +82,32 @@
       {% endif %}
 
       <p class='venue'>
-      <span>{{ page.event.date | date: "%B %e, %A" }}</span> &nbsp;&middot;&nbsp; <span>{{ page.event.time }}</span> onwards
+        <span>{{ page.event.date | date: "%B %e, %A" }}</span>
+        &nbsp;&middot;&nbsp;
+        <span>{{ page.event.time }}</span> onwards
       </p>
 
-      {% if page.registration.state == "open" %}
       <p class='hint'>
-        It's free! Reserve your seat now. Slots are limited, so hurry!
-      </p>
-      {% endif %}
-      {% if page.registration.state == "closed" %}
-      <p class='hint'>
-        Slots are now full. Be sure to register early next month!
-      </p>
-      {% endif %}
-      {% if page.registration.state == "announce" %}
-        {% if page.registration.date %}
-          <p class='hint'>
-            Registration will open on {{ page.registration.date | date: "%B %e, %A" }}. Slots are limited!
-          </p>
-        {% else %}
-          <p class='hint'>
-            Registration will open soon.
-          </p>
+        {% if page.registration.state == "open" %}
+          It's free! Reserve your seat now. Slots are limited, so hurry!
         {% endif %}
-      {% endif %}
-      {% if page.registration.state == "over" %}
-      <p class='hint'>
-        Event is over! Watch the Facebook group for updates on the next event.
+
+        {% if page.registration.state == "closed" %}
+          Slots are now full. Be sure to register early next month!
+        {% endif %}
+
+        {% if page.registration.state == "announce" %}
+          {% if page.registration.date %}
+            Registration will open on {{ page.registration.date | date: "%B %e, %A" }}. Slots are limited!
+          {% else %}
+            Registration will open soon.
+          {% endif %}
+        {% endif %}
+
+        {% if page.registration.state == "over" %}
+          Event is over! Watch the Facebook group for updates on the next event.
+        {% endif %}
       </p>
-      {% endif %}
 
     </div>
   </section>

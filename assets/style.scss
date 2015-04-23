@@ -33,16 +33,8 @@
 @import 'components/section-speakers';
 @import 'components/section-venue';
 @import 'components/section-panorama';
+@import 'components/section-register';
 @import 'components/speaker-item';
-
-.cta {
-  margin: 0;
-}
-
-.cta .in {
-  text-align: center;
-  padding: 2em 0 3em 0;
-}
 
 /* okay, i messed up and there's .button and .btn. sorreh */
 .button {
@@ -105,17 +97,6 @@
 
 .button.disabled:after {
   display: none;
-}
-
-.cta .venue {
-  margin-top: 1em;
-  font-weight: bold;
-  font-size: 1.2em;
-  color: #222;
-}
-
-.cta .hint {
-  font-size: 0.9em;
 }
 
 /* ---------------------------------------------------------------------------- */
