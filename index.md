@@ -6,7 +6,7 @@ event:
   date: 2015-05-08
   time: 7PM
   location: A Space, Makati
-  share_image: "http://manilajs.com/images/share/010-landscape.png"
+  share_image: "http://manilajs.com/images/share/011-square.png"
 
 mailchimp:
   group_id: 4096 # typically 2^(series+3)
