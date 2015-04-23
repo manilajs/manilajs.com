@@ -1,0 +1,95 @@
+.picture-header {
+  & {
+    background-color: #143;
+    margin-bottom: 5em;
+
+    overflow: hidden;
+    position: relative;
+
+    z-index: 10;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+  .cover {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    -webkit-transition: opacity 400ms linear;
+    transition: opacity 400ms linear;
+
+    -webkit-background-size: cover;
+
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .attribution {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.6em;
+
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+  }
+
+  .attribution a {
+    color: rgba(255, 255, 255, 0.7);
+    -webkit-box-shadow: inset 0 -1px rgba(255, 255, 255, 0.30);
+    box-shadow: inset 0 -1px rgba(255, 255, 255, 0.30);
+    margin-left: 5px;
+  }
+
+  .attribution a:hover {
+    color: rgba(255, 255, 255, 1.0);
+    -webkit-box-shadow: inset 0 -1px rgba(255, 255, 255, 0.70);
+    box-shadow: inset 0 -1px rgba(255, 255, 255, 0.70);
+  }
+
+  @media (max-width: 768px) {
+    .attribution {
+      display: none;
+    }
+  }
+
+  section {
+    position: relative;
+    z-index: 2;
+  }
+
+  .monogram {
+    background-image: url(manilajs-white-mono.png);
+    -webkit-background-size: 66px 45px;
+    background-size: 66px 45px;
+    width: 66px;
+    height: 45px;
+    margin: 40px auto;
+    position: relative;
+    z-index: 20;
+  }
+
+  .top-nav-bg .logo,
+  .logo {
+    font-family: montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 1.3;
+  }
+
+  /* Mobile */
+  @media (max-width: 480px) {
+    .monogram {
+      margin: 20px auto;
+    }
+    & {
+      height: 90px;
+      margin-bottom: 2em;
+    }
+  }
+}
