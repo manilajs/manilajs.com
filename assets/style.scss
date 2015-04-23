@@ -71,6 +71,8 @@
 @import 'components/section';
 @import 'components/section-date-time';
 @import 'components/section-speakers';
+@import 'components/section-venue';
+@import 'components/section-panorama';
 @import 'components/speaker-item';
 
 .cta {
@@ -154,20 +156,6 @@
 
 .cta .hint {
   font-size: 0.9em;
-}
-
-/* ---------------------------------------------------------------------------- */
-
-.venue-info {
-  /* background: #f9fafb; */
-  border-top: solid 1px #e5e5e7;
-}
-
-/* Desktop */
-@media (min-width: 768px) {
-  .venue-info {
-    padding-bottom: 20px;
-  }
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -409,18 +397,3 @@
 
 @import 'components/text-field';
 @import 'components/signup-footer';
-
-.section.full-image {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  background-color: #345;
-}
-
-.section.full-image div {
-  height: 300px;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.5;
-}
