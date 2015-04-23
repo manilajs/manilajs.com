@@ -1,0 +1,21 @@
+/*
+/* Sections */
+
+.section {
+  padding: 15px 30px;
+}
+
+.section > .in {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.section.wide > .in {
+  max-width: 800px;
+}
+
+.section > .in-wide {
+  max-width: 820px;
+  margin: 0 auto;
+}
+

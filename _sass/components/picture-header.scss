@@ -14,7 +14,8 @@
     padding-bottom: 3em;
   }
 
-  .cover {
+  // Cover image
+  >.cover {
     left: 0;
     top: 0;
     width: 100%;
@@ -30,6 +31,7 @@
     background-position: center center;
   }
 
+  // Attribution text
   .attribution {
     color: rgba(255, 255, 255, 0.3);
     font-size: 0.6em;
@@ -75,7 +77,6 @@
     z-index: 20;
   }
 
-  .top-nav-bg .logo,
   .logo {
     font-family: montserrat, sans-serif;
     font-weight: bold;

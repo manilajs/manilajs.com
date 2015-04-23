@@ -1,0 +1,47 @@
+i.twitter:before,
+i.github:before,
+i.facebook:before,
+.btn.gitter:before,
+.btn.facebook:before,
+i.google:before
+{
+  font-family: 'ionicons';
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.button:after,
+.btn:after,
+a.map:before,
+i.right:before,
+.venue .placeholder:before,
+.afterparty .placeholder:before
+{
+  font-family: 'ionicons';
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  position: relative;
+}
+
+.btn.facebook:before,
+.button:after,
+.btn:after,
+i.right:before {
+  font-size: 16px;
+  top: 2px;
+}
+
+i.twitter:before { content: '\f242'; }
+i.github:before { content: '\f232'; }
+i.google:before { content: '\f234'; }
+i.facebook:before { content: '\f230'; }
+.btn.facebook:before { content: '\f231'; margin-right: 7px; }
+.btn.gitter:before { content: '\f168'; margin-right: 7px; }
+a.map:before { content: '\f1b9'; }
+.venue .placeholder:before { content: '\f1a5'; }
+.afterparty .placeholder:before { content: '\f293'; }
+.btn:after,
+.button:after,
+i.right:before { content: '\f152'; }
