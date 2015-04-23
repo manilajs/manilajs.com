@@ -70,17 +70,8 @@
 @import 'components/next-meetup';
 @import 'components/section';
 @import 'components/section-date-time';
-
-/* ---------------------------------------------------------------------------- */
-/* Speakers section */
-
-.section.speakers {
-  padding-top: 0;
-}
-
+@import 'components/section-speakers';
 @import 'components/speaker-item';
-
-/* ---------------------------------------------------------------------------- */
 
 .cta {
   margin: 0;
