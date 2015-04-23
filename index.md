@@ -1,0 +1,93 @@
+---
+# vim:ft=yaml
+layout: event
+
+event:
+  series: "011"
+  date: 2015-05-08
+  time: 7PM
+  location: Salcedo Village, Makati
+  share_image: "http://manilajs.com/images/share/010-landscape.png"
+
+mailchimp:
+  group_id: 4096 # typically 2^(series+3)
+
+registration:
+  date: 2014-04-28
+  state: announce # announce | open | closed | over
+  signup: "http://goo.gl/forms/???"
+
+hero:
+  color: "#203a4f"
+  opacity: 0.40
+  image: "/images/longexposure.jpg"
+  # attribution_source: "aspacemanila.com"
+  # attribution_url: "https://www.flickr.com/photos/hackny/7033121879/"
+
+# -- Comment out the venue if it's TBD --
+venue:
+  name: A-Venue Coworking
+  panorama: images/bg-aspace.jpg
+  icon: images/aspace.jpg
+  url: http://aspacemanila.com/
+  map: https://goo.gl/maps/kuhS4
+  address: 110 Legazpi St., Makati City
+
+# -- Comment out the drinkup if it's not available --
+# drinkup: <see above>
+
+speakers:
+# - name: Dude McScrubberson
+#   url: http://
+#   avatar: images/dude.jpg
+#   title: Developer
+#   github: username
+#   twitter: username
+#   description: |-
+#     A scrub is a guy that thinks he's fine
+
+#------------------------------------------------------------------------------
+---
+
+#### Manila JavaScript Community Meetup
+{:.pull-quote-heading}
+
+Let's have an evening of updates from the JavaScript community. Join us for a
+fun night of talks and camaraderie—beginners and experts welcome.
+{:.pull-quote}
+
+* * * *
+
+{% include speaker-list.html %}
+
+### Open for speakers!
+The floor is open to anyone who has something interesting to share.
+Wanna share something? [Contact us.](mailto:{{ site.contact.email }})
+
+Manila.js Fridays happens (usually) every first Friday of the month.
+Everybody's welcome!  Expect learning, fun, and happy conversations from people
+just like you.  This event is free. Bring your friends!
+
+<!-- Call to action -->
+{% include register-cta.html %}
+
+<!-- Big venue image -->
+{% if page.venue.panorama %}{% include panorama.html image=page.venue.panorama %}{% endif %}
+
+#### Our venue is
+
+{% if page.venue %}
+{% include location-box.html venue=page.venue %}{% else %}
+{% include location-box-tbd.html %}{% endif %}
+
+Special thanks to our generous venue sponsor, [Quipper](http://quipper.com),
+for making our meetup possible.
+
+#### Contact info
+
+Need directions or any help? Interested in speaking or sponsorship? Contact
+Rico at [hi@ricostacruz.com](mailto:hi@ricostacruz.com) or 0908 864 8125.
+
+#### Thanks!
+
+Manila.js is made possible by the JS community volunteers who have been organizing and volunteering to make Manila.js events possible. 
