@@ -28,7 +28,7 @@
       <!-- Begin MailChimp Signup Form -->
       <form action="http://manilajs.us6.list-manage.com/subscribe/post?u=5f5fd8e377&amp;id=916f3ae313" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscribe-form" target="_blank" novalidate role="validate">
 
-      <div class="form-row texts">
+      <div class="form-row -texts">
         <label class='text-field'>
           <input type="text" value="" name="FNAME" class="required" placeholder='Piolo' required>
           <strong>First name <span class='req'>*</span></strong>
@@ -39,7 +39,7 @@
         </label>
       </div>
 
-      <div class="form-row texts">
+      <div class="form-row -texts">
         <label class='text-field'>
           <input type="email" value="" name="EMAIL" class="required email" placeholder='piolo@gmail.com' required>
           <strong>Email address <span class='req'>*</span></strong>
@@ -52,14 +52,14 @@
 
       <!-- Join the meetup -->
       {% if page.registration.state == "open" %}
-        <div class="form-row checkbox">
+        <div class="form-row -checkbox">
           <label class='checkbox-field'>
             <input value="{{ page.mailchimp.group_id }}" name="group[8741][{{ page.mailchimp.group_id }}]" type="checkbox" checked>
             <span>Yes, I'm joining the meetup.</span>
           </label>
         </div>
 
-        <div class="form-row checkbox">
+        <div class="form-row -checkbox">
           <label class='checkbox-field'>
             <input type="checkbox" value="8" name="group[9585][8]" checked>
             <strong>Email me for updates.</strong>
