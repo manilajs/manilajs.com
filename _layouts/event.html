@@ -17,49 +17,20 @@
                                                             
 -->
 <head>
-  <meta charset="UTF-8">
-  <title>Manila.js - JavaScript community in Manila, Philippines</title>
-  <base href='.'>
+{% include meta.html %}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="assets/vendor.js?v={{ site.time | date: "%Y%M%d%H%M%S" }}"></script>
+<script src="assets/script.js?v={{ site.time | date: "%Y%M%d%H%M%S" }}"></script>
+</head><body>
 
-  <link href="assets/style.css?v={{site.time | date: "%Y%M%d%H%M%S"}}" rel="stylesheet" type="text/css">
-
-  <!-- description -->
-  <meta content="Next meetup: {{ page.event.date | date: "%A, %B %e" }} at {{ page.event.location }}" name="description">
-  <meta content="Next meetup: {{ page.event.date | date: "%A, %B %e" }} at {{ page.event.location }}" property="og:description">
-  <meta content="javascript, manila, meetup, manila.js" name="keywords">
-
-  <!-- og/twitter -->
-  <meta content="{{ page.event.share_image }}" property="og:image">
-  <meta content="{{ page.event.share_image }}" name="twitter:image">
-
-  <meta content="Manila.js JavaScript community" property="og:title">
-  <meta content="Manila.js JavaScript community" property="og:site_name">
-  <meta content="Manila.js JavaScript community" name="twitter:title">
-  <meta content="website" property="og:type">
-  <meta content="http://manilajs.com/" property="og:url">
-  <meta content="http://manilajs.com/" name="twitter:url">
-  <link href="http://manilajs.com/" rel="canonical">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width; initial-scale=1.0">
-
-  <!-- analytics -->
-  <script>(location.hostname.match(/manilajs.com/))&&(_gaq=[['_setAccount','UA-38979948-1'],['_trackPageview']],(function(a,b){var c=b.createElement(a);c.async=!0,c.src=("https:"==b.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var d=b.getElementsByTagName(a)[0];d.parentNode.insertBefore(c,d)})("script",document))</script>
-
-  <!-- scripts -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="assets/vendor.js?v={{site.time | date: "%Y%M%d%H%M%S" }}"></script>
-  <script src="assets/script.js?v={{site.time | date: "%Y%M%d%H%M%S" }}"></script>
-</head>
-<body>
-
-  {% include top-nav.html %}
-  {% include hero-shot.html %}
-  {% include section-speakers.html %}
-  {% include section-register.html %}
-  {% include section-venue-image.html %}
-  {% include section-venue.html %}
-  {% include section-about-us.html %}
-  {% include section-signup.html %}
+{% include top-nav.html %}
+{% include hero-shot.html %}
+{% include section-speakers.html %}
+{% include section-register.html %}
+{% include section-venue-image.html %}
+{% include section-venue.html %}
+{% include section-about-us.html %}
+{% include section-signup.html %}
 
 </body>
 </html>
