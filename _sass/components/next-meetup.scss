@@ -8,8 +8,7 @@
   }
 
   h5 {
-    /* color: #60ab50; */
-    color: #8adc79;
+    color: $green;
     font-family: source sans pro, sans-serif;
     font-size: 0.9em;
     line-height: 1.5;
@@ -62,7 +61,7 @@
       margin: 20px auto;
       width: 90px;
       height: 2px;
-      background: #8adc79;
+      background: $green;
       border-radius: 4px;
     }
 

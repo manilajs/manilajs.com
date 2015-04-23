@@ -1,5 +1,4 @@
 ---
-# vim:ft=yaml
 layout: event
 
 event:
@@ -46,7 +45,7 @@ speakers:
 #   description: |-
 #     A scrub is a guy that thinks he's fine
 
-#------------------------------------------------------------------------------
+##############################################################################
 ---
 
 #### Manila JavaScript Community Meetup
@@ -83,11 +82,12 @@ just like you.  This event is free. Bring your friends!
 Special thanks to our generous venue sponsor, [Quipper](http://quipper.com),
 for making our meetup possible.
 
-#### Contact info
+* * * *
+
+### Thanks!
 
 Need directions or any help? Interested in speaking or sponsorship? Contact
 Rico at [hi@ricostacruz.com](mailto:hi@ricostacruz.com) or 0908 864 8125.
 
-#### Thanks!
-
-Manila.js is made possible by the JS community volunteers who have been organizing and volunteering to make Manila.js events possible. 
+Manila.js is made possible by the JS community volunteers who have been
+organizing and volunteering to make Manila.js events possible. 

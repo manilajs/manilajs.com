@@ -27,20 +27,21 @@
   }
 
   &, &:visited {
-    color: #506070;
+    color: $slate;
   }
 
   &:link {
-    border-color: #506070;
+    border-color: $slate;
   }
 
   &:hover {
-    text-decoration: none;
+    text-decoration: none !important;
   }
 
   &:after {
     @include ion-icon('ios-arrow-right', 16px);
-    margin-left: 10px;
+    margin-top: -1px;
+    margin-left: 14px;
     opacity: 0.3;
   }
 
@@ -81,6 +82,19 @@
 
   &.-disabled:after {
     display: none;
+  }
+
+  &.-white {
+    border-color: rgba(white, 0.2);
+
+    &:after {
+      opacity: 1;
+    }
+
+    &:hover {
+      border-color: transparent;
+      background: $orange;
+    }
   }
 
   &.-lite {

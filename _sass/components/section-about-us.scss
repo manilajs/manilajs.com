@@ -1,7 +1,9 @@
 .section-about-us {
+  $g: darken($green, 5%);
+
   & {
     background:
-      linear-gradient(320deg, rgba(16, 128, 80, 0.98), rgba(16, 128, 100, 0.86)),
+      linear-gradient(320deg, rgba($g, 0.98), rgba($g, 0.90)),
       url(/images/header/bg-about-us.jpg) center center / cover fixed,
       #185;
 
@@ -48,19 +50,8 @@
     margin-top: -20px;
   }
 
-  .btn:visited,
-  .btn {
-    border-color: rgba(250, 250, 250, 0.5);
-    border-radius: 6px;
-  }
-
-  .btn:hover {
-    text-decoration: none;
-  }
-
   // Desktop
   @media (min-width: 768px) {
-    margin-top: 100px;
     padding-top: 90px;
     padding-bottom: 90px;
   }
