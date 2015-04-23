@@ -361,73 +361,7 @@ a.map:before {
 
 /* ---------------------------------------------------------------------------- */
 
-.about-us-section {
-  background:
-    linear-gradient(320deg, rgba(16, 128, 80, 0.98), rgba(16, 128, 100, 0.86)),
-    url(/images/header/ms.jpg) center center / cover fixed,
-    #185;
-
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-  color: #efe;
-
-  font-size: 0.9em;
-  line-height: 1.7;
-}
-
-.about-us-section p {
-  margin: 2em 0;
-}
-
-.about-us-section h3 {
-  font-family: open sans, sans-serif;
-  font-weight: 300;
-  color: white;
-  margin: 0;
-  font-size: 1.6em;
-}
-
-.about-us-section h3.primary {
-  font-weight: bold;
-  font-family: source sans pro, sans-serif;
-}
-
-.about-us-section h3 + p {
-  margin-top: 0;
-}
-
-.about-us-section a:visited,
-.about-us-section a {
-  color: white;
-}
-
-.about-us-section a:hover {
-  text-decoration: underline;
-}
-
-.about-us-section p.actions {
-  margin-top: -20px;
-}
-
-.about-us-section .btn:visited,
-.about-us-section .btn {
-  border-color: rgba(250, 250, 250, 0.5);
-  border-radius: 6px;
-}
-
-.about-us-section .btn:hover {
-  text-decoration: none;
-}
-
-/* Desktop */
-@media (min-width: 768px) {
-  .about-us-section {
-    margin-top: 100px;
-    padding-top: 90px;
-    padding-bottom: 90px;
-  }
-}
+@import 'components/section-about-us';
 
 /* ---------------------------------------------------------------------------- */
 /* Inline: button */
