@@ -26,6 +26,7 @@
 
 @import 'components/top-nav';
 @import 'components/column-section';
+@import 'components/form-row';
 @import 'components/picture-header';
 @import 'components/next-meetup';
 @import 'components/section';
@@ -35,6 +36,11 @@
 @import 'components/section-panorama';
 @import 'components/section-register';
 @import 'components/speaker-item';
+@import 'components/signup-footer';
+@import 'components/text-field';
+@import 'components/location-box';
+@import 'components/brief-pullquote';
+@import 'components/section-about-us';
 
 /* okay, i messed up and there's .button and .btn. sorreh */
 .button {
@@ -188,15 +194,6 @@
   background: transparent;
 }
 
-/* -- */
-
-@import 'components/location-box';
-@import 'components/brief-pullquote';
-
-/* ---------------------------------------------------------------------------- */
-
-@import 'components/section-about-us';
-
 /* ---------------------------------------------------------------------------- */
 /* Inline: button */
 
@@ -314,27 +311,3 @@
     top: -1px;
   }
 }
-
-/*
- * form
- */
-
-.form-row {
-  margin: 10px 0;
-}
-.form-row.checkbox {
-  font-size: 0.85em;
-}
-.form-row.texts:first-of-type {
-  margin-top: 30px;
-}
-.form-row.texts + .form-row:not(.texts) {
-  margin-top: 30px;
-}
-
-.checkbox-field input {
-  margin-right: 10px;
-}
-
-@import 'components/text-field';
-@import 'components/signup-footer';
