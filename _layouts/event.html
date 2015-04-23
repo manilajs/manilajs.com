@@ -176,7 +176,7 @@
 
       <div class="speaker-list">
         {% for speaker in page.speakers %}
-          <article class="speaker">
+          <article class="speaker-item">
             <div class="avatar">
               <img src="{{ speaker.avatar }}" alt="{{ speaker.initials }}">
             </div>
@@ -208,7 +208,7 @@
           </article>
         {% endfor %}
         
-        <article class="speaker anyone">
+        <article class="speaker-item -anyone">
           <div class="avatar"></div>
           <h3>Open for speakers!</h3>
           <p>
@@ -222,7 +222,7 @@
 
         {% if page.event.location %}
         {% else %}
-          <article class="speaker anyone">
+          <article class="speaker-item -anyone">
             <h3>Venue TBD</h3>
             <p>
               We are still looking for a venue for this meetup. Interested to hold
