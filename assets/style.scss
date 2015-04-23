@@ -9,6 +9,7 @@
 
 $blacker: #111;
 $green: #60ab50;
+$page-width: 550px;
 
 @import 'utils/clearfix';
 @import 'utils/ionicons';
@@ -28,7 +29,6 @@ $green: #60ab50;
 @import 'components/next-meetup';
 @import 'components/section';
 @import 'components/section-date-time';
-@import 'components/section-venue';
 @import 'components/section-panorama';
 @import 'components/register-cta';
 @import 'components/speaker-item';

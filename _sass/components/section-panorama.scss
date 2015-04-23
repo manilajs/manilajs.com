@@ -2,12 +2,27 @@
  * venue image
  */
 
-.section-panorama {
+.all .section-panorama {
   & {
     padding: 0;
-    margin: 0;
+    margin: 1.5em auto;
     border: 0;
     background-color: #345;
+  }
+
+  @media (min-width: 769px) {
+    & {
+      margin: 5em auto;
+    }
+
+    & + .section-panorama {
+      margin-top: -5em;
+    }
+  }
+
+  & {
+    width: calc(100vw);
+    margin-left: unquote("calc((100vw - #{$page-width}) / 2 * -1)");
   }
 
   > div {

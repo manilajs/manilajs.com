@@ -79,6 +79,10 @@
     font-style: normal;
     text-align: center;
     margin-bottom: 0;
+
+    &:after {
+      display: none;
+    }
   }
 
   .pull-quote {
