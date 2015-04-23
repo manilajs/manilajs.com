@@ -1,0 +1,42 @@
+<div class='register-cta'>
+  {% if page.registration.state == "open" %}
+  <a class='cta-button' href='{{ page.registration.signup }}'>I'm attending!</a>
+  {% endif %}
+  {% if page.registration.state == "closed" %}
+  <a class='cta-button -disabled' href="#">Sold out!</a>
+  {% endif %}
+  {% if page.registration.state == "announce" %}
+  <a class='cta-button -disabled' href="#">Soon to open</a>
+  {% endif %}
+  {% if page.registration.state == "over" %}
+  <a class='cta-button -disabled' href="#">All done</a>
+  {% endif %}
+
+  <p class='venue'>
+    <span>{{ page.event.date | date: "%B %e, %A" }}</span>
+    &nbsp;&middot;&nbsp;
+    <span>{{ page.event.time }}</span> onwards
+  </p>
+
+  <p class='hint'>
+    {% if page.registration.state == "open" %}
+      It's free! Reserve your seat now. Slots are limited, so hurry!
+    {% endif %}
+
+    {% if page.registration.state == "closed" %}
+      Slots are now full. Be sure to register early next month!
+    {% endif %}
+
+    {% if page.registration.state == "announce" %}
+      {% if page.registration.date %}
+        Registration will open on {{ page.registration.date | date: "%B %e, %A" }}. Slots are limited!
+      {% else %}
+        Registration will open soon.
+      {% endif %}
+    {% endif %}
+
+    {% if page.registration.state == "over" %}
+      Event is over! Watch the Facebook group for updates on the next event.
+    {% endif %}
+  </p>
+</div>

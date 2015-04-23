@@ -1,0 +1,25 @@
+.all .register-cta {
+  & {
+    text-align: center;
+    margin: 1.5em 0;
+  }
+
+  @media (min-width: 769px) {
+    margin: 3.5em 0;
+  }
+
+  .venue, .hint {
+    margin: 0;
+  }
+
+  .venue {
+    margin-top: 0.5em;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #222;
+  }
+
+  .hint {
+    font-size: 0.9em;
+  }
+}

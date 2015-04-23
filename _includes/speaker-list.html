@@ -1,0 +1,36 @@
+{% if page.speakers[0] %}
+<div class="speaker-list">
+  {% for speaker in page.speakers %}
+    <article class="speaker-item">
+      <div class="avatar">
+        <img src="{{ speaker.avatar }}" alt="{{ speaker.initials }}">
+      </div>
+      <h3>
+        {% if speaker.url %}
+          <a href="{{ speaker.url }}">{{ speaker.name }}</a>
+        {% else %}
+          {{ speaker.name }}
+        {% endif %}
+
+        {% if speaker.title %}
+        <em class='title'>{{ speaker.title }}</em>
+        {% endif %}
+
+        {% if speaker.github %}
+          <a href='https://github.com/{{ speaker.github }}'>
+            <i class='github'></i>
+          </a>
+        {% endif %}
+
+        {% if speaker.twitter %}
+          <a href='https://twitter.com/{{ speaker.twitter }}'>
+            <i class='twitter'></i>
+          </a>
+        {% endif %}
+      </h3>
+
+      <p>{{ speaker.description }}</p>
+    </article>
+  {% endfor %}
+</div>
+{% endif %}

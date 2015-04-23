@@ -1,0 +1,14 @@
+<div class='location-box'>
+  {% if include.venue.icon %}
+    <div class='icon -logo'>
+      <img src='{{ include.venue.icon }}' alt='{{ include.venue.name }}'>
+    </div>
+  {% else %}
+    <div class='icon -placeholder'></div>
+  {% endif %}
+  <h4 class='title'>
+    <a href='{{ include.venue.url }}'>{{ include.venue.name }}</a>
+  </h4>
+  <p class='address'>{{ include.venue.address }}</p>
+  <a href='{{ include.venue.map }}' class='map' target='_blank'>View map</a>
+</div>
