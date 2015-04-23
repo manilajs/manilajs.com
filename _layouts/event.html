@@ -303,11 +303,11 @@
       <section class='section content-section venue' id="venue">
         <div class="in">
           <h3>Our venue is</h3>
-          <div class='location'>
+          <div class='location-box'>
             {% if page.venue.icon %}
-              <div class='icon logo'><img src='{{ page.venue.icon }}' alt='{{ page.venue.name }}'></div>
+              <div class='icon -logo'><img src='{{ page.venue.icon }}' alt='{{ page.venue.name }}'></div>
             {% else %}
-              <div class='icon placeholder'></div>
+              <div class='icon -placeholder'></div>
             {% endif %}
             <h4>
               <a href='{{ page.venue.url }}'>{{ page.venue.name }}</a>
@@ -327,8 +327,8 @@
       <section class='section content-section venue' id="venue">
         <div class="in">
           <h3>Venue TBD</h3>
-          <div class='location'>
-            <div class='icon placeholder'></div>
+          <div class='location-box'>
+            <div class='icon -placeholder'></div>
           </div>
           <p>
             We are still looking for a venue for this meetup. Interested to
@@ -343,11 +343,11 @@
       <section class='section content-section afterparty' id="drinkup">
         <div class="in">
           <h3>After-drinkup</h3>
-          <div class='location afterparty'>
+          <div class='location-box -afterparty'>
             {% if page.drinkup.icon %}
-              <div class='icon logo smaller'><img src='images/{{ page.drinkup.icon }}' alt='{{ page.drinkup.name }}'></div>
+              <div class='icon -logo -smaller'><img src='{{ page.drinkup.icon }}' alt='{{ page.drinkup.name }}'></div>
             {% else %}
-              <div class='icon placeholder'></div>
+              <div class='icon -placeholder'></div>
             {% endif %}
             {% if page.drinkup.url %}
               <h4><a href="{{ page.drinkup.url }}">{{ page.drinkup.name }}</a></h4>

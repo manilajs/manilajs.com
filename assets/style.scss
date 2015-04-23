@@ -270,39 +270,7 @@
 
 /* -- */
 
-.location {
-  margin: 0 0 1em 0;
-}
-
-.location:last-child {
-  margin-bottom: 0;
-}
-
-.location .address {
-  font-size: 0.9em;
-  margin-bottom: 18px;
-  line-height: 1.6;
-}
-
-a.map,
-a.map:visited {
-  background: transparent;
-  border: solid 1px #d0d0d0;
-  font-size: 0.7em;
-  color: #506070;
-  padding: 6px 12px;
-  border-radius: 3px;
-
-  font-family: montserrat, sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-a.map:hover {
-  border: solid 1px #3ad;
-}
-a.map:before {
-  color: #3ad;
-}
+@import 'components/location-box';
 
 .closing {
   font-family: playfair display, serif;
@@ -346,16 +314,6 @@ a.map:before {
     background: #222;
     opacity: 0.2;
   }
-}
-
-/* -- */
-
-.venue .location a.map {
-  margin-top: 30px;
-}
-
-.venue .location + p {
-  margin-top: 1em;
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -437,100 +395,6 @@ a.map:before {
   border: solid 1px rgba(250, 250, 250, 0.8);
 }
 
-/* ---------------------------------------------------------------------------- */
-/* Inline: map */
-
-a.map:before {
-  margin-right: 10px;
-  /* font-size: 28px; */
-  vertical-align: middle;
-}
-
-/* Icon */
-.location .icon {
-  display: block;
-  float: left;
-
-  width: 60px;
-
-  margin: 0 0 0 -70px;
-  vertical-align: top;
-
-  color: #a0b0c0;
-}
-
-.location .placeholder:before {
-  font-size: 60px;
-  opacity: 0.9;
-}
-
-.location .logo,
-.location .logo img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-
-.location .logo {
-  background: white;
-  margin: 0 0 0 -140px;
-  border-radius: 50%;
-  overflow: hidden;
-  padding: 2px;
-}
-
-/* Smaller logo */
-.location .logo.smaller {
-  margin: 0 0 0 -110px;
-}
-
-.location .logo.smaller,
-.location .logo.smaller img {
-  width: 70px;
-  height: 70px;
-}
-
-.afterparty .placeholder:before {
-  font-size: 64px;
-  position: relative;
-  top: -21px;
-}
-
-@media (max-width: 768px) {
-  .location .icon {
-    float: right;
-    margin: 0 0 0 20px;
-  }
-  .location h4,
-  .afterparty h4,
-  .location .address,
-  .afterparty .address {
-    text-align: center;
-  }
-  a.map {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 0.9em;
-    padding-top: 2px;
-    padding-bottom: 2px;
-  }
-  .location .placeholder,
-  .afterparty .placeholder {
-    display: block;
-    float: none;
-    margin: 0 auto;
-    text-align: center;
-    height: 60px;
-    top: 0;
-  }
-  .location .placeholder:before,
-  .afterparty .placeholder:before {
-    font-size: 40px;
-    position: relative;
-    top: -10px;
-  }
-}
 
 /*
  * About us link buttons
