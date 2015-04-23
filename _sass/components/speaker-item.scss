@@ -1,4 +1,4 @@
-.speaker-item {
+.all .speaker-item {
   & {
     margin: 2em 0;
   }
@@ -10,6 +10,10 @@
     zoom: 1;
   }
 
+  h3, p {
+    margin: 0;
+    padding: 0;
+  }
 
   h3 {
     font-weight: 700;
@@ -65,12 +69,8 @@
     border-radius: 50%;
   }
 
-  &.-anyone .avatar {
-     display: none;
-  }
-
   /* no speakers */
-  &.-anyone:first-of-type:last-of-type h3 {
+  &.-big h3 {
     font-size: 1.6em;
     font-weight: normal;
     margin-bottom: 0.2em;

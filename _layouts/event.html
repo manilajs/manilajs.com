@@ -2,31 +2,24 @@
 # vim:path=./../_includes
 ---
 <!DOCTYPE html>
-<html>
-<!--
-
- _______ _______ __   _ _____        _______   _____ _______
- |  |  | |_____| | \  |   |   |      |_____|     |   |______
- |  |  | |     | |  \_| __|__ |_____ |     | . __|   ______|
-
-   https://github.com/manilajs/manilajs.com
-   https://www.facebook.com/groups/javascriptdevelopersph
-
-   Follow us on Twitter!
-   http://twitter.com/manila_js
-                                                            
--->
-<head>
+<html><head>
 {% include meta.html %}
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="assets/vendor.js?v={{ site.time | date: "%Y%M%d%H%M%S" }}"></script>
 <script src="assets/script.js?v={{ site.time | date: "%Y%M%d%H%M%S" }}"></script>
-</head><body>
+</head><body class='all'>
 
 {% include top-nav.html %}
 {% include hero-shot.html %}
-{% include section-speakers.html %}
-{% include section-register.html %}
+
+<section class='section'>
+  <div class='in formatted-content'>
+{% capture mkdn %}
+{% include s-speakers.md %}
+{% endcapture %}{{ mkdn | markdownify }}
+  </div>
+</section>
+
 {% include section-venue-image.html %}
 {% include section-venue.html %}
 {% include section-about-us.html %}

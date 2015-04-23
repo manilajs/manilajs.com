@@ -7,6 +7,8 @@
 @import url(http://fonts.googleapis.com/css?family=Electrolize:400&text=0123456789);
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400italic);
 
+$blacker: #111;
+
 @import 'utils/clearfix';
 @import 'utils/ionicons';
 @include ion-font;
@@ -25,14 +27,13 @@
 @import 'components/next-meetup';
 @import 'components/section';
 @import 'components/section-date-time';
-@import 'components/section-speakers';
 @import 'components/section-venue';
 @import 'components/section-panorama';
-@import 'components/section-register';
+@import 'components/register-cta';
 @import 'components/speaker-item';
 @import 'components/social-icon';
 @import 'components/signup-footer';
 @import 'components/text-field';
 @import 'components/location-box';
-@import 'components/brief-pullquote';
 @import 'components/section-about-us';
+@import 'components/formatted-content';
