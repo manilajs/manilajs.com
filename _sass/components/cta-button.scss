@@ -25,6 +25,10 @@
     cursor: pointer;
   }
 
+  &:after {
+    @include ion-icon('ios-arrow-right', 16px);
+  }
+
   &,
   &:visited {
     background: #506070;

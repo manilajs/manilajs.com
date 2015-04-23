@@ -39,6 +39,7 @@
   }
 
   a.map:before {
+    @include ion-icon('paper-airplane', 16px);
     margin-right: 10px;
     color: #3ad;
     vertical-align: middle;

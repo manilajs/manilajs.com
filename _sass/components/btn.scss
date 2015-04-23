@@ -39,6 +39,7 @@
   }
 
   &:after {
+    @include ion-icon('ios-arrow-right', 16px);
     margin-left: 10px;
     opacity: 0.3;
   }
@@ -130,6 +131,13 @@
   }
 
   &.-facebook:before {
+    @include ion-icon('social-facebook', 16px);
     top: -1px;
+    margin-right: 10px;
+  }
+
+  &.-gitter:before {
+    @include ion-icon('chatboxes', 16px);
+    margin-right: 10px;
   }
 }

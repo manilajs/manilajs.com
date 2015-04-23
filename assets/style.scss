@@ -6,10 +6,10 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:700);
 @import url(http://fonts.googleapis.com/css?family=Electrolize:400&text=0123456789);
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400italic);
-@import url(http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css);
 
 @import 'utils/clearfix';
 @import 'utils/ionicons';
+@include ion-font;
 
 @import 'base/reset';
 @import 'base/icons';
@@ -31,6 +31,7 @@
 @import 'components/section-panorama';
 @import 'components/section-register';
 @import 'components/speaker-item';
+@import 'components/social-icon';
 @import 'components/signup-footer';
 @import 'components/text-field';
 @import 'components/location-box';
