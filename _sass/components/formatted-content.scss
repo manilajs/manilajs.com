@@ -92,10 +92,10 @@
 .all {
   .pull-quote-heading {
     font-weight: bold;
-    color: #aaa;
+    color: $slate;
     font-family: montserrat, sans-serif;
     letter-spacing: 2px;
-    font-size: 0.8em;
+    font-size: 0.75em;
     text-transform: uppercase;
     font-style: normal;
     text-align: center;
@@ -107,7 +107,7 @@
   }
 
   .pull-quote {
-    font-family: playfair display, serif;
+    font-family: $serif;
     font-style: italic;
     font-size: 1.1em;
     text-align: center;
@@ -115,7 +115,7 @@
     @media (min-width: 768px) {
       width: 140%;
       margin-left: -20%;
-      font-size: 1.3em;
+      font-size: 1.2em;
     }
   }
 
