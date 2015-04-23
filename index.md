@@ -5,7 +5,7 @@ event:
   series: "011"
   date: 2015-05-08
   time: 7PM
-  location: Salcedo Village, Makati
+  location: A Space, Makati
   share_image: "http://manilajs.com/images/share/010-landscape.png"
 
 mailchimp:
@@ -19,7 +19,7 @@ registration:
 hero:
   color: "#203a4f"
   opacity: 0.40
-  image: "/images/longexposure.jpg"
+  image: images/longexposure.jpg
   # attribution_source: "aspacemanila.com"
   # attribution_url: "https://www.flickr.com/photos/hackny/7033121879/"
 

@@ -14,12 +14,15 @@
 
   <section class='section next-meetup wide'>
     <div class='in'>
+      <p class='subtext'>JavaScript Community Meetup</p>
       <h1>Manila.js Fridays <small>{{ page.event.series }}</small></h1>
+
       {% if page.event.location %}
-        <h5>{{ page.event.location }}</h5>
+        <h5 class='venue'>{{ page.event.location }}</h5>
       {% else %}
-        <h5>Venue TBD</h5>
+        <h5 class='venue'>Venue TBD</h5>
       {% endif %}
+
     </div>
   </section>
 
