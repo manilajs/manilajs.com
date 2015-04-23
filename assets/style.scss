@@ -8,27 +8,12 @@
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400italic);
 @import url(http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css);
 
+@import 'utils/clearfix';
+
 @import 'base/reset';
 @import 'base/icons';
 @import 'base/body';
-
-/*
- * Clearfix
- */
-
-.clearfix,
-.column-section:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.nobr {
-  white-space: nowrap;
-}
-
-/* ---------------------------------------------------------------------------- */
-/* Inline: btn */
+@import 'base/utilities';
 
 .btn:hover {
   text-decoration: none;
@@ -39,33 +24,8 @@
   opacity: 0.3;
 }
 
-/*
- * columns
- */
-
-.column-section {
-}
-
-@media (min-width: 768px) {
-  .column-section > .left,
-  .column-section > .right {
-    width: 50%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    float: left;
-  }
-
-  .column-section > .left {
-    padding-right: 30px;
-  }
-
-  .column-section > .right {
-    padding-left: 30px;
-  }
-}
-
 @import 'components/top-nav';
+@import 'components/column-section';
 @import 'components/picture-header';
 @import 'components/next-meetup';
 @import 'components/section';
