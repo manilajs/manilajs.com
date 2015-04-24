@@ -49,7 +49,7 @@ speakers:
 ---
 
 ## Let's try something different.
-Instead of having speaking presentations, we'll have an open dicussion to share how JavaScript has shaped our web development work. I'll be picking the brains of seasoned professionals on some relevant topics, such as:
+Instead of having speaking presentations, we'll have an open discussion to share how JavaScript has shaped our web development work. I'll be picking the brains of seasoned professionals on some relevant topics, such as:
 
 * __ES6__: Have you adopted it? Why or why not? Has it helped?
 * __Grunt/Gulp__: How has modern frontend development tools shaped your workflow?
