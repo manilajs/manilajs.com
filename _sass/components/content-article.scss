@@ -25,11 +25,9 @@
   }
 
   h3 {
-    text-transform: uppercase;
-    font-weight: bold;
     font-size: 0.8em;
     letter-spacing: 1px;
-    font-family: montserrat;
+    @include montserrat-700-caps;
     color: #60ab50;
   }
   h3:after {

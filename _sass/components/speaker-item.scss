@@ -23,8 +23,7 @@
   h3 .title {
     color: #60ab50;
     font-size: 0.75em;
-    text-transform: uppercase;
-    font-family: montserrat, sans-serif;
+    @include montserrat-700-caps;
     letter-spacing: 1px;
     margin: 0 15px 0 10px;
   }

@@ -6,17 +6,16 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:700);
 @import url(http://fonts.googleapis.com/css?family=Electrolize:400&text=0123456789);
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400italic);
-// @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400italic);
 
 $blacker: #111;
 $slate: #506070;
 $green: #16a085;
 $orange: orange;
 $page-width: 550px;
-$serif: merriweather, serif;
 
 @import 'utils/clearfix';
 @import 'utils/ionicons';
+@import 'utils/typography';
 @include ion-font;
 
 @import 'base/reset';

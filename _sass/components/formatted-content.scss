@@ -27,8 +27,7 @@
   }
 
   > h2 {
-    font-weight: 300;
-    font-family: open sans, sans-serif;
+    @include opensans-300;
     color: $blacker;
     font-size: 1.6em;
   }
@@ -46,10 +45,9 @@
 
   > h4 {
     text-transform: uppercase;
-    font-weight: bold;
     font-size: 0.8em;
     letter-spacing: 1px;
-    font-family: montserrat, sans-serif;
+    @include montserrat-700-caps;
     color: $green;
 
     @media (min-width: 769px) {
@@ -91,12 +89,10 @@
 
 .all {
   .pull-quote-heading {
-    font-weight: bold;
+    @include montserrat-700-caps;
     color: $slate;
-    font-family: montserrat, sans-serif;
     letter-spacing: 2px;
     font-size: 0.75em;
-    text-transform: uppercase;
     font-style: normal;
     text-align: center;
     margin-bottom: 0;

@@ -4,6 +4,7 @@
 
 .btn {
   & {
+    @include montserrat-700-caps;
     margin: 0;
     outline: 0;
     display: inline-block;
@@ -15,9 +16,6 @@
     border: solid 1px transparent;
     padding: 0 20px;
 
-    text-transform: uppercase;
-    font-weight: 400;
-    font-family: montserrat;
     font-size: 9pt;
 
     cursor: pointer;

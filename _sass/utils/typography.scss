@@ -1,0 +1,20 @@
+$serif: merriweather, serif;
+$opensans: open sans, sans-serif;
+$sourcesans: source sans pro, sans-serif;
+$montserrat: montserrat, $sourcesans;
+
+@mixin opensans-300 {
+  font-family: $opensans;
+  font-weight: 300;
+}
+
+@mixin montserrat-700 {
+  font-family: $montserrat;
+  font-weight: 700;
+}
+
+@mixin montserrat-700-caps {
+  font-family: $montserrat;
+  font-weight: 700;
+  text-transform: uppercase;
+}
