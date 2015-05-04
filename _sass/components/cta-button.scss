@@ -10,14 +10,13 @@
 
     height: 42px;
     line-height: 42px;
-    border-radius: 26px;
+    border-radius: 40px;
+    border: 0;
 
-    padding: 0 40px;
+    padding: 6px 50px;
 
     font-size: 12pt;
     @include montserrat-700-caps;
-
-    color: #506070;
 
     cursor: pointer;
   }
@@ -28,29 +27,31 @@
 
   &,
   &:visited {
-    background: #506070;
-    border-color: #506070;
+    background: $green;
+    border-color: $green;
+    border-bottom: solid 3px darken($green, 4%);
     color: white;
     text-decoration: none;
   }
 
   &:hover {
     background: #333;
-    border-color: #333;
+    border-bottom-color: darken(#333, 4%);
     color: white;
     text-decoration: none;
   }
 
   &:active {
     background: #111;
-    border-color: #111;
+    border-bottom-color: darken(#111, 4%);
+    color: white;
   }
 
   &:after {
     margin-left: 13px;
     position: relative;
-    top: 1px;
-    opacity: 0.5;
+    top: -1px;
+    opacity: 0.75;
   }
 
   &.-disabled:hover,
