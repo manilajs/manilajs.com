@@ -2,33 +2,61 @@
 /* Top nav */
 
 .top-nav-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  & {
+    @include clearfix;
 
-  height: 56px;
-  background: #fff;
-  z-index: 5;
-  opacity: 0.99;
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    height: 56px;
+    background: #fff;
+    z-index: 5;
+    opacity: 0.99;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  }
+
+  & {
+    padding-top: 12px;
+    padding-left: 20px;
+
+    color: $lightslate;
+  }
+
+  .logo-box {
+    float: left;
+  }
+
+  .logo {
+    color: #111;
+    display: inline-block;
+    @include montserrat-700;
+    font-size: 1.3;
+  }
+
+  .hint {
+    margin: 0 20px;
+    color: $lightslate;
+  }
+
+  .right {
+    float: right;
+    padding-right: 130px;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
-.top-nav-bg {
-  padding-top: 12px;
-  padding-left: 20px;
-
-  color: #aaa;
-}
-
-.top-nav-bg .logo {
-  display: inline-block;
-  color: #111;
-}
+/*
+ * Join button
+ */
 
 .top-nav {
   position: fixed;
@@ -46,54 +74,20 @@
   overflow: hidden;
 }
 
-.top-nav .hint {
-  margin: 0 20px;
-  opacity: 0.5;
-}
-
-.top-nav a:visited,
-.top-nav a {
-  display: inline-block;
-
-  color: #506070;
-  background: #fff;
-  padding: 0 20px;
-
-  height: 32px;
-  line-height: 32px;
-  border-radius: 4px;
-  border: 0;
-
-  font-size: 9pt;
-  color: #222;
-  @include montserrat-700-caps;
-}
-
-/* Desktop */
-@media (min-width: 768px) {
-  .top-nav .left {
-    float: left;
-  }
-  .top-nav .right {
-    float: right;
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .top-nav-bg {
-    display: none;
+.top-nav {
+  /* Desktop */
+  @media (min-width: 760px) {
+    .right {
+      float: right;
+    }
   }
 
-  .top-nav {
-    position: static;
-    background: #222;
-    color: #aaa;
-    display: none; /* Eh, can't get it to look right so whatevs */
+  /* Mobile */
+  @media (max-width: 768px) {
+    .top-nav {
+      position: static;
+      background: #222;
+      color: #aaa;
+      display: none; /* Eh, can't get it to look right so whatevs */
+    }
   }
-}
-
-.top-nav-bg .logo {
-  @include montserrat-700;
-  font-size: 1.3;
-}
