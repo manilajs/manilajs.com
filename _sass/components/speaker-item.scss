@@ -17,12 +17,13 @@
 
   h3 {
     font-weight: 700;
+    font-size: 1.1em;
     color: #222;
   }
 
   h3 .title {
     color: #60ab50;
-    font-size: 0.75em;
+    font-size: 0.65em;
     @include montserrat-700-caps;
     letter-spacing: 1px;
     margin: 0 15px 0 10px;
@@ -36,7 +37,7 @@
     color: #222;
     padding: 0 5px;
     position: relative;
-    top: 3px;
+    top: 0;
     -webkit-transition: all 100ms linear;
     transition: all 100ms linear;
   }

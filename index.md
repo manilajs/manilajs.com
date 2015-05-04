@@ -36,14 +36,15 @@ venue:
 # drinkup: <see above>
 
 speakers:
-# - name: Dude McScrubberson
-#   url: http://
-#   avatar: images/dude.jpg
-#   title: Developer
-#   github: username
-#   twitter: username
-#   description: |-
-#     A scrub is a guy that thinks he's fine
+- name: Joy Paas
+  # url: ...
+  avatar: images/u-joypaas.png
+  title: Quipper School
+  github: kjcpaas
+  # twitter: username
+  description: |-
+    Joy will be sharing her experiences in building realtime applications using React.js and Pusher.com's realtime messaging service.
+
 
 ##############################################################################
 ---
@@ -56,14 +57,16 @@ Instead of having speaking presentations, we'll have an open discussion to share
 * __io.js__: How is the future of Node.js going to be?
 * __Anything else__: feel free to suggest topics!
 
-{% include speaker-list.html %}
-
 <!-- Call to action -->
 {% include register-cta.html %}
 
 * * * *
 
-## Still open for speakers!
+## Speakers
+
+{% include speaker-list.html %}
+
+### Still open for speakers!
 The floor is open to anyone who has something interesting to share.
 Wanna share a 20-minute presentation? [Contact me](mailto:{{ site.contact.email }}) and I'll set you right up.
 
