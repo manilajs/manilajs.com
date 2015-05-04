@@ -45,6 +45,15 @@ speakers:
   description: |-
     Joy will be sharing her experiences in building realtime applications using React.js and Pusher.com's realtime messaging service.
 
+#- name: Diwa del Mundo
+#  url: https://github.com/diwadm
+#  #avatar: http://www.gravatar.com/avatar/0cc0963379122e83693ee66d5b28ae37.png
+#  avatar: https://avatars0.githubusercontent.com/u/209127?v=3&s=400
+#  github: diwadm
+#  title: Voyager Innovations
+#  description: |-
+#    The figure of speech saying the house wasn't a blink of an eye, and then a sensational government making a rhyme and reason was standing.
+    
 
 ##############################################################################
 ---
