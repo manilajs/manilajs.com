@@ -39,7 +39,7 @@ speakers:
 - name: Joy Paas
   # url: ...
   avatar: images/u-joypaas.png
-  title: Quipper School
+  title: Quipper
   github: kjcpaas
   # twitter: username
   description: |-
