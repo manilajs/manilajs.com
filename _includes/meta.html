@@ -12,7 +12,11 @@
    http://twitter.com/manila_js
                                                             
 -->
+{% if page.title %}
+<title>{{ page.title }}</title>
+{% else %}
 <title>Manila.js - JavaScript community in Manila, Philippines</title>
+{% endif %}
 
 {% assign base = '' %}
 {% assign depth = page.url | split: '/' | size | minus: 1 %}
