@@ -37,6 +37,7 @@
 {% endif %}
 
 {% if page.description %}
+<meta content="article" property="og:type">
 <meta content="{{ page.description }}" name="description">
 <meta content="{{ page.description }}" property="og:description">
 <meta content="http://manilajs.com/images/share/011-generic.png" property="og:image">
@@ -47,10 +48,13 @@
 <meta content="Manila.js JavaScript community" property="og:title">
 <meta content="Manila.js JavaScript community" property="og:site_name">
 <meta content="Manila.js JavaScript community" name="twitter:title">
+
+{% if page.url == '/index.html' %}
 <meta content="website" property="og:type">
 <meta content="http://manilajs.com/" property="og:url">
 <meta content="http://manilajs.com/" name="twitter:url">
 <link href="http://manilajs.com/" rel="canonical">
+{% endif %}
 
 {%comment%}<!-- google analytics -->{%endcomment%}
 {% if site.analytics %}<script>if(~location.hostname.indexOf("{{site.analytics.hostname}}")){var _gaq=_gaq||[];_gaq.push(["_setAccount","{{ site.analytics.id }}"]);_gaq.push(["_trackPageview"]);(function(){var ga=document.createElement("script");ga.async=true;ga.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga,s)})()}</script>{% endif %}
