@@ -6,7 +6,15 @@ kramdown:
 contact:
   email: hi@ricostacruz.com
 
+permalink: "/p/:title.html"
+
 # Google analytics
 analytics:
   hostname: manilajs.com
   id: UA-38979948-1
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "article"

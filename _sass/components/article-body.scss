@@ -1,0 +1,22 @@
+.article-body {
+  max-width: 560px;
+  margin: 40px auto;
+  padding: 0 30px;
+
+  @media (max-width: 768px) {
+    padding: 0 15px;
+  }
+}
+
+.article-header {
+  $size: 180px;
+  .logo {
+    display: block;
+    background: url(http://manilajs.github.io/logos/png/Vertical%20with%20tagline.png);
+    background-size: 100%;
+    margin-left: -0.1 * $size;
+    width: $size;
+    height: ($size / 0.95);
+    margin-bottom: -40px;
+  }
+}

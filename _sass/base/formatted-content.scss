@@ -1,6 +1,25 @@
 .formatted-content {
-  h2, h3, h4, p, ul {
+  h1, h2, h3, h4, p, ul {
     margin: 1.5em 0;
+  }
+
+  > blockquote {
+    background: mix(#fafafa, $green, 98%);
+    border-bottom: solid 1px #eaeaea;
+    line-height: 1.55;
+    font-size: 0.9em;
+    padding: 1px 30px;
+    border-radius: 4px;
+    margin-left: -30px;
+    margin-right: -30px;
+
+    @media (max-width: 768px) {
+      font-size: 1em;
+      border-radius: 0;
+      padding: 1px 15px;
+      margin-left: -15px;
+      margin-right: -15px;
+    }
   }
 
   & {
@@ -26,10 +45,19 @@
     list-style: disc;
   }
 
+  > h1,
   > h2 {
     @include opensans-300;
     color: $blacker;
     font-size: 1.6em;
+  }
+
+  > h1 {
+    font-size: 2em;
+    color: $green;
+    border-bottom: solid 1px #f0f0f0;
+    padding-bottom: 15px;
+    margin-bottom: 0;
   }
 
   > h3 {
