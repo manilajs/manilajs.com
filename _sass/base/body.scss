@@ -18,12 +18,12 @@ body, td, th, input, textarea {
 }
 
 a, a:visited {
-  color: #60ab50;
+  color: $green;
   text-decoration: none;
 }
 
 a:hover {
-  color: #333;
+  color: darken($green, 10%);
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
 }
