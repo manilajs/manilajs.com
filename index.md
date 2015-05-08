@@ -13,7 +13,7 @@ mailchimp:
 
 registration:
   date: 2014-04-28
-  state: closed # announce | open | closed | over
+  state: over # announce | open | closed | over
   signup: "http://goo.gl/forms/ar9Mxnjnny"
 
 hero:
