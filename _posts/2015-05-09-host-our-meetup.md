@@ -18,9 +18,17 @@ on the first Friday of the month.
 
 ### Attendees
 
-Our typical head count is between 50 to 90 people. These are usually developer 
-and designer professionals coming in after their work. We cap registrations 
-depending on the capacity of the venue to prevent going over-capacity.
+The meetup attracts design and web development professionals coming in after
+their work. These are people who spend their career building web and mobile
+applications, both as contractual freelancers and full-time employees.
+There are also students, educators, and non-tech professionals.
+
+We cap registrations depending on the capacity of the venue to prevent going
+over-capacity. Here's our past head counts:
+
+* Jan 2013 (Mint College): ~110 attendees
+* Nov 2014 (Acropolis, Eastwood): ~85 attendees
+* May 2015 (A Space, Makati): ~65 attendees
 
 ### Time slot
 Our programme takes 2 hours. The usual time slot is 7pm to 9pm.
