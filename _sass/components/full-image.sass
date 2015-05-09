@@ -1,0 +1,41 @@
+/*
+ * .full-image -- full width image containers
+ */
+
+.full-image, p.full-image
+  &
+    overflow: hidden
+    text-align: center
+    position: relative
+    margin-bottom: 4em
+    margin-top: 4em
+
+  img
+    background: #fcfcfc
+    max-width: 100%
+
+  &.cropped img,
+  &.cropped img:first-child:last-child
+    margin-bottom: -50px
+    display: block
+    background: transparent
+
+  &.cropped:after
+    content: ''
+    display: block
+    position: absolute
+    bottom: 0
+    left: 20px
+    right: 20px
+    border-bottom: solid 1px $lightgray
+
+  &.stretched img
+    width: 100%
+
+  @media (max-width: 768px)
+    margin-left: -20px
+    margin-right: -20px
+
+  @media (min-width: 769px)
+    width: 100vw
+    margin-left: calc(-50vw + #{$page-width} / 2)

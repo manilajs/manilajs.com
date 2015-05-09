@@ -10,6 +10,7 @@
 $blacker: #111;
 $slate: #506070;
 $lightslate: #a0a8af;
+$lightgray: lighten($lightslate, 10%);
 $green: #16a085;
 $orange: orange;
 $page-width: 550px;
@@ -43,3 +44,5 @@ $page-width: 550px;
 @import 'components/speaker-item';
 @import 'components/text-field';
 @import 'components/top-nav';
+@import 'components/full-image';
+@import 'components/brief-intro';
