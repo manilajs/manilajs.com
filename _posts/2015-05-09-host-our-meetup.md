@@ -77,4 +77,4 @@ We're really excited to have your office host our meetup.
 Please drop me a note at [hi@ricostacruz.com].
 {:.pull-quote}
 
-[hi@ricostacruz.com]: hi@ricostacruz.com
+[hi@ricostacruz.com]: mailto:hi@ricostacruz.com
