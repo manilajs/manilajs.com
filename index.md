@@ -76,7 +76,7 @@ Instead of having speaking presentations, we'll have an open discussion to share
 
 ### Still open for speakers!
 The floor is open to anyone who has something interesting to share.
-Wanna share a 20-minute presentation? [Contact me](mailto:{{ site.contact.email }}) and I'll set you right up.
+[Here are some details.](p/submitting-a-talk.html).
 
 Manila.js Fridays happens (usually) every first Friday of the month.
 Everybody's welcome!  Expect learning, fun, and happy conversations from people
