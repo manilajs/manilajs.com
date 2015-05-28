@@ -6,7 +6,7 @@ event:
   date: 2015-06-05
   time: 7PM
   location: Clinic+, Makati
-  share_image: "http://manilajs.com/images/share/011-landscape.png"
+  share_image: "http://manilajs.com/images/share/012-landscape.png"
 
 mailchimp:
   group_id: 4096 # typically 2^(series+3), not used
