@@ -1,6 +1,7 @@
 languages: ruby
 rvm:
   - 2.0.0
+before_script: make build
 script: make test
 branches:
   only:

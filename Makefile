@@ -20,4 +20,8 @@ bundle:
 	if [ ! -x ${nom}/multiexec ]; then npm install multiexec; fi
 	if [ ! -x ${nom}/serveur ]; then npm install serveur; fi
 
-test: build
+test:
+	grep html _site/index.html >/dev/null
+	grep Manila.js _site/index.html >/dev/null
+	test -f _site/assets/style.css
+	test -f _site/assets/script.js
