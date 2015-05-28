@@ -45,7 +45,7 @@ speakers:
   github: atroche
   twitter: atroche
   description: |-
-    Alistair will be talking about some pretty interesting things that will simply blow your mind away.
+    Alistair is visiting from Melbourne and he'll be talking about some pretty mind-blowing things.
     He's been using Babel + Webpack + React on a sideproject, so he's total badass.
 
 - name: Joshua Lat
