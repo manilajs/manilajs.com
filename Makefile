@@ -19,3 +19,5 @@ bundle:
 	${bundle}
 	if [ ! -x ${nom}/multiexec ]; then npm install multiexec; fi
 	if [ ! -x ${nom}/serveur ]; then npm install serveur; fi
+
+test: build
