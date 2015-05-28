@@ -2,68 +2,60 @@
 layout: event
 
 event:
-  series: "011"
-  date: 2015-05-08
+  series: "012"
+  date: 2015-06-05
   time: 7PM
-  location: A Space, Makati
+  location: Clinic+, Makati
   share_image: "http://manilajs.com/images/share/011-landscape.png"
 
 mailchimp:
-  group_id: 4096 # typically 2^(series+3)
+  group_id: 4096 # typically 2^(series+3), not used
 
 registration:
-  date: 2014-04-28
-  state: over # announce | open | closed | over
-  signup: "http://goo.gl/forms/ar9Mxnjnny"
+  date: 2015-06-01
+  state: announce # announce | open | closed | over
+  signup: "" #http://goo.gl/forms/ar9Mxnjnny"
 
 hero:
   color: "#203a4f"
-  opacity: 0.40
-  image: images/longexposure.jpg
+  opacity: 0.10
+  image: images/012-bg.jpg
   # attribution_source: "aspacemanila.com"
   # attribution_url: "https://www.flickr.com/photos/hackny/7033121879/"
 
 # -- Comment out the venue if it's TBD --
 venue:
-  name: A Space Manila Coworking Studio
-  panorama: images/bg-aspace.jpg
-  icon: images/aspace.jpg
-  url: http://aspacemanila.com/
-  map: https://goo.gl/maps/kuhS4
-  address: 110 Legazpi St., Makati City
+  name: Clinic+ Offices
+  # icon: images/aspace.jpg
+  url: http://clinicny.com
+  map: https://goo.gl/maps/H4m8n
+  address: Unit 5B L&F Building, Aguirre Street, Legazpi Village, Makati
 
 # -- Comment out the drinkup if it's not available --
 # drinkup: <see above>
 
 speakers:
-- name: Joy Paas
+- name: Alistair Roche
   # url: ...
-  avatar: images/u-joypaas.png
-  title: Quipper
-  github: kjcpaas
+  avatar: ""
+  title: Zendesk
+  # github: kjcpaas
   # twitter: username
   description: |-
-    Joy will be sharing her experiences in building realtime applications using React.js and Pusher.com's realtime messaging service.
+    Alistair will be talking about some pretty interesting things that will simply blow you mind away.
 
-- name: Diwa del Mundo
-  url: https://github.com/diwadm
-  #avatar: http://www.gravatar.com/avatar/0cc0963379122e83693ee66d5b28ae37.png
-  avatar: https://avatars0.githubusercontent.com/u/209127?v=3&s=400
-  github: diwadm
-  title: Voyager Innovations
+- name: Joshua Lat
+  # url: ...
+  avatar: ""
+  title: Dealgrocer
+  url: http://joshualat.com/
+  # github: kjcpaas
+  # twitter: username
   description: |-
-    Diwa will be sharing some insights on his test-driven JavaScript development process using Mocha, Chai.js, and Sinon.
+    Josh will be speaking about some wicked wonderful things that will really impress you.
 
 ##############################################################################
 ---
-
-## Let's try something different.
-Instead of having speaking presentations, we'll have an open discussion to share how JavaScript has shaped our web development work. I'll be picking the brains of seasoned professionals on some relevant topics, such as:
-
-* __ES6__: Have you adopted it? Why or why not? Has it helped?
-* __Grunt/Gulp__: How has modern frontend development tools shaped your workflow?
-* __io.js__: How is the future of Node.js going to be?
-* __Anything else__: feel free to suggest topics!
 
 <!-- Call to action -->
 {% include register-cta.html %}
@@ -76,7 +68,7 @@ Instead of having speaking presentations, we'll have an open discussion to share
 
 ### Still open for speakers!
 The floor is open to anyone who has something interesting to share.
-[Here are some details.](p/submitting-a-talk.html).
+[Here are some details.](p/submitting-a-talk.html)
 
 Manila.js Fridays happens (usually) every first Friday of the month.
 Everybody's welcome!  Expect learning, fun, and happy conversations from people
@@ -92,7 +84,7 @@ fun night of talks and camaraderie—beginners and experts welcome.
 {:.pull-quote}
 
 <!-- Big venue image -->
-{% if page.venue.panorama %}{% include panorama.html image=page.venue.panorama %}{% endif %}
+{% include panorama.html image="images/header/011-panorama.jpg" %}
 
 #### Our venue is
 
@@ -100,7 +92,7 @@ fun night of talks and camaraderie—beginners and experts welcome.
 {% include location-box.html venue=page.venue %}{% else %}
 {% include location-box-tbd.html %}{% endif %}
 
-Special thanks to our generous venue sponsor, [Quipper](http://quipper.com),
+Special thanks to our generous venue sponsor, [Clinic+](http://clinicny.com/what),
 for making our meetup possible.
 
 * * * *
