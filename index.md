@@ -60,7 +60,7 @@ speakers:
 ---
 
 Let's talk about the future of the web.
-{:.pull-quote-heading.align-left.bottom-collapse-0}
+{:.pull-quote-heading.align-left.bottom-space-1}
 
 Let's have an evening of updates from the JavaScript community. Join us for a
 fun night of talks and camaraderie—beginners and experts welcome.
