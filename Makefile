@@ -1,15 +1,21 @@
 PORT ?= 3000
 bundle := env BUNDLE_GEMFILE=./_/Gemfile bundle
+nom := ./node_modules/.bin
 
-start: bundle
-	${bundle} exec jekyll serve --drafts --watch --port ${PORT}
+start: start-serveur
+
+start-serveur: bundle
+	${nom}/multiexec \
+		"${bundle} exec jekyll build --watch" \
+		"${nom}/serveur -R _site --port ${PORT}"
+
+start-jekyll: bundle
+	${bundle} exec jekyll serve --safe --drafts --watch --port ${PORT}
 
 build: bundle
-	${bundle} exec jekyll build --drafts
+	${bundle} exec jekyll build
 
 bundle:
 	${bundle}
-
-autoprefix:
-	@# npm install -g autoprefixer
-	autoprefixer assets/style.css
+	if [ ! -x ${nom}/multiexec ]; then npm install multiexec; fi
+	if [ ! -x ${nom}/serveur ]; then npm install serveur; fi
