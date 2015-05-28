@@ -1,0 +1,18 @@
+.post-index {
+  margin: 4em 0;
+}
+
+.post-index-item {
+  & {
+    display: block;
+    border-bottom: solid 1px #eee;
+    padding: 5px 0;
+  }
+
+  .date {
+    color: $lightslate;
+    font-size: 0.8em;
+    display: inline-block;
+    width: 90px;
+  }
+}
