@@ -20,6 +20,9 @@ bundle:
 	if [ ! -x ${nom}/multiexec ]; then npm install multiexec; fi
 	if [ ! -x ${nom}/serveur ]; then npm install serveur; fi
 
+fb-debug:
+	open "https://developers.facebook.com/tools/debug/og/object?q=http%3A%2F%2Fmanilajs.com"
+
 test:
 	grep html _site/index.html >/dev/null
 	grep Manila.js _site/index.html >/dev/null
