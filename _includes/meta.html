@@ -32,9 +32,12 @@
 <!-- description -->
 <meta content="Next meetup: {{ page.event.date | date: "%A, %B %e" }} at {{ page.event.location }}" name="description">
 <meta content="Next meetup: {{ page.event.date | date: "%A, %B %e" }} at {{ page.event.location }}" property="og:description">
-<meta content="{{ page.event.share_image }}" property="og:image">
-<meta content="{{ page.event.share_image }}" name="twitter:image">
 {% endif %}
+
+{% for image in page.images %}
+<meta content="{{ image }}" property="og:image">
+<meta content="{{ image }}" name="twitter:image">
+{% endfor %}
 
 {% if page.description %}
 <meta content="article" property="og:type">

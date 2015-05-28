@@ -23,5 +23,6 @@ bundle:
 test:
 	grep html _site/index.html >/dev/null
 	grep Manila.js _site/index.html >/dev/null
+	grep 011-generic _site/index.html >/dev/null
 	test -f _site/assets/style.css
 	test -f _site/assets/script.js
