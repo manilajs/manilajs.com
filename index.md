@@ -18,7 +18,7 @@ registration:
 
 hero:
   color: "#203a4f"
-  opacity: 0.10
+  opacity: 0.30
   image: images/012-bg.jpg
   # attribution_source: "aspacemanila.com"
   # attribution_url: "https://www.flickr.com/photos/hackny/7033121879/"
@@ -37,25 +37,31 @@ venue:
 speakers:
 - name: Alistair Roche
   # url: ...
-  avatar: ""
+  avatar: "images/012-u-atroche.png"
   title: Zendesk
-  # github: kjcpaas
-  # twitter: username
+  github: atroche
+  twitter: atroche
   description: |-
     Alistair will be talking about some pretty interesting things that will simply blow you mind away.
 
 - name: Joshua Lat
   # url: ...
-  avatar: ""
+  avatar: "images/012-u-joshualat.png"
   title: Dealgrocer
   url: http://joshualat.com/
-  # github: kjcpaas
+  # github: 
   # twitter: username
   description: |-
     Josh will be speaking about some wicked wonderful things that will really impress you.
 
 ##############################################################################
 ---
+
+## Let's talk about the web.
+
+Let's have an evening of updates from the JavaScript community. Join us for a
+fun night of talks and camaraderie—beginners and experts welcome.
+{:.pull-quote}
 
 <!-- Call to action -->
 {% include register-cta.html %}

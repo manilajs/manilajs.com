@@ -7,8 +7,9 @@
     margin: 2em 0 1em 0;
   }
 
-  h5 {
+  .venue {
     color: $green;
+    color: white;
     font-family: source sans pro, sans-serif;
     font-size: 0.8em;
     line-height: 1.5;
@@ -63,7 +64,7 @@
 
   /* Tablet & Desktop */
   @media (min-width: 480px) {
-    h5:before {
+    .venue:before {
       content: '';
       display: block;
       margin: 30px auto 35px auto;
@@ -73,7 +74,7 @@
       border-radius: 4px;
     }
 
-    h5 {
+    .venue {
       font-size: 0.85em;
       text-shadow: 1px 1px rgba(black, 0.1);
     }
