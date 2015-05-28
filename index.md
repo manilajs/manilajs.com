@@ -43,6 +43,7 @@ speakers:
   twitter: atroche
   description: |-
     Alistair will be talking about some pretty interesting things that will simply blow you mind away.
+    He's been using Babel + Webpack + React on a sideproject, so he's total badass.
 
 - name: Joshua Lat
   # url: ...
@@ -53,15 +54,17 @@ speakers:
   # twitter: username
   description: |-
     Josh will be speaking about some wicked wonderful things that will really impress you.
+    He's totally all about AngularJS's life cycle, and you're gonna love his work.
 
 ##############################################################################
 ---
 
-## Let's talk about the web.
+Let's talk about the future of the web.
+{:.pull-quote-heading.align-left.bottom-collapse-0}
 
 Let's have an evening of updates from the JavaScript community. Join us for a
 fun night of talks and camaraderie—beginners and experts welcome.
-{:.pull-quote}
+{:.sans-pull-quote.top-collapse-0}
 
 <!-- Call to action -->
 {% include register-cta.html %}
@@ -80,14 +83,15 @@ Manila.js Fridays happens (usually) every first Friday of the month.
 Everybody's welcome!  Expect learning, fun, and happy conversations from people
 just like you.  This event is free. Bring your friends!
 
+<!--
 <br>
-
 #### Manila JavaScript Community Meetup
 {:.pull-quote-heading}
 
 Let's have an evening of updates from the JavaScript community. Join us for a
 fun night of talks and camaraderie—beginners and experts welcome.
 {:.pull-quote}
+-->
 
 <!-- Big venue image -->
 {% include panorama.html image="images/header/011-panorama.jpg" %}

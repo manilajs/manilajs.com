@@ -1,3 +1,4 @@
+.all {
 .pull-quote-heading {
   @include montserrat-700-caps;
   color: $slate;
@@ -27,4 +28,5 @@
 
 .pull-quote-heading + .pull-quote {
   margin-top: 0.3em;
+}
 }

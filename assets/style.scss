@@ -34,6 +34,7 @@ $page-width: 550px;
 @import 'components/location-box';
 @import 'components/next-meetup';
 @import 'components/picture-header';
+@import 'components/pull-quote';
 @import 'components/register-cta';
 @import 'components/section';
 @import 'components/section-about-us';
@@ -46,3 +47,6 @@ $page-width: 550px;
 @import 'components/top-nav';
 @import 'components/full-image';
 @import 'components/brief-intro';
+@import 'components/sans-pull-quote';
+
+@import 'trumps/trumps';

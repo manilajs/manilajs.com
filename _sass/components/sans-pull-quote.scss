@@ -1,0 +1,7 @@
+.sans-pull-quote {
+  & {
+    @include opensans-300;
+    color: $blacker;
+    font-size: 1.6em;
+  }
+}
