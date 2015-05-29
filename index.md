@@ -4,6 +4,12 @@ layout: event
 images:
   - http://manilajs.com/images/share/012-landscape.png
   - http://manilajs.com/images/share/011-generic.png
+  - http://manilajs.com/images/share/012-testing.png
+  - http://manilajs.com/images/share/012-landscape.png
+  - http://manilajs.com/images/share/012-white-a.png
+  - http://manilajs.com/images/share/012-white-b.png
+  - http://manilajs.com/images/share/012-see-you-later.png
+  - http://manilajs.com/images/share/012-see-you-later-2.png
 
 event:
   series: "012"
