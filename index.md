@@ -2,8 +2,8 @@
 layout: event
 
 images:
-  - http://manilajs.com/images/share/012-landscape.png
   - http://manilajs.com/images/share/012-sky.png
+  - http://manilajs.com/images/share/012-landscape.png
   - http://manilajs.com/images/share/012-white-a.png
   # - http://manilajs.com/images/share/011-generic.png
   # - http://manilajs.com/images/share/012-landscape.png
