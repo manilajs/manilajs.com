@@ -3,13 +3,15 @@ layout: event
 
 images:
   - http://manilajs.com/images/share/012-sky.png
+  - http://manilajs.com/images/share/012-testing.png
+  - http://manilajs.com/images/share/012-future-2.png
   - http://manilajs.com/images/share/012-landscape.png
-  - http://manilajs.com/images/share/012-white-a.png
-  # - http://manilajs.com/images/share/011-generic.png
-  # - http://manilajs.com/images/share/012-landscape.png
-  # - http://manilajs.com/images/share/012-white-b.png
-  # - http://manilajs.com/images/share/012-see-you-later.png
-  # - http://manilajs.com/images/share/012-see-you-later-2.png
+  # http://manilajs.com/images/share/012-white-a.png
+  # http://manilajs.com/images/share/011-generic.png
+  # http://manilajs.com/images/share/012-landscape.png
+  # http://manilajs.com/images/share/012-white-b.png
+  # http://manilajs.com/images/share/012-see-you-later.png
+  # http://manilajs.com/images/share/012-see-you-later-2.png
 
 event:
   series: "012"
@@ -22,8 +24,8 @@ mailchimp:
 
 registration:
   date: 2015-06-01
-  state: announce # announce | open | closed | over
-  signup: "" #http://goo.gl/forms/ar9Mxnjnny"
+  state: open # announce | open | closed | over
+  signup: "http://goo.gl/forms/mOzG0q7Vzf"
 
 hero:
   color: "#203a4f"
