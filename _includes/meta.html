@@ -14,6 +14,14 @@
 -->
 {% if page.title %}
 <title>{{ page.title }}</title>
+<meta content="{{ page.title }}" property="og:title">
+<meta content="{{ page.title }}" property="og:site_name">
+<meta content="{{ page.title }}" name="twitter:title">
+{% else if page.event %}
+<title>Manila.js JavaScript meetup {{ page.event.series }}</title>
+<meta content="Manila.js JavaScript meetup {{ page.event.series }}" property="og:title">
+<meta content="Manila.js JavaScript meetup {{ page.event.series }}" property="og:site_name">
+<meta content="Manila.js JavaScript meetup {{ page.event.series }}" name="twitter:title">
 {% else %}
 <title>Manila.js - JavaScript community in Manila, Philippines</title>
 {% endif %}
@@ -48,9 +56,6 @@
 {% endif %}
 
 <meta content="javascript, manila, meetup, manila.js" name="keywords">
-<meta content="Manila.js JavaScript meetup {{ page.event.series }}" property="og:title">
-<meta content="Manila.js JavaScript meetup {{ page.event.series }}" property="og:site_name">
-<meta content="Manila.js JavaScript meetup {{ page.event.series }}" name="twitter:title">
 
 {% if page.url == '/index.html' %}
 <meta content="website" property="og:type">
