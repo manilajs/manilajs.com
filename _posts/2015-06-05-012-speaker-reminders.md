@@ -3,6 +3,8 @@ title: Speaker reminders
 description: Just some reminders for the meetup later
 ---
 
+# Speaker reminders
+
 Hi speakers!
 
 First of all, [manilajs.com](http://manilajs.com) has been updated, go check it out ;) Send me your corrections if you have any.
