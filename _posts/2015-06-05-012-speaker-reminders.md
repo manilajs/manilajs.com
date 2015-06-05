@@ -29,7 +29,7 @@ Above all, be sure to have fun! Preparing for your talk may be stressful, but it
 
 Also, my number is 0908-864-8125, feel free to contact me for any concerns you may have.
 
-Cheers and see you this Friday!
+Cheers and see you later!<br>
 Rico
 
 [Gamma Control]: https://michelf.ca/projects/gamma-control/
