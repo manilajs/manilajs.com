@@ -57,8 +57,15 @@ Talks are 20 minutes. There is will be a short Q&A after.
 
 [Email me](mailto:hello+mjs@ricostacruz.com) with your topic and some bullet
 points on what you want to discuss. If you're on the [Phackers
-Slack](http://phackers-slack.herkouapp.com), open up a discussion on
+Slack](http://phackers.io), open up a discussion on
 #javascript.
+
+----
+
+## Preparing for your talk
+
+I've done a few and I'm always happy to help out... reach out to me (@rstacruz)
+anytime.  I also recommend reading up on [speaking.io](http://speaking.io/).
 
 ----
 
