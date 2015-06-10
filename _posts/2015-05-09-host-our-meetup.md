@@ -13,8 +13,8 @@ for venues to hold our events. Here's some basic information on our meetups.
 
 ### Schedule
 
-Our next meetup is on `July 3, 2015`. The event is typically scheduled 
-on the first Friday of the month.
+Our next meetup is on `July 10, 2015`. The event is typically scheduled 
+on the first Friday of the month. (July 3 is a holiday)
 
 ### Attendees
 
