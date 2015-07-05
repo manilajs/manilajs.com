@@ -15,7 +15,7 @@ mailchimp:
 
 registration:
   date: 2015-07-01
-  state: over # announce | open | closed | over
+  state: announce # announce | open | closed | over
   signup: "http://goo.gl/forms/mOzG0q7Vzf"
 
 hero:
@@ -27,11 +27,11 @@ hero:
 
 # -- Comment out the venue if it's TBD --
 venue:
-  name: Clinic+ Offices
-  # icon: images/aspace.jpg
+  name: Mayon Studios, Inc.
+  icon: images/013-v-mayon.png
   url: http://clinicny.com
-  map: https://goo.gl/maps/H4m8n
-  address: Unit 5B L&F Building, Aguirre Street, Legazpi Village, Makati
+  map: https://goo.gl/maps/rLFOn
+  address: 19th Flr, Jecoprime Bldg. 20th Drive, McKinley Parkway, BGC, Taguig
 
 # -- Comment out the drinkup if it's not available --
 # drinkup: <see above>
@@ -48,11 +48,11 @@ speakers:
 
 - name: Michael Julio
   # url: ""
-  # avatar: ""
-  title: Dealgrocer
+  avatar: "images/013-u-michaeljulio.png"
+  # title: Aelogica
   # url: ""
   # github: 
-  # twitter: username
+  twitter: mikejulio
   description: |-
     Michael will be sharing his learning experience in building realtime apps using AJAX long polling and Server-Side Events (SSE).
 
@@ -102,8 +102,7 @@ fun night of talks and camaraderie—beginners and experts welcome.
 {% include location-box.html venue=page.venue %}{% else %}
 {% include location-box-tbd.html %}{% endif %}
 
-Special thanks to our generous venue sponsor, [Clinic+](http://clinicny.com/what),
-for making our meetup possible.
+Special thanks to our generous venue sponsor, [Mayon Studios, Inc](https://www.facebook.com/MayonStudios), for making our meetup possible.
 
 * * * *
 
