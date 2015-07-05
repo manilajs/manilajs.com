@@ -2,37 +2,28 @@
 layout: event
 
 images:
-  - http://manilajs.com/images/share/012-sky.png
-  - http://manilajs.com/images/share/012-testing.png
-  - http://manilajs.com/images/share/012-future-2.png
-  - http://manilajs.com/images/share/012-landscape.png
-  # http://manilajs.com/images/share/012-white-a.png
-  # http://manilajs.com/images/share/011-generic.png
-  # http://manilajs.com/images/share/012-landscape.png
-  # http://manilajs.com/images/share/012-white-b.png
-  # http://manilajs.com/images/share/012-see-you-later.png
-  # http://manilajs.com/images/share/012-see-you-later-2.png
+  # - http://manilajs.com/images/share/012-sky.png
 
 event:
-  series: "012"
-  date: 2015-06-05
+  series: "013"
+  date: 2015-07-10
   time: 7PM
-  location: Clinic+, Makati
+  location: Mayon Studios, BGC
 
 mailchimp:
   group_id: 4096 # typically 2^(series+3), not used
 
 registration:
-  date: 2015-06-01
+  date: 2015-07-01
   state: over # announce | open | closed | over
   signup: "http://goo.gl/forms/mOzG0q7Vzf"
 
 hero:
   color: "#203a4f"
   opacity: 0.30
-  image: images/012-bg.jpg
-  # attribution_source: "aspacemanila.com"
-  # attribution_url: "https://www.flickr.com/photos/hackny/7033121879/"
+  image: images/013-bg.jpg
+  # attribution_source: ""
+  # attribution_url: ""
 
 # -- Comment out the venue if it's TBD --
 venue:
@@ -46,26 +37,24 @@ venue:
 # drinkup: <see above>
 
 speakers:
-- name: Alistair Roche
-  # url: ...
-  avatar: "images/012-u-atroche.png"
-  title: Zendesk
-  github: atroche
-  twitter: atroche
+- name: Noel del Castillo
+  # url: ""
+  avatar: "images/013-u-ngdelcastillo.jpg"
+  title: Pragtechnologies
+  # github: atroche
+  twitter: ngdelcastillo
   description: |-
-    Alistair is visiting from Melbourne and he'll be talking about some pretty mind-blowing things.
-    He's been using Babel + Webpack + React on a sideproject, so he's total badass.
+    Noel will be sharing his experiences with building scalable web apps using Ember CLI.
 
-- name: Joshua Lat
-  # url: ...
-  avatar: "images/012-u-joshualat.png"
+- name: Michael Julio
+  # url: ""
+  # avatar: ""
   title: Dealgrocer
-  url: http://joshualat.com/
+  # url: ""
   # github: 
   # twitter: username
   description: |-
-    Josh will be speaking about some wicked wonderful things that will really impress you.
-    He's totally all about AngularJS's life cycle, and you're gonna love his work.
+    Michael will be sharing his learning experience in building realtime apps using AJAX long polling and Server-Side Events (SSE).
 
 ##############################################################################
 ---
