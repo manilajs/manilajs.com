@@ -13,7 +13,7 @@
   speakers:
   - name: Alistair Roche
     # url: ...
-    avatar: "images/012-u-atroche.png"
+    avatar: "images/012/u-atroche.png"
     title: Zendesk
     github: atroche
     twitter: atroche
@@ -23,7 +23,7 @@
 
   - name: Joshua Lat
     # url: ...
-    avatar: "images/012-u-joshualat.png"
+    avatar: "images/012/u-joshualat.png"
     title: Dealgrocer
     url: http://joshualat.com/
     # github: 
