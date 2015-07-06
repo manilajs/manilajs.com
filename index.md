@@ -12,7 +12,7 @@ event:
   series: "013"
   date: 2015-07-10
   time: 7PM
-  location: Mayon Studios, BGC
+  location: Proudcloud, Eastwood
 
 mailchimp:
   group_id: 4096 # typically 2^(series+3), not used
@@ -31,11 +31,13 @@ hero:
 
 # -- Comment out the venue if it's TBD --
 venue:
-  name: Mayon Studios, Inc.
-  icon: images/013/v-mayon.png
-  url: https://www.facebook.com/MayonStudios
-  map: https://goo.gl/maps/rLFOn
-  address: 19th Flr, Jecoprime Bldg. 20th Drive, McKinley Parkway, BGC, Taguig
+  name: Proudcloud, Inc.
+  icon: images/013/v-proudcloud.png
+  url: https://www.proudcloud.net
+  map: https://goo.gl/maps/GKwHx
+  address: |
+    2/F Topy Building 1<br>
+    No. 3 Economia Street, Bgy. Bagumbayan, QC
 
 # -- Comment out the drinkup if it's not available --
 # drinkup: <see above>
