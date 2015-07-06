@@ -12,7 +12,7 @@ Developer notes
 
 On Facebook images:
 
- * Place them in images/share/
+ * Place them in `images/___/share/` (where the blank is the meetup ID)
  * Update `index.md` to add those URLs
  * Yes, we should have many. Facebook's limit is 4 though
  * Ping Facebook on updates ([debug](https://developers.facebook.com/tools/debug/og/object?q=http%3A%2F%2Fmanilajs.com))
@@ -27,3 +27,8 @@ TODO actually make this
 * .pull-quote
 * .sans-pull-quote
 
+<br>
+
+----
+
+[![](https://img.shields.io/badge/%E2%9C%93-collaborative_etiquette-brightgreen.svg)](http://git.io/col)
