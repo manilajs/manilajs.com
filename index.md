@@ -20,15 +20,15 @@ registration:
 
 hero:
   color: "#203a4f"
-  opacity: 0.30
-  image: images/013-bg.jpg
+  opacity: 0.60
+  image: images/013/bg.jpg
   # attribution_source: ""
   # attribution_url: ""
 
 # -- Comment out the venue if it's TBD --
 venue:
   name: Mayon Studios, Inc.
-  icon: images/013-v-mayon.png
+  icon: images/013/v-mayon.png
   url: http://clinicny.com
   map: https://goo.gl/maps/rLFOn
   address: 19th Flr, Jecoprime Bldg. 20th Drive, McKinley Parkway, BGC, Taguig
@@ -39,7 +39,7 @@ venue:
 speakers:
 - name: Noel del Castillo
   # url: ""
-  avatar: "images/013-u-ngdelcastillo.jpg"
+  avatar: "images/013/u-ngdelcastillo.jpg"
   title: Pragtechnologies
   # github: atroche
   twitter: ngdelcastillo
@@ -48,7 +48,7 @@ speakers:
 
 - name: Michael Julio
   # url: ""
-  avatar: "images/013-u-michaeljulio.png"
+  avatar: "images/013/u-michaeljulio.png"
   # title: Aelogica
   # url: ""
   # github: 
@@ -94,7 +94,7 @@ fun night of talks and camaraderie—beginners and experts welcome.
 -->
 
 <!-- Big venue image -->
-{% include panorama.html image="images/header/011-panorama.jpg" %}
+{% include panorama.html image="images/012/panorama.jpg" %}
 
 #### Our venue is
 

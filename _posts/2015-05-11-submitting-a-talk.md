@@ -6,7 +6,7 @@ title: Submit a talk
 The Manila.js community would be nothing if not for the people who share their stories.
 {:.brief-intro}
 
-![](/images/header/011-panorama.jpg)
+![](/images/011/panorama.jpg)
 {:.full-image.stretch.mspaced}
 
 ## Can I talk?
