@@ -33,7 +33,7 @@ hero:
 venue:
   name: Mayon Studios, Inc.
   icon: images/013/v-mayon.png
-  url: http://clinicny.com
+  url: https://www.facebook.com/MayonStudios
   map: https://goo.gl/maps/rLFOn
   address: 19th Flr, Jecoprime Bldg. 20th Drive, McKinley Parkway, BGC, Taguig
 
@@ -106,7 +106,7 @@ fun night of talks and camaraderie—beginners and experts welcome.
 {% include location-box.html venue=page.venue %}{% else %}
 {% include location-box-tbd.html %}{% endif %}
 
-Special thanks to our generous venue sponsor, [Mayon Studios, Inc](https://www.facebook.com/MayonStudios), for making our meetup possible.
+Special thanks to our generous venue sponsor, [{{ page.venue.name }}]({{ page.venue.url }}), for making our meetup possible.
 
 * * * *
 
