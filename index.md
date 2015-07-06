@@ -77,6 +77,13 @@ fun night of talks and camaraderie—beginners and experts welcome.
 
 * * * *
 
+## Important note!
+**The venue has been changed from earlier announcements.** Our previous announcement had Mayon Studios, BGC as our venue. They will now be hosting the August meetup instead of July.
+
+Our meetup for this month is sponsored by the fantastic people of [{{ page.venue.name }}]({{ page.venue.url }}) in Eastwood, Libis. Those who previously registered are still welcome to join us.
+
+* * * *
+
 ## Speakers
 
 {% include speaker-list.html %}
