@@ -11,6 +11,7 @@ exclude:
   - Makefile
   - README.md
   - node_modules
+  - vendor
 
 contact:
   email: hi@ricostacruz.com
