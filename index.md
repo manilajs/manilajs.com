@@ -2,7 +2,11 @@
 layout: event
 
 images:
-  # - http://manilajs.com/images/share/012-sky.png
+  - http://manilajs.com/images/013/share/share-a.png
+  - http://manilajs.com/images/013/share/share-b.png
+  - http://manilajs.com/images/013/share/share-c.png
+  - http://manilajs.com/images/013/share/share-d.png
+  - http://manilajs.com/images/013/share/see-you-later.png
 
 event:
   series: "013"
