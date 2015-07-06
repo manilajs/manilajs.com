@@ -8,7 +8,7 @@ Manila.js, the Philippine JavaScript developers meetup group, is always looking
 for venues to hold our events. Here's some basic information on our meetups.
 {:.brief-intro}
 
-![](/images/012/panorama.jpg)
+![](/images/011/panorama.jpg)
 {:.full-image.stretch.mspaced}
 
 ### Schedule
