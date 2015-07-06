@@ -8,13 +8,13 @@ Manila.js, the Philippine JavaScript developers meetup group, is always looking
 for venues to hold our events. Here's some basic information on our meetups.
 {:.brief-intro}
 
-![](/images/011/panorama.jpg)
+![](/images/012/panorama.jpg)
 {:.full-image.stretch.mspaced}
 
 ### Schedule
 
-Our next meetup is on `July 10, 2015`. The event is typically scheduled 
-on the first Friday of the month. (July 3 is a holiday)
+Our next meetup is on `August 7, 2015`. The event is typically scheduled 
+on the first Friday of the month.
 
 ### Attendees
 
