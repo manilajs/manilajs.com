@@ -37,7 +37,8 @@ venue:
   map: https://goo.gl/maps/GKwHx
   address: |
     2/F Topy Building 1<br>
-    No. 3 Economia Street, Bgy. Bagumbayan, QC
+    No. 3 Economia Street, Bgy. Bagumbayan<br>
+    Libis, QC (Near Eastwood City)<br>
 
 # -- Comment out the drinkup if it's not available --
 # drinkup: <see above>
