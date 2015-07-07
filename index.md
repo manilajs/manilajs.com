@@ -12,7 +12,7 @@ event:
   series: "013"
   date: 2015-07-10
   time: 7PM
-  location: Mayon Studios, BGC
+  location: Proudcloud, Eastwood
 
 mailchimp:
   group_id: 4096 # typically 2^(series+3), not used
@@ -31,11 +31,14 @@ hero:
 
 # -- Comment out the venue if it's TBD --
 venue:
-  name: Mayon Studios, Inc.
-  icon: images/013/v-mayon.png
-  url: https://www.facebook.com/MayonStudios
-  map: https://goo.gl/maps/rLFOn
-  address: 19th Flr, Jecoprime Bldg. 20th Drive, McKinley Parkway, BGC, Taguig
+  name: Proudcloud, Inc.
+  icon: images/013/v-proudcloud.png
+  url: https://www.proudcloud.net
+  map: https://goo.gl/maps/GKwHx
+  address: |
+    2/F Topy Building 1<br>
+    No. 3 Economia Street, Bgy. Bagumbayan<br>
+    Libis, QC (Near Eastwood City)<br>
 
 # -- Comment out the drinkup if it's not available --
 # drinkup: <see above>
@@ -72,6 +75,13 @@ fun night of talks and camaraderie—beginners and experts welcome.
 
 <!-- Call to action -->
 {% include register-cta.html %}
+
+* * * *
+
+## Important note!
+**The venue has been changed from earlier announcements.** Our previous announcement had Mayon Studios, BGC as our venue. They will now be hosting the August meetup instead of July.
+
+Our meetup for this month is sponsored by the fantastic people of [{{ page.venue.name }}]({{ page.venue.url }}) in Eastwood, Libis. Those who previously registered are still welcome to join us.
 
 * * * *
 
