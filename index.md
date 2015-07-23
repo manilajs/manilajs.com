@@ -9,59 +9,58 @@ images:
   - http://manilajs.com/images/013/share/share-d-2.png
 
 event:
-  series: "013"
-  date: 2015-07-10
+  series: "014"
+  date: 2015-08-07
   time: 7PM
-  location: Proudcloud, Eastwood
+  location: Mayon Studios, Inc.
 
 mailchimp:
   group_id: 4096 # typically 2^(series+3), not used
 
 registration:
-  date: 2015-07-01
-  state: over # announce | open | closed | over
+  date: 2015-08-03
+  state: announce # announce | open | closed | over
   signup: "http://goo.gl/forms/RseuyHDVw9"
 
 hero:
   color: "#203a4f"
   opacity: 0.60
-  image: images/013/bg.jpg
+  image: images/014/bg.jpg
   # attribution_source: ""
   # attribution_url: ""
 
 # -- Comment out the venue if it's TBD --
 venue:
-  name: Proudcloud, Inc.
-  icon: images/013/v-proudcloud.png
-  url: https://www.proudcloud.net
-  map: https://goo.gl/maps/GKwHx
+  name: Mayon Studios, Inc.
+  icon: images/014/v-mayon.png
+  url: https://www.facebook.com/MayonStudios
+  map: https://goo.gl/maps/rLFOn
   address: |
-    2/F Topy Building 1<br>
-    No. 3 Economia Street, Bgy. Bagumbayan<br>
-    Libis, QC (Near Eastwood City)<br>
+    19th Flr, Jecoprime Bldg. 20th Drive<br>
+    McKinley Parkway, BGC, Taguig
 
 # -- Comment out the drinkup if it's not available --
 # drinkup: <see above>
 
 speakers:
-- name: Noel del Castillo
-  # url: ""
-  avatar: "images/013/u-ngdelcastillo.jpg"
-  title: Pragtechnologies
-  # github: atroche
-  twitter: ngdelcastillo
-  description: |-
-    Noel will be sharing his experiences with building scalable web apps using Ember CLI.
-
-- name: Michael Julio
-  # url: ""
-  avatar: "images/013/u-michaeljulio.png"
-  # title: Aelogica
-  # url: ""
-  # github: 
-  twitter: mikejulio
-  description: |-
-    Michael will be sharing his learning experience in building realtime apps using AJAX long polling and Server-Side Events (SSE).
+# - name: Noel del Castillo
+#   # url: ""
+#   avatar: "images/013/u-ngdelcastillo.jpg"
+#   title: Pragtechnologies
+#   # github: atroche
+#   twitter: ngdelcastillo
+#   description: |-
+#     Noel will be sharing his experiences with building scalable web apps using Ember CLI.
+#
+# - name: Michael Julio
+#   # url: ""
+#   avatar: "images/013/u-michaeljulio.png"
+#   # title: Aelogica
+#   # url: ""
+#   # github:
+#   twitter: mikejulio
+#   description: |-
+#     Michael will be sharing his learning experience in building realtime apps using AJAX long polling and Server-Side Events (SSE).
 
 ##############################################################################
 ---
@@ -75,13 +74,6 @@ fun night of talks and camaraderie—beginners and experts welcome.
 
 <!-- Call to action -->
 {% include register-cta.html %}
-
-* * * *
-
-## Important note!
-**The venue has been changed from earlier announcements.** Our previous announcement had Mayon Studios, BGC as our venue. They will now be hosting the August meetup instead of July.
-
-Our meetup for this month is sponsored by the fantastic people of [{{ page.venue.name }}]({{ page.venue.url }}) in Eastwood, Libis. Those who previously registered are still welcome to join us.
 
 * * * *
 
@@ -126,4 +118,4 @@ Need directions or any help? Interested in speaking or sponsorship? Contact
 Rico at [hi@ricostacruz.com](mailto:hi@ricostacruz.com) or 0908 864 8125.
 
 Manila.js is made possible by the JS community volunteers who have been
-organizing and volunteering to make Manila.js events possible. 
+organizing and volunteering to make Manila.js events possible.
