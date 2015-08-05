@@ -41,15 +41,15 @@ venue:
 # drinkup: <see above>
 
 speakers:
-# - name: Noel del Castillo
-#   # url: ""
-#   avatar: "images/013/u-ngdelcastillo.jpg"
-#   title: Pragtechnologies
-#   # github: atroche
-#   twitter: ngdelcastillo
-#   description: |-
-#     Noel will be sharing his experiences with building scalable web apps using Ember CLI.
-#
+- name: Arjay Elbore
+  # url: ""
+  avatar: "images/014/u-arjay.jpg"
+  title: YouGov
+  github: virtualoverride
+  twitter: virtualoverride
+  description: |-
+    Arjay is a frontend developer at YouGov. He will be sharing about how to write type-safe JavaScript using TypeScript.
+
 # - name: Michael Julio
 #   # url: ""
 #   avatar: "images/013/u-michaeljulio.png"
