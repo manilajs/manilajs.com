@@ -17,8 +17,8 @@ mailchimp:
 
 registration:
   date: 2015-08-03
-  state: announce # announce | open | closed | over
-  signup: "http://goo.gl/forms/RseuyHDVw9"
+  state: open # announce | open | closed | over
+  signup: "http://goo.gl/forms/hBOI3sio4V"
 
 hero:
   color: "#203a4f"
