@@ -33,4 +33,4 @@ Cheers and see you later!<br>
 Rico
 
 [Gamma Control]: https://michelf.ca/projects/gamma-control/
-[welcome]: http://manilajs.com/p/012-welcome.html
+[welcome]: http://manilajs.com/p/014-welcome.html
