@@ -19,7 +19,7 @@ build: bundle
 bundle:
 	@ruby -v
 	@node -v
-	${bundle}
+	bundle
 
 fb:
 	open "https://developers.facebook.com/tools/debug/og/object?q=http%3A%2F%2Fmanilajs.com"
