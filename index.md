@@ -29,10 +29,10 @@ venue:
   name: Silicon Valley Insight
   icon: images/015/v-svi.png
   url: http://siliconvalleyinsight.com/
-  map: "https://www.google.com.ph/maps/place/Twenty-Four+Seven+McKinley,+24th+St.+corner+7th+Ave,+Taguig,+Metro+Manila/@14.5470316,121.0479856,17z/data=!3m1!4b1!4m2!3m1!1s0x3397c8ee52fc4e61:0xe42f214ec1a3eff9"
+  map: https://goo.gl/dGawZT
   address: |
     29th floor, Twenty-Four Seven McKinley<br>
-    24th St cor. 7th ave cor. McKinley st.<br>
+    24th St cor. 7th ave cor. McKinley Parkway<br>
     BGC, Taguig
 
 # -- Comment out the drinkup if it's not available --
