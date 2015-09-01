@@ -38,8 +38,8 @@
 
 {% if page.event %}
 <!-- description -->
-<meta content="Next meetup: {{ page.event.date | date: "%A, %B %e" }} at {{ page.event.location }}" name="description">
-<meta content="Next meetup: {{ page.event.date | date: "%A, %B %e" }} at {{ page.event.location }}" property="og:description">
+<meta content="{{ page.event.date | date: "%A, %B %e" }} at {{ page.event.location }}" name="description">
+<meta content="{{ page.event.date | date: "%A, %B %e" }} at {{ page.event.location }}" property="og:description">
 {% endif %}
 
 {% for image in page.images %}
