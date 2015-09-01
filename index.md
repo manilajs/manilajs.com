@@ -19,8 +19,8 @@ registration:
 
 hero:
   color: "#203a4f"
-  opacity: 0.60
-  image: images/014/bg.jpg
+  opacity: 0.20
+  image: images/015/bg.jpg
   # attribution_source: ""
   # attribution_url: ""
 
