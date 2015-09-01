@@ -50,8 +50,8 @@ speakers:
 
 - name: Andre Marcelo-Tanner
   avatar: "images/015/u-kzap.jpg"
-  # title:
-  # url:
+  title: Examine.com
+  url: http://examine.com/about
   # github:
   # twitter:
   description: |-
