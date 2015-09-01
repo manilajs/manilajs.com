@@ -2,23 +2,20 @@
 layout: event
 
 images:
-  - http://manilajs.com/images/014/share/share-a.png
-  - http://manilajs.com/images/014/share/share-b.png
-  - http://manilajs.com/images/014/share/see-you-later.png
+  - http://manilajs.com/images/015/share/share-a.png
+  - http://manilajs.com/images/015/share/share-b.png
+  - http://manilajs.com/images/015/share/see-you-later.png
 
 event:
-  series: "014"
-  date: 2015-08-07
+  series: "015"
+  date: 2015-09-04
   time: 7PM
-  location: Mayon Studios, Inc.
-
-mailchimp:
-  group_id: 4096 # typically 2^(series+3), not used
+  location: Silicon Valley Insight, BGC
 
 registration:
   date: 2015-08-03
-  state: over # announce | open | closed | over
-  signup: "http://goo.gl/forms/hBOI3sio4V"
+  state: open # announce | open | closed | over
+  signup: "http://goo.gl/forms/xH2LVnhmDl"
 
 hero:
   color: "#203a4f"
@@ -29,36 +26,40 @@ hero:
 
 # -- Comment out the venue if it's TBD --
 venue:
-  name: Mayon Studios, Inc.
-  icon: images/014/v-mayon.png
-  url: https://www.facebook.com/MayonStudios
-  map: https://goo.gl/maps/rLFOn
+  name: Silicon Valley Insight
+  # icon: images/014/v-mayon.png
+  url: http://siliconvalleyinsight.com/
+  map: "https://www.google.com.ph/maps/place/Twenty-Four+Seven+McKinley,+24th+St.+corner+7th+Ave,+Taguig,+Metro+Manila/@14.5470316,121.0479856,17z/data=!3m1!4b1!4m2!3m1!1s0x3397c8ee52fc4e61:0xe42f214ec1a3eff9"
   address: |
-    19th Flr, Jecoprime Bldg. 20th Drive<br>
-    McKinley Parkway, BGC, Taguig
+    29th floor, Twenty-Four Seven McKinley<br>
+    24th St cor. 7th ave cor. McKinley st.<br>
+    BGC, Taguig
 
 # -- Comment out the drinkup if it's not available --
 # drinkup: <see above>
 
 speakers:
-- name: Arjay Elbore
-  # url: ""
-  avatar: "images/014/u-arjay.jpg"
-  title: YouGov
-  github: virtualoverride
-  twitter: virtualoverride
-  description: |-
-    Arjay is a frontend developer at YouGov. He will be sharing about how to write type-safe JavaScript using TypeScript.
-
-# - name: Michael Julio
+# - name: Arjay Elbore
 #   # url: ""
-#   avatar: "images/013/u-michaeljulio.png"
-#   # title: Aelogica
-#   # url: ""
-#   # github:
-#   twitter: mikejulio
+#   avatar: "images/014/u-arjay.jpg"
+#   title: YouGov
+#   github: virtualoverride
+#   twitter: virtualoverride
 #   description: |-
-#     Michael will be sharing his learning experience in building realtime apps using AJAX long polling and Server-Side Events (SSE).
+#     Arjay is a frontend developer at YouGov. He will be sharing about how to write type-safe JavaScript using TypeScript.
+
+- name: Michael Julio
+  # url: ""
+  avatar: "images/013/u-michaeljulio.png"
+  # title: Aelogica
+  # url: ""
+  # github:
+  twitter: mikejulio
+  description: |-
+    Michael will be sharing some interesting things.
+
+mailchimp:
+  group_id: 4096 # typically 2^(series+3), not used
 
 ##############################################################################
 ---
