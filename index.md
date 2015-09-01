@@ -27,7 +27,7 @@ hero:
 # -- Comment out the venue if it's TBD --
 venue:
   name: Silicon Valley Insight
-  # icon: images/014/v-mayon.png
+  icon: images/015/v-svi.png
   url: http://siliconvalleyinsight.com/
   map: "https://www.google.com.ph/maps/place/Twenty-Four+Seven+McKinley,+24th+St.+corner+7th+Ave,+Taguig,+Metro+Manila/@14.5470316,121.0479856,17z/data=!3m1!4b1!4m2!3m1!1s0x3397c8ee52fc4e61:0xe42f214ec1a3eff9"
   address: |
@@ -39,24 +39,25 @@ venue:
 # drinkup: <see above>
 
 speakers:
-# - name: Arjay Elbore
-#   # url: ""
-#   avatar: "images/014/u-arjay.jpg"
-#   title: YouGov
-#   github: virtualoverride
-#   twitter: virtualoverride
-#   description: |-
-#     Arjay is a frontend developer at YouGov. He will be sharing about how to write type-safe JavaScript using TypeScript.
-
 - name: Michael Julio
   # url: ""
-  avatar: "images/013/u-michaeljulio.png"
+  avatar: "images/015/u-michaeljulio.png"
   # title: Aelogica
   # url: ""
   # github:
   twitter: mikejulio
   description: |-
     Michael will be sharing some interesting things.
+
+- name: Andre Marcelo-Tanner
+  # url: ""
+  # avatar: "images/015/u-kzap.png"
+  # title: Aelogica
+  # url: ""
+  # github:
+  # twitter: mikejulio
+  description: |-
+    Andre will be sharing some interesting things.
 
 mailchimp:
   group_id: 4096 # typically 2^(series+3), not used
