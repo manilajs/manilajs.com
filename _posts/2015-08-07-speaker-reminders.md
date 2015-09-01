@@ -1,6 +1,6 @@
 ---
 title: Speaker reminders
-description: Just some reminders for the meetup later
+description: Just some reminders for the coming meetup
 ---
 
 # Speaker reminders
