@@ -40,22 +40,20 @@ venue:
 
 speakers:
 - name: Michael Julio
-  # url: ""
   avatar: "images/015/u-michaeljulio.png"
-  # title: Aelogica
-  # url: ""
+  # title:
+  # url:
   # github:
   twitter: mikejulio
   description: |-
     Michael is an experienced web developer, and he will be sharing about manipulating browser pushState history in conjunction with Bootstrap and Backbone.js.
 
 - name: Andre Marcelo-Tanner
-  # url: ""
-  # avatar: "images/015/u-kzap.jpg"
-  # title: Aelogica
-  # url: ""
+  avatar: "images/015/u-kzap.jpg"
+  # title:
+  # url:
   # github:
-  # twitter: mikejulio
+  # twitter:
   description: |-
     Andre, a seasoned professional developer, will be telling us about his insights and experience on how to deal with clients and keep your sanity.
 
