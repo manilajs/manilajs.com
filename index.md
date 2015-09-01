@@ -47,17 +47,17 @@ speakers:
   # github:
   twitter: mikejulio
   description: |-
-    Michael will be sharing some interesting things.
+    Michael is an experienced web developer, and he will be sharing about manipulating browser pushState history in conjunction with Bootstrap and Backbone.js.
 
 - name: Andre Marcelo-Tanner
   # url: ""
-  # avatar: "images/015/u-kzap.png"
+  # avatar: "images/015/u-kzap.jpg"
   # title: Aelogica
   # url: ""
   # github:
   # twitter: mikejulio
   description: |-
-    Andre will be sharing some interesting things.
+    Andre, a seasoned professional developer, will be telling us about his insights and experience on how to deal with clients and keep your sanity.
 
 mailchimp:
   group_id: 4096 # typically 2^(series+3), not used
