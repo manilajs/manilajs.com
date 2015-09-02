@@ -2,10 +2,10 @@
 layout: event
 
 images:
-  - http://manilajs.com/images/015/share/share-e.png
-  - http://manilajs.com/images/015/share/share-f.png
-  - http://manilajs.com/images/015/share/share-d.png
-  - http://manilajs.com/images/015/share/see-you-later.png
+  - http://www.manilajs.com/images/015/share/share-e.png
+  - http://www.manilajs.com/images/015/share/share-f.png
+  - http://www.manilajs.com/images/015/share/share-d.png
+  - http://www.manilajs.com/images/015/share/see-you-later.png
 
 event:
   series: "015"
