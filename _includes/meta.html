@@ -1,4 +1,4 @@
-<meta charset="utf-8">
+<meta charset='utf-8'>
 <!--
 
  _______ _______ __   _ _____        _______   _____ _______
@@ -14,14 +14,14 @@
 -->
 {% if page.title %}
 <title>{{ page.title }}</title>
-<meta content="{{ page.title }}" property="og:title">
-<meta content="{{ page.title }}" property="og:site_name">
-<meta content="{{ page.title }}" name="twitter:title">
+<meta content='{{ page.title }}' property='og:title'>
+<meta content='{{ page.title }}' property='og:site_name'>
+<meta content='{{ page.title }}' name='twitter:title'>
 {% else if page.event %}
 <title>Manila.js JavaScript meetup {{ page.event.series }}</title>
-<meta content="Manila.js JavaScript meetup {{ page.event.series }}" property="og:title">
-<meta content="Manila.js JavaScript meetup {{ page.event.series }}" property="og:site_name">
-<meta content="Manila.js JavaScript meetup {{ page.event.series }}" name="twitter:title">
+<meta content='Manila.js JavaScript meetup {{ page.event.series }}' property='og:title'>
+<meta content='Manila.js JavaScript meetup {{ page.event.series }}' property='og:site_name'>
+<meta content='Manila.js JavaScript meetup {{ page.event.series }}' name='twitter:title'>
 {% else %}
 <title>Manila.js - JavaScript community in Manila, Philippines</title>
 {% endif %}
@@ -34,34 +34,38 @@
 {% elsif depth == 4 %}{% assign base = '../../..' %}{% endif %}
 {% assign timestamp = site.time | date: "%Y%m%d%H%M%S" %}
 
-<link href="{{base}}/assets/style.css?v={{ timestamp }}" rel="stylesheet" type="text/css">
+<link href='{{base}}/assets/style.css?v={{ timestamp }}' rel='stylesheet' type='text/css'>
 
 {% if page.event %}
 <!-- description -->
-<meta content="{{ page.event.date | date: "%A, %B %e" }} at {{ page.event.location }}" name="description">
-<meta content="{{ page.event.date | date: "%A, %B %e" }} at {{ page.event.location }}" property="og:description">
+<meta content='{{ page.event.date | date: "%A, %B %e" }} at {{ page.event.location }}' name='description'>
+<meta content='{{ page.event.date | date: "%A, %B %e" }} at {{ page.event.location }}' property='og:description'>
 {% endif %}
 
 {% for image in page.images %}
-<meta content="{{ image }}" property="og:image">
-<meta content="{{ image }}" name="twitter:image">
+<meta content='{{ image }}' property='og:image'>
+<meta content='{{ image }}' name='twitter:image'>
+<meta property='og:image:width' content='940'>
+<meta property='og:image:height' content='492'>
 {% endfor %}
 
 {% if page.description %}
-<meta content="article" property="og:type">
-<meta content="{{ page.description }}" name="description">
-<meta content="{{ page.description }}" property="og:description">
-<meta content="http://manilajs.com/images/base/share.png" property="og:image">
-<meta content="http://manilajs.com/images/base/share.png" name="twitter:image">
+<meta content='article' property='og:type'>
+<meta content='{{ page.description }}' name='description'>
+<meta content='{{ page.description }}' property='og:description'>
+<meta content='http://manilajs.com/images/base/share.png' property='og:image'>
+<meta content='http://manilajs.com/images/base/share.png' name='twitter:image'>
+<meta property='og:image:width' content='940'>
+<meta property='og:image:height' content='492'>
 {% endif %}
 
-<meta content="javascript, manila, meetup, manila.js" name="keywords">
+<meta content='javascript, manila, meetup, manila.js' name='keywords'>
 
 {% if page.url == '/index.html' %}
-<meta content="website" property="og:type">
-<meta content="http://manilajs.com/" property="og:url">
-<meta content="http://manilajs.com/" name="twitter:url">
-<link href="http://manilajs.com/" rel="canonical">
+<meta content='website' property='og:type'>
+<meta content='http://manilajs.com/' property='og:url'>
+<meta content='http://manilajs.com/' name='twitter:url'>
+<link href='http://manilajs.com/' rel='canonical'>
 {% endif %}
 
 {%comment%}<!-- google analytics -->{%endcomment%}
@@ -72,4 +76,4 @@
 <!-- <link href='{{ base }}/assets/favicon.png' rel='shortcut icon'> -->
 
 {%comment%}<!-- js -->{%endcomment%}
-<script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+<script>(functi1on(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
