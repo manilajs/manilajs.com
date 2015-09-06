@@ -1,4 +1,4 @@
----
+
 layout: event
 
 images:
@@ -15,7 +15,7 @@ event:
 
 registration:
   date: 2015-08-03
-  state: open # announce | open | closed | over
+  state: over # announce | open | closed | over
   signup: "http://goo.gl/forms/xH2LVnhmDl"
 
 hero:
