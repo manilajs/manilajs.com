@@ -1,7 +1,7 @@
 ManilaJS.com website
 ====================
 
-[![Status](https://travis-ci.org/manilajs/manilajs.com.svg?branch=master)](https://travis-ci.org/manilajs/manilajs.com)
+[![Status](https://travis-ci.org/manilajs/manilajs.com.svg?branch=gh-pages)](https://travis-ci.org/manilajs/manilajs.com)
 
 Developer notes
 ---------------
