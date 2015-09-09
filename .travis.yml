@@ -1,7 +1,7 @@
 languages: ruby
 rvm:
   - 2.0.0
-script: make build
+script: make build test
 branches:
   only:
     - gh-pages

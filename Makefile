@@ -21,5 +21,8 @@ bundle:
 	@node -v
 	bundle
 
+test:
+	test -f _site/index.html
+
 fb:
 	open "https://developers.facebook.com/tools/debug/og/object?q=http%3A%2F%2Fmanilajs.com"
