@@ -1,11 +1,11 @@
 ---
 layout: event
 
-images:
-  - http://www.manilajs.com/images/015/share/share-e.png
-  - http://www.manilajs.com/images/015/share/share-f.png
-  - http://www.manilajs.com/images/015/share/share-d.png
-  - http://www.manilajs.com/images/015/share/see-you-later.png
+# images:
+#   - http://www.manilajs.com/images/015/share/share-e.png
+#   - http://www.manilajs.com/images/015/share/share-f.png
+#   - http://www.manilajs.com/images/015/share/share-d.png
+#   - http://www.manilajs.com/images/015/share/see-you-later.png
 
 event:
   series: "016"
@@ -21,9 +21,11 @@ registration:
 hero:
   color: "#203a4f"
   opacity: 0.20
-  image: images/015/bg.jpg
-  # attribution_source: ""
-  # attribution_url: ""
+  image: images/016/bg.jpg
+  # :: current image is under Creative Commons Zero however,
+  #    so no attribution is required. Might as well though, yeah?
+  attribution_source: "NASA"
+  attribution_url: "https://unsplash.com/photos/NuE8Nu3otjo"
 
 # -- Comment out the venue if it's TBD --
 # venue:
@@ -39,7 +41,7 @@ hero:
 # -- Comment out the drinkup if it's not available --
 # drinkup: <see above>
 
-speakers:
+# speakers:
 # - name: Michael Julio
 #   avatar: "images/015/u-michaeljulio.png"
 #   title:
@@ -107,7 +109,9 @@ fun night of talks and camaraderie—beginners and experts welcome.
 {% include location-box.html venue=page.venue %}{% else %}
 {% include location-box-tbd.html %}{% endif %}
 
+{% if page.venue %}
 Special thanks to our generous venue sponsor, [{{ page.venue.name }}]({{ page.venue.url }}), for making our meetup possible.
+{% endif %}
 
 * * * *
 
