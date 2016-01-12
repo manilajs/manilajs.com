@@ -8,15 +8,15 @@ images:
   - http://www.manilajs.com/images/015/share/see-you-later.png
 
 event:
-  series: "015"
-  date: 2015-09-04
+  series: "016"
+  date: 2016-02-05
   time: 7PM
-  location: Silicon Valley Insight, BGC
+  location: TBD
 
 registration:
-  date:
+  # date:
   state: announce # announce | open | closed | over
-  signup:
+  # signup:
 
 hero:
   color: "#203a4f"
@@ -26,37 +26,37 @@ hero:
   # attribution_url: ""
 
 # -- Comment out the venue if it's TBD --
-venue:
-  name: Silicon Valley Insight
-  icon: images/015/v-svi.png
-  url: http://siliconvalleyinsight.com/
-  map: https://goo.gl/dGawZT
-  address: |
-    29th floor, Twenty-Four Seven McKinley<br>
-    24th St cor. 7th ave cor. McKinley Parkway<br>
-    BGC, Taguig
+# venue:
+#   name: Silicon Valley Insight
+#   icon: images/015/v-svi.png
+#   url: http://siliconvalleyinsight.com/
+#   map: https://goo.gl/dGawZT
+#   address: |
+#     29th floor, Twenty-Four Seven McKinley<br>
+#     24th St cor. 7th ave cor. McKinley Parkway<br>
+#     BGC, Taguig
 
 # -- Comment out the drinkup if it's not available --
 # drinkup: <see above>
 
 speakers:
-- name: Michael Julio
-  avatar: "images/015/u-michaeljulio.png"
-  # title:
-  # url:
-  # github:
-  twitter: mikejulio
-  description: |-
-    Michael is an experienced web developer, and he will be sharing about manipulating browser pushState history in conjunction with Bootstrap and Backbone.js.
+# - name: Michael Julio
+#   avatar: "images/015/u-michaeljulio.png"
+#   title:
+#   url:
+#   github:
+#   twitter: mikejulio
+#   description: |-
+#     Michael is an experienced web developer, and he will be sharing about manipulating browser pushState history in conjunction with Bootstrap and Backbone.js.
 
-- name: Andre Marcelo-Tanner
-  avatar: "images/015/u-kzap.jpg"
-  title: Examine.com
-  url: http://examine.com/about
-  # github:
-  # twitter:
-  description: |-
-    Andre, a seasoned professional developer, will be telling us about his insights and experience on how to deal with clients and keep your sanity.
+# - name: Andre Marcelo-Tanner
+#   avatar: "images/015/u-kzap.jpg"
+#   title: Examine.com
+#   url: http://examine.com/about
+#   github:
+#   twitter:
+#   description: |-
+#      Andre, a seasoned professional developer, will be telling us about his insights and experience on how to deal with clients and keep your sanity.
 
 mailchimp:
   group_id: 4096 # typically 2^(series+3), not used
