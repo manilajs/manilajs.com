@@ -14,9 +14,9 @@ event:
   location: Silicon Valley Insight, BGC
 
 registration:
-  date: 2015-08-03
-  state: over # announce | open | closed | over
-  signup: "http://goo.gl/forms/xH2LVnhmDl"
+  date:
+  state: announce # announce | open | closed | over
+  signup:
 
 hero:
   color: "#203a4f"
