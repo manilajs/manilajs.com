@@ -11,7 +11,7 @@ event:
   series: "016"
   date: 2016-02-05
   time: 7PM
-  location: TBD
+  location: VentureSpace PH, Shaw Boulevard
 
 registration:
   # date:
@@ -28,15 +28,14 @@ hero:
   attribution_url: "https://unsplash.com/photos/NuE8Nu3otjo"
 
 # -- Comment out the venue if it's TBD --
-# venue:
-#   name: Silicon Valley Insight
-#   icon: images/015/v-svi.png
-#   url: http://siliconvalleyinsight.com/
-#   map: https://goo.gl/dGawZT
-#   address: |
-#     29th floor, Twenty-Four Seven McKinley<br>
-#     24th St cor. 7th ave cor. McKinley Parkway<br>
-#     BGC, Taguig
+venue:
+  name: VentureSpace PH
+  icon: images/016/v-vs.png
+  url: https://www.facebook.com/VentureSpacePH/
+  map: https://goo.gl/maps/wbPWmDD9vn72
+  address: |
+    724 Shaw Boulevard<br>
+    Mandaluyong City
 
 # -- Comment out the drinkup if it's not available --
 # drinkup: <see above>
