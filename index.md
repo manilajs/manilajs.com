@@ -40,15 +40,16 @@ venue:
 # -- Comment out the drinkup if it's not available --
 # drinkup: <see above>
 
-# speakers:
-# - name: Michael Julio
-#   avatar: "images/015/u-michaeljulio.png"
-#   title:
-#   url:
-#   github:
-#   twitter: mikejulio
-#   description: |-
-#     Michael is an experienced web developer, and he will be sharing about manipulating browser pushState history in conjunction with Bootstrap and Backbone.js.
+speakers:
+- name: Joe Palala
+  avatar: "images/016/u-jpalabs.jpg"
+  title: Cognizant
+  url: http://jpalala.com
+  github: jpalala
+  twitter: jpalala
+  description: |-
+    Joe lovingly calls his talk "Asyncs, Promises, and avoiding callback hell."
+    He'll talk about dealing with complexities in wrangling long-running functions, and harnessing Javascript's power to build fast, reliable apps using asynchronous callbacks.
 
 # - name: Andre Marcelo-Tanner
 #   avatar: "images/015/u-kzap.jpg"
