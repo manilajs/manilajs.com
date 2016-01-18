@@ -14,7 +14,7 @@ event:
   location: VentureSpace PH, Shaw Boulevard
 
 registration:
-  # date:
+  date: 2016-02-01
   state: announce # announce | open | closed | over
   # signup:
 
