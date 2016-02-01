@@ -51,14 +51,14 @@ speakers:
     Joe lovingly calls his talk "Asyncs, Promises, and avoiding callback hell."
     He'll talk about dealing with complexities in wrangling long-running functions, and harnessing Javascript's power to build fast, reliable apps using asynchronous callbacks.
 
-# - name: Andre Marcelo-Tanner
-#   avatar: "images/015/u-kzap.jpg"
-#   title: Examine.com
-#   url: http://examine.com/about
-#   github:
-#   twitter:
-#   description: |-
-#      Andre, a seasoned professional developer, will be telling us about his insights and experience on how to deal with clients and keep your sanity.
+- name: Rico Sta. Cruz
+  avatar: "images/016/u-rstacruz.jpg"
+  title: MashupGarage
+  url: http://ricostacruz.com
+  github: rstacruz
+  twitter: rstacruz
+  description: |-
+    Are you wondering why npm is slow? Rico will be sharing his experiences in building [pnpm](https://github.com/rstacruz/pnpm), a faster implementation of npm.
 
 mailchimp:
   group_id: 4096 # typically 2^(series+3), not used
