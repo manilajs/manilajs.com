@@ -15,8 +15,8 @@ event:
 
 registration:
   date: 2016-02-01
-  state: announce # announce | open | closed | over
-  # signup:
+  state: open # announce | open | closed | over
+  signup: http://goo.gl/forms/ZNHNImCMrR
 
 hero:
   color: "#203a4f"
