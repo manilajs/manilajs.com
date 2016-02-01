@@ -2,8 +2,9 @@
 layout: event
 
 images:
-  - http://www.manilajs.com/images/016/share/share-e.png
-  - http://www.manilajs.com/images/016/share/share-f.png
+  - http://www.manilajs.com/images/016/share/share-a.png
+  - http://www.manilajs.com/images/016/share/share-b.png
+  - http://www.manilajs.com/images/016/share/share-c.png
   - http://www.manilajs.com/images/016/share/share-d.png
   - http://www.manilajs.com/images/016/share/see-you-later.png
 
