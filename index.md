@@ -2,61 +2,63 @@
 layout: event
 
 images:
-  - http://www.manilajs.com/images/015/share/share-e.png
-  - http://www.manilajs.com/images/015/share/share-f.png
-  - http://www.manilajs.com/images/015/share/share-d.png
-  - http://www.manilajs.com/images/015/share/see-you-later.png
+  - http://www.manilajs.com/images/016/share/share-e.png
+  - http://www.manilajs.com/images/016/share/share-f.png
+  - http://www.manilajs.com/images/016/share/share-d.png
+  - http://www.manilajs.com/images/016/share/see-you-later.png
 
 event:
-  series: "015"
-  date: 2015-09-04
+  series: "016"
+  date: 2016-02-05
   time: 7PM
-  location: Silicon Valley Insight, BGC
+  location: VentureSpace PH, Shaw Boulevard
 
 registration:
-  date: 2015-08-03
-  state: over # announce | open | closed | over
-  signup: "http://goo.gl/forms/xH2LVnhmDl"
+  date: 2016-02-01
+  state: open # announce | open | closed | over
+  signup: http://goo.gl/forms/ZNHNImCMrR
 
 hero:
   color: "#203a4f"
   opacity: 0.20
-  image: images/015/bg.jpg
-  # attribution_source: ""
-  # attribution_url: ""
+  image: images/016/bg.jpg
+  # :: current image is under Creative Commons Zero however,
+  #    so no attribution is required. Might as well though, yeah?
+  attribution_source: "NASA"
+  attribution_url: "https://unsplash.com/photos/NuE8Nu3otjo"
 
 # -- Comment out the venue if it's TBD --
 venue:
-  name: Silicon Valley Insight
-  icon: images/015/v-svi.png
-  url: http://siliconvalleyinsight.com/
-  map: https://goo.gl/dGawZT
+  name: VentureSpace PH
+  icon: images/016/v-vs.png
+  url: https://www.facebook.com/VentureSpacePH/
+  map: https://goo.gl/maps/wbPWmDD9vn72
   address: |
-    29th floor, Twenty-Four Seven McKinley<br>
-    24th St cor. 7th ave cor. McKinley Parkway<br>
-    BGC, Taguig
+    724 Shaw Boulevard<br>
+    Mandaluyong City
 
 # -- Comment out the drinkup if it's not available --
 # drinkup: <see above>
 
 speakers:
-- name: Michael Julio
-  avatar: "images/015/u-michaeljulio.png"
-  # title:
-  # url:
-  # github:
-  twitter: mikejulio
+- name: Joe Palala
+  avatar: "images/016/u-jpalabs.jpg"
+  title: Cognizant
+  url: http://jpalala.com
+  github: jpalala
+  twitter: jpalala
   description: |-
-    Michael is an experienced web developer, and he will be sharing about manipulating browser pushState history in conjunction with Bootstrap and Backbone.js.
+    Joe lovingly calls his talk "Asyncs, Promises, and avoiding callback hell."
+    He'll talk about dealing with complexities in wrangling long-running functions, and harnessing Javascript's power to build fast, reliable apps using asynchronous callbacks.
 
-- name: Andre Marcelo-Tanner
-  avatar: "images/015/u-kzap.jpg"
-  title: Examine.com
-  url: http://examine.com/about
-  # github:
-  # twitter:
-  description: |-
-    Andre, a seasoned professional developer, will be telling us about his insights and experience on how to deal with clients and keep your sanity.
+# - name: Andre Marcelo-Tanner
+#   avatar: "images/015/u-kzap.jpg"
+#   title: Examine.com
+#   url: http://examine.com/about
+#   github:
+#   twitter:
+#   description: |-
+#      Andre, a seasoned professional developer, will be telling us about his insights and experience on how to deal with clients and keep your sanity.
 
 mailchimp:
   group_id: 4096 # typically 2^(series+3), not used
@@ -107,7 +109,9 @@ fun night of talks and camaraderie—beginners and experts welcome.
 {% include location-box.html venue=page.venue %}{% else %}
 {% include location-box-tbd.html %}{% endif %}
 
+{% if page.venue %}
 Special thanks to our generous venue sponsor, [{{ page.venue.name }}]({{ page.venue.url }}), for making our meetup possible.
+{% endif %}
 
 * * * *
 
