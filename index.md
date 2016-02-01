@@ -58,7 +58,7 @@ speakers:
   github: rstacruz
   twitter: rstacruz
   description: |-
-    Are you wondering why npm is slow? Rico will be sharing his experiences in building [pnpm](https://github.com/rstacruz/pnpm), a faster implementation of npm.
+    Are you wondering why npm is slow? Rico will be sharing his experiences in building <a href='https://github.com/rstacruz/pnpm'>pnpm</a>, a faster implementation of npm.
 
 mailchimp:
   group_id: 4096 # typically 2^(series+3), not used
