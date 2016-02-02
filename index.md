@@ -16,7 +16,7 @@ event:
 
 registration:
   date: 2016-02-01
-  state: open # announce | open | closed | over
+  state: closed # announce | open | closed | over
   signup: http://goo.gl/forms/ZNHNImCMrR
 
 hero:
